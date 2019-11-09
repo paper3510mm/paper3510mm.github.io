@@ -1,7 +1,9 @@
+---
+title-heading: false
+---
+
 # はたらく双対性
 - [sample pdf](pdf/sample_diagram.pdf)
-
-
 
 # paper の web サイト
 
