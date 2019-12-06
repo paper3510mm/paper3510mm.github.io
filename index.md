@@ -20,6 +20,13 @@ title-heading: false
 
 書いた記事やノートを一部まとめて公開しています。
 
+- **[Spectral空間と分配束のStone双対性](pdf/spectral.pdf)**
+  
+  Stone双対性といえば、ブール代数とストーン空間の間のものがよく知られていますが、実はより広く(有界な)分配束に対しても双対性は存在します。分配束に対応する位相空間はspectral空間と呼ばれます。spectral空間の定義と諸性質を述べた後、分配束の圏とspectral空間の圏との間に双対性が成り立つことを紹介します。これはspectral空間論のノートを兼ねます。
+
+  - [Math Advent Calender 2019](https://adventar.org/calendars/4297) 7日目の記事
+  - 2019/12/6:公開 (32 pages)
+
 
 - **[一般化元の考え方](pdf/generalized_elements.pdf)**
 
