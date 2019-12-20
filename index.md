@@ -20,6 +20,15 @@ title-heading: false
 
 書いた記事やノートを一部まとめて公開しています。
 
+- **[Spectral空間とHochsterの環構成](pdf/spectral.pdf)**
+
+  可換環に対してその素スペクトラムを対応させることで位相空間が得られます。このような位相空間は特にspectral空間になりなすが、実はこの逆が成り立ち、すべてのspectral空間はある可換環の素スペクトラムとして表せます。Hochsterは、spectral空間XからSpec(H)=Xとなるような環Hを具体的に構成してみせました。本稿ではこの構成法に関する結果を解説します。
+
+  - [Math Advent Calender 2019](https://adventar.org/calendars/4297), 21日目の記事
+  - 2019/12/21:公開 (47 pages)
+
+
+
 - **[Spectral空間と分配束のStone双対性](pdf/spectral.pdf)**
   
   Stone双対性といえば、ブール代数とストーン空間の間のものがよく知られていますが、実はより広く(有界な)分配束に対しても双対性は存在します。分配束に対応する位相空間はspectral空間と呼ばれます。spectral空間の定義と諸性質を述べた後、分配束の圏とspectral空間の圏との間に双対性が成り立つことを紹介します。これはspectral空間論のノートを兼ねます。
@@ -101,7 +110,8 @@ title-heading: false
 
 
 
-### 誤植表製作プロジェクト ― 誤植表製作と公開に向けて
+### 誤植表製作プロジェクト
+誤植表製作と公開に向けて
 - 第1弾公開しました：[2016/自主ゼミ/松島多様体](http://s2s.undefin.net/wiki/?2016%2F%E8%87%AA%E4%B8%BB%E3%82%BC%E3%83%9F%2F%E6%9D%BE%E5%B3%B6%E5%A4%9A%E6%A7%98%E4%BD%93)
 - 第2弾公開しました：[『数理物理と数理情報の基礎』誤植表](http://s2s.undefin.net/wiki/?plugin=attach&pcmd=open&file=spotlight3.pdf&refer=%E4%BB%8A%E6%9D%91) (2018/11)
 - 第3弾公開しました：[『圏論の技法』誤植表](https://paper3510mm.amebaownd.com/posts/6945739) (2019/9/15)
