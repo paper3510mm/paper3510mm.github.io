@@ -21,17 +21,17 @@ title-heading: false
 
 ### ・**[Notes](/notes)**
 
-### ・**Links**
+### ・**[Links](/links)**
 
 ---
-#### 主な更新履歴
+#### <span style="font-size:10.5pt;">主な更新履歴</span>
 - 2019/12/1 : 公開
 
-#### 連絡先
+#### <span style="font-size:10.5pt;">連絡先</span>
 - Twitter: [@paper3510mm](https://twitter.com/paper3510mm)
 - Mastodon: [@paper3510mm@mathtod.online](https://mathtod.online/@paper3510mm)
 
-#### 参加記録
+#### <span style="font-size:10.5pt;">参加記録</span>
 - [京都大学理系自主ゼミサークルS2S](http://s2s.undefin.net/wiki/?FrontPage)
 - 数物セミナー 14th～19th
 - 関西すうがく徒のつどい 11th, 12th
