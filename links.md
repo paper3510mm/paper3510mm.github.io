@@ -4,18 +4,20 @@
 
 目次
  1. [暇な人もそうでない人も](#for_everyone)
+
  1. [LaTeX関連リンク](#latex)
      - [LaTeXについて](#on_latex)
-
      - [LaTeX editor](#latex_editor)
      - [LaTeXお役立ちサービス](#useful_service)
 
  1. [文章を書く/研究者を目指す](#for_master)
      - [文章を書く](#on_writing)
-
      - [プレゼンする](#presentation)
      - [研究者を志望すること](#toward_researcher)
+
  1. [個人サイト/ブログ](#personal_site)
+
+---
 
 ---
 <a id="for_everyone"></a>
@@ -211,6 +213,7 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
 #### 研究者を志望すること
 
   - [博士進学が決まったあなたが今すぐに始めるべきこと（2015年版）](http://next49.hatenadiary.jp/entry/20150201/p4)
+  
   - [お茶の水女子大学 教授 伊藤貴之](http://itolab.is.ocha.ac.jp/~itot/)先生のHPから
     - [研究分野をサーベイする](https://www.slideshare.net/iTooooooooooooT/itolab-how-to-survey-2017)
     - [研究発表を準備する](https://www.slideshare.net/iTooooooooooooT/itolab-presentation2015)
