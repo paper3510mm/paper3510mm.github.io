@@ -1,10 +1,19 @@
 ## LaTeX 関連リンク
 
- Now Loading......
 
-<!--
+
 --- LaTeX 関連のリンクです
 
+目次
+1.  [LaTeXについて](#on_latex)
+1.  [LaTeX editor](#latex_editor)
+1.  [LaTeXお役立ちサービス](#useful_service)
+1.  [プレゼンする](#presentation)
+1.  [文章を書く](#on_writing)
+1.  [研究者を志望すること](#toward_researcher)
+
+
+---
 
 
 LaTeXの入門書。LaTeXを始めるには、まずはこれから！
@@ -12,7 +21,12 @@ LaTeXの入門書。LaTeXを始めるには、まずはこれから！
   - [改訂第7版] LaTeX 2ε美文書作成入門/奥村晴彦・黒木裕介 ([日本技術社のページ](http://gihyo.jp/book/2017/978-4-7741-8705-1))
 
 
-【LaTeXについて】
+
+
+
+<a id="on_latex"></a>
+
+#### LaTeXについて
 
   - [LaTeXで文章を書いてみよう/隅谷孝洋(2018)](https://speakerdeck.com/gnutar/introduction-to-latex?slide=2)
     - 最高のコンピュータ組版システムLaTeXを体験してみる講習会の資料
@@ -29,7 +43,7 @@ LaTeXの入門書。LaTeXを始めるには、まずはこれから！
   - [数学論文の書き方 基礎編/荒井迅(2007)](https://www.math.kyoto-u.ac.jp/~arai/latex/presen2.pdf) (pdf)
  - [Short Math Guide for LATEX/Michael Downes(v2.0,2017)](http://ftp.jaist.ac.jp/pub/CTAN/info/short-math-guide/short-math-guide.pdf) (pdf)
 
-LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの心構えに、黒木さんのページと小田さんのpdfは必読。書き方・構成は、荒井さんのpdfを参照。
+LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの心構えに、黒木先生のページと小田先生のpdfは必読。書き方・構成は、荒井さんのpdfを参照。
 
 
   - TeXの作法・小ネタ
@@ -48,7 +62,12 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
       - 最新版ではないがweb上でSATySFiができる
 
 
-【LaTeX editor】
+
+
+
+<a id="latex_editor"></a>
+
+#### LaTeX editor
 
   - [texstudio](https://www.texstudio.org/)
     - texを打つときにいろいろ助けてくれるエディタアプリ。texworksと一緒に使う。コンパイル設定は、y.さんのTeX講習会資料を参照のこと
@@ -74,7 +93,7 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
     - [draft.hyuki.net: 数式まじりのメモを書くためのシンプルなWebアプリ](https://math.hyuki.net/20180513233343/)
   - [TeX Writer - LaTeX On The Go](https://itunes.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222?mt=8)
     - iPad等向けのiOSアプリ
-    - TeXのエンジンがpdflatexなので日本語を使えるようにするのは設定する必要がある:[pdfLaTeX + CJK パッケージで日本語する方法](https://qiita.com/zr_tex8r/items/cdaac1500718eb9fa330)
+    - TeXのエンジンがpdflatexなので日本語を使えるようにするのは設定する必要がある: [pdfLaTeX + CJK パッケージで日本語する方法](https://qiita.com/zr_tex8r/items/cdaac1500718eb9fa330)
   - [VerbTeX LaTeX editor](https://www.verbosus.com/)
     - Android/iOS/windows向けのTeXエディタアプリ
   - [LyX](https://www.lyx.org/WebJa.Home)
@@ -83,7 +102,12 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
     - [初心者にとってのLaTeXの問題点とLyXの紹介](https://senooken.jp/post/2013/12/04/)
 
 
-【LaTeXお役立ちサービス】
+
+
+
+<a id="useful_service"></a>
+
+#### LaTeXお役立ちサービス
 
   - [Detexify LaTeX handwritten symbol recognition](http://detexify.kirelabs.org/classify.html)
     - TeXのコマンドがわからないとき、手書き入力から候補をあげてくれる。
@@ -107,22 +131,29 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
 
 
 
-【TeXでプレゼンする】
+
+
+
+<a id="presentation"></a>
+
+#### プレゼンする
 
   - [TeXでプレゼン-LaTeX Beamerを使う人のためのTips集](https://blog.tokor.org/2016/06/04/TeX%E3%81%A7%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3-LaTeX-Beamer%E3%82%92%E4%BD%BF%E3%81%86%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AETips%E9%9B%86/)
   - [発表スライドにこだわろう](http://pst-ic.hatenadiary.jp/entry/2017/12/12/000038)
   - [伝わるデザイン 研究発表のユニバーサルデザイン](http://tsutawarudesign.com/)
   - [これだけ守れば見やすくなるデザインの基礎](https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu)
+  - [プレゼン講座等のリンク](http://www2.yukawa.kyoto-u.ac.jp/~akio.tomiya/slides.html)
 
+<a id="on_writing"></a>
 
-
-【文章を書くために】
+#### 文章を書く
   - 数学文章作法 基礎編/結城浩
   - 数学文章作法 推敲編/結城浩
   - 理科系の作文技術/木下是雄
 
-広く理系が文章を書くにあたっては、この三冊を読むことが各方面でおすすめされています
+広く理科系の文章を書くにあたっては、この三冊を読むことが各方面でおすすめされています
 
+  - [文章を書く心がけ/結城浩](http://www.hyuki.com/writing/writing.html)
   - 数式組版/木枝祐介 ([ラムダノートのページ](https://www.lambdanote.com/collections/mathtypo))
     - [『数式組版』を組む技術 Advent Calendar 2019](https://adventar.org/calendars/4719)
   - [科学英語を考える](https://www.s.u-tokyo.ac.jp/ja/story/newsletter/english/)
@@ -136,9 +167,14 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
     - 数学論文を書くための心構えについて。英語文献がまとめられてます
   - [How to write math papers clearly/Igor Pak](https://igorpak.wordpress.com/2017/07/12/how-to-write-math-papers-clearly/)
     - 引用の仕方について
+  - [数学フランス語文法/松本雄也](http://yuyamatsumoto.com/mfr2.html)
+  - [数学フランス語小辞典/松本雄也](http://yuyamatsumoto.com/mfr.html)
 
 
-【研究者を志望すること】
+
+<a id="toward_researcher"></a>
+
+#### 研究者を志望すること
   - [お茶の水女子大学 教授 伊藤貴之](http://itolab.is.ocha.ac.jp/~itot/)さんのHPから
     - [研究分野をサーベイする](https://www.slideshare.net/iTooooooooooooT/itolab-how-to-survey-2017)
     - [研究発表を準備する](https://www.slideshare.net/iTooooooooooooT/itolab-presentation2015)
@@ -155,15 +191,10 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
     - [添削者を困らせることのない修士論文の書き方の研究/奥村曉](http://www.isee.nagoya-u.ac.jp/~okumura/files/MasterThesisTemplate_v2.0.0.pdf) (pdf)
     - [松尾ぐみの論文の書き方](http://ymatsuo.com/japanese/ronbun_jpn.html)
     - [松尾ぐみの論文の書き方：英語論文](http://ymatsuo.com/japanese/ronbun_eng.html)
+    - [これから論文を書く若者のために/酒井聡樹](http://www7b.biglobe.ne.jp/~satoki/ronbun/kyo/korekara/korekara.html)
+    - [論文作成に関する注意/落合理](http://www4.math.sci.osaka-u.ac.jp/~ochiai/ronbunsakusei.html)
+    - [博士進学が決まったあなたが今すぐに始めるべきこと（2015年版）](http://next49.hatenadiary.jp/entry/20150201/p4)
 
-
-
-
-
-
-
-
--->
 
 
 ---
