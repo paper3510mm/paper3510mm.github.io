@@ -26,6 +26,9 @@ title-heading: false
 ---
 #### <span style="font-size:11pt;">主な更新履歴</span>
 - 2019/12/1 : 公開
+- 2020/1/17 : Notesページを作りました
+- 2020/1/20 : Linksページを作りました
+- 2020/6/1 : 最終更新日
 
 #### <span style="font-size:11pt;">連絡先</span>
 - Twitter: [@paper3510mm](https://twitter.com/paper3510mm)
