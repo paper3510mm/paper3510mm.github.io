@@ -17,9 +17,8 @@
 
  1. [個人サイト/ブログ](#personal_site)
 
----
+<hr />
 
----
 <a id="for_everyone"></a>
 
 ### 暇な人もそうでない人も
@@ -47,7 +46,8 @@
 
 
 
----
+<hr />
+
 <a id="latex"></a>
 
 ### LaTeX 関連
@@ -166,7 +166,8 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
       - DTPとは、DeskTop Publishing (卓上出版)の略のこと
 
 
----
+
+<hr />
 <a id="for_master"></a>
 
 ### 文章を書く/研究者を目指す
@@ -236,7 +237,7 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
 
 
 
----
+<hr />
 <a id="personal_site"></a>
 
 ### 個人サイト/ブログ

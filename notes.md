@@ -2,14 +2,16 @@
 
 書いた記事やノートを一部まとめて公開しています。
 
+<ol reversed>
 
-- **[Spectral空間とHochsterの環構成](pdf/hochster.pdf)**
+<li> **[Spectral空間とHochsterの環構成](pdf/hochster.pdf)**
 
     可換環に対してその素スペクトラムを対応させることで位相空間が得られます。このような位相空間は特にspectral空間になりなすが、実はこの逆が成り立ち、すべてのspectral空間はある可換環の素スペクトラムとして表せます。Hochsterは、spectral空間XからSpec(H)=Xとなるような環Hを具体的に構成してみせました。本稿ではこの構成法に関する結果を解説します。
 
     - [Math Advent Calender 2019](https://adventar.org/calendars/4297), 21日目の記事
     - 2019/12/21:公開 (47 pages)
-
+</li>
+</ol>
 
 
 - **[Spectral空間と分配束のStone双対性](pdf/spectral.pdf)**

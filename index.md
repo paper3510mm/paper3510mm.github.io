@@ -19,9 +19,12 @@ title-heading: false
 ---
 サイトマップ
 
-### ・**[Notes](/notes)**
+### **[Notes](/notes)**
+  書いた記事やノートを一部まとめて公開しています。
 
-### ・**[Links](/links)**
+
+### **[Links](/links)**
+  様々なリンクを集めたページです。
 
 ---
 #### <span style="font-size:11pt;">主な更新履歴</span>
