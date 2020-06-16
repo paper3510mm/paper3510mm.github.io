@@ -41,9 +41,11 @@
   - [学生時代をどう過ごすか/篠本滋](http://www.ton.scphys.kyoto-u.ac.jp/~shino/students.html)
   - [日々の雑感的なもの/田崎晴明 2/2/2003](http://www.gakushuin.ac.jp/~881791/d/0302.html#02)
   - [夢のない理系](https://anond.hatelabo.jp/touch/20170922053438?mode=amp)
+  - [なぜ博士号をとったのに大学教員にならないのか](https://www.ki1tos.com/entry/2020/05/21/181426)
   - [映画大好きポンポさん/杉谷庄吾【人間プラモ】](https://comic.pixiv.net/works/3728)
   - [映画大好きフランちゃん/杉谷庄吾【人間プラモ】](https://comic.pixiv.net/works/4971)
-
+  - [文学部で学んだこと―100年先の世界のために](https://www.kitashirakawa.jp/yama-no-gakko/?p=4788)
+  - [なぜ研究者は学術書を翻訳すべきなのか？](https://note.com/suz_dg/n/nd855ba5b66b2)
 
 
 <hr />
@@ -118,9 +120,13 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
     - [Overleafの使い方/Y2b委員会](https://v2.overleaf.com/read/qfnzkzggcjkr)
     - [upLaTeXを使うのに最低限必要な知識/Y2b委員会](https://v2.overleaf.com/read/vshsvphkccqv)
   - [Moeditor](https://moeditor.js.org/)
-    - オンライン・エディタ。TeX+markdown、リアルタイムでプレビューを表示してくれる
+    - オンライン・エディタ。Markdown+LaTeX、リアルタイムでプレビューを表示してくれる
   - [HackMD](https://hackmd.io/)
     - HackMDはMarkdown+LaTeXで書けるコラボノート
+  - [StackEdit](https://stackedit.io/)
+    - LaTeXが使えるMarkdownオンラインエディタ。ただし数式のレンダリングにKaTeXを使用
+  - [Kibela](https://kibe.la/ja)
+    - Markdownオンラインエディタ。トップには書かれてないが一応LaTeXが使える
   - [Mathcha](https://www.mathcha.io/)
     - オンライン・エディタ。pc向けアプリ版もある。人によっては使いやすそう
   - [TeXam](https://tex.am/)
@@ -164,7 +170,8 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
   - もっとTeX
     - [TeXでDTP](http://www.dab.hi-ho.ne.jp/t-wata/tex/)
       - DTPとは、DeskTop Publishing (卓上出版)の略のこと
-
+    - [Stylish LaTeX Cover Page](https://latexdraw.com/stylish-latex-cover-page/)
+      - LaTeXで表紙デザインをするためのstep-by-stepチュートリアル
 
 
 <hr />
@@ -182,6 +189,7 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
 広く理科系の文章を書くにあたっては、この三冊を読むことが各方面でおすすめされています
 
   - [文章を書く心がけ/結城浩](http://www.hyuki.com/writing/writing.html)
+  - [文章をわかりやすくする【18個】のルール](https://www.slideshare.net/juntoku_yoshizawa/ss-79083172)
   - [科学英語を考える](https://www.s.u-tokyo.ac.jp/ja/story/newsletter/english/)
   - [正しい英語で論文を書くために/木田雅成](https://www.rs.tus.ac.jp/kida/english.html)
   - [Stanford大学流科学技術論文の書き方](http://hontolab.org/tips-for-research-activity/tips-for-writing-technical-papers/)
@@ -204,7 +212,10 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
   - [TeXでプレゼン-LaTeX Beamerを使う人のためのTips集](https://blog.tokor.org/2016/06/04/TeX%E3%81%A7%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3-LaTeX-Beamer%E3%82%92%E4%BD%BF%E3%81%86%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AETips%E9%9B%86/)
   - [発表スライドにこだわろう](http://pst-ic.hatenadiary.jp/entry/2017/12/12/000038)
   - [伝わるデザイン 研究発表のユニバーサルデザイン](http://tsutawarudesign.com/)
+  - [伝わるデザイン 高校生のための研究発表の手引き](https://student.tsutawarudesign.com/powerpoint_slide/)
   - [これだけ守れば見やすくなるデザインの基礎](https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu)
+  - [キレイな提案書を作るためのデザインの基礎知識](https://the.alleslide.com/557)
+  - [見やすいプレゼン資料の作り方](https://www.slideshare.net/yutamorishige50/ss-41321443)
   - [プレゼン講座等のリンク](http://www2.yukawa.kyoto-u.ac.jp/~akio.tomiya/slides.html)
 
 
@@ -221,7 +232,9 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
     - [査読の仕組みと論文投稿上の対策](https://www.slideshare.net/iTooooooooooooT/review20060923)
     - [はじめての論文執筆](http://itolab.is.ocha.ac.jp/~itot/message/ItolabWriting2018.pdf) (pdf)
     - etc.
+
   - 論文を書く
+    - [論文の読み方/渡辺宙志](https://speakerdeck.com/kaityo256/how-to-survey)
     - [これから論文を書く若者のために/酒井聡樹](http://www7b.biglobe.ne.jp/~satoki/ronbun/kyo/korekara/korekara.html)
     - [論文作成に関する注意/落合理](http://www4.math.sci.osaka-u.ac.jp/~ochiai/ronbunsakusei.html)
     - [修論(D論)参考/歴本純一](http://d.hatena.ne.jp/rkmt/touch/20101217/1292573279)
