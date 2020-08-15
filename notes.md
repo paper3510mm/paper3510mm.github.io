@@ -4,8 +4,10 @@
 
 <ol reversed>
 
-<li><strong><a href="/pdf/hochster.pdf">Spectral空間とHochsterの環構成</a></strong><br />
-  可換環に対してその素スペクトラムを対応させることで位相空間が得られます。このような位相空間は特にspectral空間になりなすが、実はこの逆が成り立ち、すべてのspectral空間はある可換環の素スペクトラムとして表せます。Hochsterは、spectral空間XからSpec(H)=Xとなるような環Hを具体的に構成してみせました。本稿ではこの構成法に関する結果を解説します。
+<li><p><strong><a href="/pdf/hochster.pdf">Spectral空間とHochsterの環構成</a></strong></p>
+
+  <p>可換環に対してその素スペクトラムを対応させることで位相空間が得られます。このような位相空間は特にspectral空間になりなすが、実はこの逆が成り立ち、すべてのspectral空間はある可換環の素スペクトラムとして表せます。Hochsterは、spectral空間XからSpec(H)=Xとなるような環Hを具体的に構成してみせました。本稿ではこの構成法に関する結果を解説します。</p>
+
   <ul>
     <li><a href="https://adventar.org/calendars/4297">Math Advent Calender 2019</a>, 21日目の記事</li>
     <li>2019/12/21:公開 (47 pages)</li>
@@ -15,7 +17,7 @@
 <li><p><strong><a href="/pdf/spectral.pdf">Spectral空間と分配束のStone双対性</a></strong></p>
 
   <p>Stone双対性といえば、ブール代数とストーン空間の間のものがよく知られていますが、実はより広く(有界な)分配束に対しても双対性は存在します。分配束に対応する位相空間はspectral空間と呼ばれます。spectral空間の定義と諸性質を述べた後、分配束の圏とspectral空間の圏との間に双対性が成り立つことを紹介します。これはspectral空間論のノートを兼ねます。</p>
-
+  
   <ul>
     <li><a href="https://adventar.org/calendars/4297">Math Advent Calender 2019</a>, 7日目の記事</li>
     <li>2019/12/07:公開 (32 pages)</li>
