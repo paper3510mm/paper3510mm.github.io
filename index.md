@@ -19,11 +19,11 @@ title-heading: false
 ---
 サイトマップ
 
-<strong><span style="font-size:12pt;"><a href="/notes">Notes</a></span></strong><br />
+#### <a href="/notes">Notes</a>
 書いた記事やノートを一部まとめて公開しています。
 
 
-<strong><span style="font-size:12pt;"><a href="/links">Links</a></span></strong><br />
+#### <a href="/links">Links</a>
 様々なリンクを集めたページです。
   
 
