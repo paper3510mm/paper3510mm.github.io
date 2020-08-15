@@ -19,19 +19,21 @@ title-heading: false
 ---
 サイトマップ
 
-### **[Notes](/notes)**
-  書いた記事やノートを一部まとめて公開しています。
+<p><strong><a href="/notes">Notes</a></strong><br />
+書いた記事やノートを一部まとめて公開しています。
+</p>
 
-
-### **[Links](/links)**
-  様々なリンクを集めたページです。
+<p><strong><a href="/links">Links</a></strong><br />
+様々なリンクを集めたページです。
+</p>
+  
 
 ---
 #### <span style="font-size:11pt;">主な更新履歴</span>
-- 2019/12/1 : 公開
-- 2020/1/17 : Notesページを作りました
-- 2020/1/20 : Linksページを作りました
-- 2020/6/1 : 最終更新日
+- 2019/12/01 : 公開
+- 2020/01/17 : Notesページを作りました
+- 2020/01/20 : Linksページを作りました
+- 2020/08/15 : 最終更新日
 
 #### <span style="font-size:11pt;">連絡先</span>
 - Twitter: [@paper3510mm](https://twitter.com/paper3510mm)

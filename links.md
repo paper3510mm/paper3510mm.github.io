@@ -12,6 +12,7 @@
 
  1. [文章を書く/研究者を目指す](#for_master)
      - [文章を書く](#on_writing)
+     - [レポート・論文を書く](#on_academic_writing)
      - [プレゼンする](#presentation)
      - [研究者を志望すること](#toward_researcher)
 
@@ -44,7 +45,8 @@
   - [なぜ博士号をとったのに大学教員にならないのか](https://www.ki1tos.com/entry/2020/05/21/181426)
   - [映画大好きポンポさん/杉谷庄吾【人間プラモ】](https://comic.pixiv.net/works/3728)
   - [映画大好きフランちゃん/杉谷庄吾【人間プラモ】](https://comic.pixiv.net/works/4971)
-  - [文学部で学んだこと―100年先の世界のために](https://www.kitashirakawa.jp/yama-no-gakko/?p=4788)
+  - [渡辺明の孤独な闘い](https://anond.hatelabo.jp/20200718001048)
+  - [文学部で学んだこと―100年先の世界のために/山下太郎](https://www.kitashirakawa.jp/yama-no-gakko/?p=4788)
   - [なぜ研究者は学術書を翻訳すべきなのか？](https://note.com/suz_dg/n/nd855ba5b66b2)
 
 
@@ -78,6 +80,7 @@ LaTeXの入門書。LaTeXを始めるには、まずはこれから！
   - [数学論文の書き方 入門編/荒井迅(2007)](https://www.math.kyoto-u.ac.jp/~arai/latex/presen1.pdf) (pdf)
   - [数学論文の書き方 基礎編/荒井迅(2007)](https://www.math.kyoto-u.ac.jp/~arai/latex/presen2.pdf) (pdf)
  - [Short Math Guide for LATEX/Michael Downes(v2.0,2017)](http://ftp.jaist.ac.jp/pub/CTAN/info/short-math-guide/short-math-guide.pdf) (pdf)
+ - [learnlatex.org](https://www.learnlatex.org/)
 
 LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの心構えに、黒木先生のページと小田先生のpdfは必読。書き方・構成は、荒井さんのpdfを参照。
 
@@ -105,8 +108,9 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
 
 <a id="latex_editor"></a>
 
-#### LaTeX editor
-
+#### Editor
+LaTeX エディタ
+  - [VSCodeで最高のLaTeX環境を作る](https://qiita.com/Gandats/items/d7718f12d71e688f3573)
   - [texstudio](https://www.texstudio.org/)
     - texを打つときにいろいろ助けてくれるエディタアプリ。texworksと一緒に使う。コンパイル設定は、y.さんのTeX講習会資料を参照のこと
   - [Cloud LaTeX](https://cloudlatex.io/ja)
@@ -119,25 +123,29 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
       - 2018年5月18日に開催された、Overleaf Tokyo User Group Open Drinks Meet Upでの資料
     - [Overleafの使い方/Y2b委員会](https://v2.overleaf.com/read/qfnzkzggcjkr)
     - [upLaTeXを使うのに最低限必要な知識/Y2b委員会](https://v2.overleaf.com/read/vshsvphkccqv)
-  - [Moeditor](https://moeditor.js.org/)
-    - オンライン・エディタ。Markdown+LaTeX、リアルタイムでプレビューを表示してくれる
-  - [HackMD](https://hackmd.io/)
-    - HackMDはMarkdown+LaTeXで書けるコラボノート
-  - [StackEdit](https://stackedit.io/)
-    - LaTeXが使えるMarkdownオンラインエディタ。ただし数式のレンダリングにKaTeXを使用
-  - [Kibela](https://kibe.la/ja)
-    - Markdownオンラインエディタ。トップには書かれてないが一応LaTeXが使える
   - [Mathcha](https://www.mathcha.io/)
     - オンライン・エディタ。pc向けアプリ版もある。人によっては使いやすそう
   - [TeXam](https://tex.am/)
     - クラウド上でLaTeXの組版ができる無料サービス。ノートは公開共有でき閲覧も可能。最近開始したサービスでまだまだ不具合も多い。
-  - [Draft](https://draft.hyuki.net/)
-    - [draft.hyuki.net: 数式まじりのメモを書くためのシンプルなWebアプリ](https://math.hyuki.net/20180513233343/)
   - [TeX Writer - LaTeX On The Go](https://itunes.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222?mt=8)
     - iPad等向けのiOSアプリ
     - TeXのエンジンがpdflatexなので日本語を使えるようにするのは設定する必要がある: [pdfLaTeX + CJK パッケージで日本語する方法](https://qiita.com/zr_tex8r/items/cdaac1500718eb9fa330)
   - [VerbTeX LaTeX editor](https://www.verbosus.com/)
     - Android/iOS/windows向けのTeXエディタアプリ
+
+Markdownベース+LaTeX
+  - [Draft](https://draft.hyuki.net/)
+    - [draft.hyuki.net: 数式まじりのメモを書くためのシンプルなWebアプリ](https://math.hyuki.net/20180513233343/)
+  - [Moeditor](https://moeditor.js.org/)
+    - オンライン・エディタ。Markdown+LaTeX、リアルタイムでプレビューを表示してくれる
+  - [HackMD](https://hackmd.io/)
+    - HackMDはMarkdown+LaTeXで書けるコラボノート
+  - [StackEdit](https://stackedit.io/)
+    - LaTeX記法が使えるMarkdownオンラインエディタ。ただし数式のレンダリングにKaTeXを使用
+  - [Kibela](https://kibe.la/ja)
+    - Markdownオンラインエディタ。トップには書かれてないが一応LaTeX記法が使える
+
+その他
   - [LyX](https://www.lyx.org/WebJa.Home)
     - LaTeXを含む多機能の文章エディタ
     - [LyXで日本語を使えるようにする(windows)](https://differentialengine.wordpress.com/2018/10/24/lyx%e3%81%a7%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%82%92%e4%bd%bf%e3%81%86%e3%82%88%e3%81%86%e3%81%ab%e3%81%99%e3%82%8b%e8%a8%ad%e5%ae%9awindows/amp/?__twitter_impression=true)
@@ -186,10 +194,33 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
   - 数学文章作法 推敲編/結城浩
   - 理科系の作文技術/木下是雄
 
-広く理科系の文章を書くにあたっては、この三冊を読むことが各方面でおすすめされています
+広く理科系の文章を書くにあたっては、この三冊を読むことが各方面でおすすめされています。
 
   - [文章を書く心がけ/結城浩](http://www.hyuki.com/writing/writing.html)
   - [文章をわかりやすくする【18個】のルール](https://www.slideshare.net/juntoku_yoshizawa/ss-79083172)
+
+
+<a id="on_academic_writing"></a>
+
+#### レポート・論文を書く
+  - [名古屋大学生のためのアカデミック・ライティング・ガイド](http://www.cshe.nagoya-u.ac.jp/asg/index.html)
+  - [立教大学大学教育開発・支援センター](https://www.rikkyo.ac.jp/about/activities/fd/cdshe.html)
+  - [On writing/Terence Tao](https://terrytao.wordpress.com/advice-on-writing-papers/)
+    - 数学論文を書くための心構えについて。英語文献がまとめられてます
+  - [How to write math papers clearly/Igor Pak](https://igorpak.wordpress.com/2017/07/12/how-to-write-math-papers-clearly/)
+    - 引用の仕方について
+  - [論文の読み方/渡辺宙志](https://speakerdeck.com/kaityo256/how-to-survey)
+  - [これから論文を書く若者のために/酒井聡樹](http://www7b.biglobe.ne.jp/~satoki/ronbun/kyo/korekara/korekara.html)
+  - [論文作成に関する注意/落合理](http://www4.math.sci.osaka-u.ac.jp/~ochiai/ronbunsakusei.html)
+  - [修論(D論)参考/歴本純一](http://d.hatena.ne.jp/rkmt/touch/20101217/1292573279)
+  - [博士論文執筆の際にお願いしたいこと/立川裕二](https://member.ipmu.jp/yuji.tachikawa/misc/dron.html)
+  - [修士論文の書き方/伊藤貴之](http://itolab.is.ocha.ac.jp/~itot/message/msthesis.html)
+  - [修士論文LaTeXテンプレート](https://github.com/akira-okumura/MasterThesisTemplate/)
+  - [添削者を困らせることのない修士論文の書き方の研究/奥村曉](http://www.isee.nagoya-u.ac.jp/~okumura/files/MasterThesisTemplate_v2.0.0.pdf) (pdf)
+  - [松尾ぐみの論文の書き方](http://ymatsuo.com/japanese/ronbun_jpn.html)
+  - [松尾ぐみの論文の書き方：英語論文](http://ymatsuo.com/japanese/ronbun_eng.html)
+
+英語について
   - [科学英語を考える](https://www.s.u-tokyo.ac.jp/ja/story/newsletter/english/)
   - [正しい英語で論文を書くために/木田雅成](https://www.rs.tus.ac.jp/kida/english.html)
   - [Stanford大学流科学技術論文の書き方](http://hontolab.org/tips-for-research-activity/tips-for-writing-technical-papers/)
@@ -197,10 +228,6 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
   - William Strunk, Jr., "The Elements of Style"
     - [1st edition](http://www.gutenberg.org/ebooks/37134?msg=welcome_stranger)は公開されている
     - [初版日本語訳](http://www.kt.rim.or.jp/~hisashim/elementsofstyle/)
-  - [On writing/Terence Tao](https://terrytao.wordpress.com/advice-on-writing-papers/)
-    - 数学論文を書くための心構えについて。英語文献がまとめられてます
-  - [How to write math papers clearly/Igor Pak](https://igorpak.wordpress.com/2017/07/12/how-to-write-math-papers-clearly/)
-    - 引用の仕方について
   - [数学フランス語文法/松本雄也](http://yuyamatsumoto.com/mfr2.html)
   - [数学フランス語小辞典/松本雄也](http://yuyamatsumoto.com/mfr.html)
 
@@ -232,20 +259,6 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
     - [査読の仕組みと論文投稿上の対策](https://www.slideshare.net/iTooooooooooooT/review20060923)
     - [はじめての論文執筆](http://itolab.is.ocha.ac.jp/~itot/message/ItolabWriting2018.pdf) (pdf)
     - etc.
-
-  - 論文を書く
-    - [論文の読み方/渡辺宙志](https://speakerdeck.com/kaityo256/how-to-survey)
-    - [これから論文を書く若者のために/酒井聡樹](http://www7b.biglobe.ne.jp/~satoki/ronbun/kyo/korekara/korekara.html)
-    - [論文作成に関する注意/落合理](http://www4.math.sci.osaka-u.ac.jp/~ochiai/ronbunsakusei.html)
-    - [修論(D論)参考/歴本純一](http://d.hatena.ne.jp/rkmt/touch/20101217/1292573279)
-    - [博士論文執筆の際にお願いしたいこと/立川裕二](https://member.ipmu.jp/yuji.tachikawa/misc/dron.html)
-    - [修士論文の書き方/伊藤貴之](http://itolab.is.ocha.ac.jp/~itot/message/msthesis.html)
-    - [修士論文LaTeXテンプレート](https://github.com/akira-okumura/MasterThesisTemplate/)
-    - [添削者を困らせることのない修士論文の書き方の研究/奥村曉](http://www.isee.nagoya-u.ac.jp/~okumura/files/MasterThesisTemplate_v2.0.0.pdf) (pdf)
-    - [松尾ぐみの論文の書き方](http://ymatsuo.com/japanese/ronbun_jpn.html)
-    - [松尾ぐみの論文の書き方：英語論文](http://ymatsuo.com/japanese/ronbun_eng.html)
-    
-
 
 
 
