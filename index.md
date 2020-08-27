@@ -19,6 +19,10 @@ title-heading: false
 ---
 サイトマップ
 
+#### <a href="/posts">Posts</a>
+単発のブログ記事です。
+
+
 #### <a href="/notes">Notes</a>
 書いた記事やノートを一部まとめて公開しています。
 
@@ -32,7 +36,7 @@ title-heading: false
 - 2019/12/01 : 公開
 - 2020/01/17 : Notesページを作りました
 - 2020/01/20 : Linksページを作りました
-- 2020/08/15 : 最終更新日
+- 2020/08/15 : 最新更新日
 
 #### <span style="font-size:11pt;">連絡先</span>
 - Twitter: [@paper3510mm](https://twitter.com/paper3510mm)
