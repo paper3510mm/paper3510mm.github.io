@@ -115,7 +115,7 @@
 ### 誤植表製作プロジェクト
 - 第1弾公開しました：[2016/自主ゼミ/松島多様体](http://s2s.undefin.net/wiki/?2016%2F%E8%87%AA%E4%B8%BB%E3%82%BC%E3%83%9F%2F%E6%9D%BE%E5%B3%B6%E5%A4%9A%E6%A7%98%E4%BD%93)
 - 第2弾公開しました：[『数理物理と数理情報の基礎』誤植表](http://s2s.undefin.net/wiki/?plugin=attach&pcmd=open&file=spotlight3.pdf&refer=%E4%BB%8A%E6%9D%91) (2018/11)
-- 第3弾公開しました：[『圏論の技法』誤植表](https://paper3510mm.amebaownd.com/posts/6945739) (2019/09/15)
+- 第3弾公開しました：[『圏論の技法』誤植表](/posts/20190915) (2019/09/15)
 
 
 
