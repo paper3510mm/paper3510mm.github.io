@@ -37,7 +37,6 @@
   - [数学は体力だ/木村達雄](https://nc.math.tsukuba.ac.jp/column/emeritus/Kimurata/)
   - [数学の道に進むべきか/植田一石](http://www.ms.u-tokyo.ac.jp/~kazushi/misc/gsguide2013.pdf) (pdf)
   - [数学科の大学院に進むとはどういうことか？](http://wofwof.blog60.fc2.com/blog-entry-594.html)
-  - [数学は「人類の幸せ」のために何ができるのか─数学者フランシス・スーが語る「数の魔法」のストーリー](https://wired.jp/2017/07/21/francis-su/)
   - [私の学生時代](http://eman-physics.net/columns/schooldays.html)
   - [学生時代をどう過ごすか/篠本滋](http://www.ton.scphys.kyoto-u.ac.jp/~shino/students.html)
   - [日々の雑感的なもの/田崎晴明 2/2/2003](http://www.gakushuin.ac.jp/~881791/d/0302.html#02)
@@ -47,7 +46,10 @@
   - [映画大好きフランちゃん/杉谷庄吾【人間プラモ】](https://comic.pixiv.net/works/4971)
   - [渡辺明の孤独な闘い](https://anond.hatelabo.jp/20200718001048)
   - [文学部で学んだこと―100年先の世界のために/山下太郎](https://www.kitashirakawa.jp/yama-no-gakko/?p=4788)
+  - [もっとうまく書けるかもという妄執をやめれば速くうまく書ける－遅筆癖を破壊する劇作家 北村想の教え](https://readingmonkey.blog.fc2.com/blog-entry-759.html)
+  - [数学は「人類の幸せ」のために何ができるのか－数学者フランシス・スーが語る「数の魔法」のストーリー](https://wired.jp/2017/07/21/francis-su/)
   - [なぜ研究者は学術書を翻訳すべきなのか？](https://note.com/suz_dg/n/nd855ba5b66b2)
+
 
 
 <hr />
@@ -174,6 +176,7 @@ Markdownベース+LaTeX
     - 可換図式を簡単に書くためのサービス。図式を書くと、それをTikZに直してくれる
   - [MathKey](https://mathkey-app.com/)
     - 手書きの数式をTeXにおこしてくれる
+  - [TeXclip](https://texclip.marutank.net/)
   - [数式入りの短い文章をブラウザ上でパパっと画像化](https://math-formula-image.oka-ryunoske.work/ja.html)
   - もっとTeX
     - [TeXでDTP](http://www.dab.hi-ho.ne.jp/t-wata/tex/)
@@ -244,7 +247,8 @@ Markdownベース+LaTeX
   - [キレイな提案書を作るためのデザインの基礎知識](https://the.alleslide.com/557)
   - [見やすいプレゼン資料の作り方](https://www.slideshare.net/yutamorishige50/ss-41321443)
   - [プレゼン講座等のリンク](http://www2.yukawa.kyoto-u.ac.jp/~akio.tomiya/slides.html)
-
+  - [EdrawMax](https://www.edrawsoft.com/jp/tour/edrawmax.html)
+    - [【EdrawMax】簡単操作で印象的にアイデアを視覚化できるプレゼン作図ツール【プレゼンに最適】](https://www.youtube.com/watch?v=ZpCRSg7SAOg&feature=youtu.be)
 
 
 <a id="toward_researcher"></a>

@@ -4,6 +4,16 @@
 
 <ol reversed>
 
+
+<li><p><strong><a href="/pdf/generator.pdf">圏のgeneratorについて</a></strong></p>
+
+  <p>圏の生成子(generator)の定義をいくつか見かけるので、一つにまとめました。</p>
+
+  <ul>
+    <li>2020/10/19:公開 (10 pages)</li>
+  </ul>
+</li>
+
 <li><p><strong><a href="/pdf/hochster.pdf">Spectral空間とHochsterの環構成</a></strong></p>
 
   <p>可換環に対してその素スペクトラムを対応させることで位相空間が得られます。このような位相空間は特にspectral空間になりなすが、実はこの逆が成り立ち、すべてのspectral空間はある可換環の素スペクトラムとして表せます。Hochsterは、spectral空間XからSpec(H)=Xとなるような環Hを具体的に構成してみせました。本稿ではこの構成法に関する結果を解説します。</p>
