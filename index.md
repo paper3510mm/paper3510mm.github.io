@@ -11,13 +11,14 @@ title-heading: false
 
 大学院で代数幾何を勉強しています。圏論と双対性に興味があります。
 
-興味
+
+<strong>興味</strong>
 - 双対性
 - 圏論
 - 代数幾何学
 
 ---
-サイトマップ
+### サイトマップ
 
 #### <a href="/posts">Posts</a>
 単発のブログ記事です。
@@ -36,11 +37,14 @@ title-heading: false
 - 2019/12/01 : 公開
 - 2020/01/17 : Notesページを作りました
 - 2020/01/20 : Linksページを作りました
-- 2020/08/27 : 最終更新日
+- 2020/08/27 : Postsページを作りました
+- 2020/11/30 : 最終更新日
 
 #### <span style="font-size:11pt;">連絡先</span>
+- HN: ペーパー/paper3510mm
 - Twitter: [@paper3510mm](https://twitter.com/paper3510mm)
 - Mastodon: [@paper3510mm@mathtod.online](https://mathtod.online/@paper3510mm)
+- Mail: paper3510mm (at) gmail (dot) com
 
 #### <span style="font-size:11pt;">参加記録</span>
 - [京都大学理系自主ゼミサークルS2S](http://s2s.undefin.net/wiki/?FrontPage)

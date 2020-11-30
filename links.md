@@ -93,8 +93,9 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
     - [LaTeXのちょっと便利な小技集/長島順清](http://osksn2.hep.sci.osaka-u.ac.jp/~naga/miscellaneous/tex/tex-tips0.html)
     - [TeXに関する覚え書き](https://seesaawiki.jp/w/fuhmi/d/TeX%a4%cb%b4%d8%a4%b9%a4%eb%b3%d0%a4%a8%bd%f1%a4%ad)
     - [アカデミックヤクザにキレられないためのLaTeX論文執筆メソッド](https://qiita.com/suigin/items/10960e516f2d44f6b6de)
-    - [イショティハドゥスにキレられないための LaTeX 論文執筆メソッド](https://qiita.com/Ishotihadus/items/bbbb85f54e6a4e7aaac0)
+    - [イショティハドゥスにキレられないためのLaTeX論文執筆メソッド](https://qiita.com/Ishotihadus/items/bbbb85f54e6a4e7aaac0)
      - [TeXのことは嫌いになっても、LaTeXのことは嫌いにならないでください/藤原惟(2019)](https://github.com/sky-y/slide-2019-02-17-typesetting-darkness)
+     - [[LaTeX][l2tabu] LaTeX2e タブー集](https://konoyonohana.blog.fc2.com/blog-entry-69.html?sp)
   - [SATySFi](https://github.com/gfngfn/SATySFi/blob/master/README-ja.md)
     - TeXに代わる新しい組版システム。発展途上中
     - [SATySFi wiki](https://github.com/gfngfn/SATySFi/wiki/SATySFi-Wiki)
@@ -134,6 +135,10 @@ LaTeX エディタ
     - TeXのエンジンがpdflatexなので日本語を使えるようにするのは設定する必要がある: [pdfLaTeX + CJK パッケージで日本語する方法](https://qiita.com/zr_tex8r/items/cdaac1500718eb9fa330)
   - [VerbTeX LaTeX editor](https://www.verbosus.com/)
     - Android/iOS/windows向けのTeXエディタアプリ
+  - [LyX](https://www.lyx.org/WebJa.Home)
+    - LaTeXを含む多機能の文章エディタ
+    - [LyXで日本語を使えるようにする(windows)](https://differentialengine.wordpress.com/2018/10/24/lyx%e3%81%a7%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%82%92%e4%bd%bf%e3%81%86%e3%82%88%e3%81%86%e3%81%ab%e3%81%99%e3%82%8b%e8%a8%ad%e5%ae%9awindows/amp/?__twitter_impression=true)
+    - [初心者にとってのLaTeXの問題点とLyXの紹介](https://senooken.jp/post/2013/12/04/)
 
 Markdownベース+LaTeX
   - [Draft](https://draft.hyuki.net/)
@@ -147,12 +152,6 @@ Markdownベース+LaTeX
   - [Kibela](https://kibe.la/ja)
     - Markdownオンラインエディタ。トップには書かれてないが一応LaTeX記法が使える
 
-その他
-  - [LyX](https://www.lyx.org/WebJa.Home)
-    - LaTeXを含む多機能の文章エディタ
-    - [LyXで日本語を使えるようにする(windows)](https://differentialengine.wordpress.com/2018/10/24/lyx%e3%81%a7%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%82%92%e4%bd%bf%e3%81%86%e3%82%88%e3%81%86%e3%81%ab%e3%81%99%e3%82%8b%e8%a8%ad%e5%ae%9awindows/amp/?__twitter_impression=true)
-    - [初心者にとってのLaTeXの問題点とLyXの紹介](https://senooken.jp/post/2013/12/04/)
-
 
 
 
@@ -162,27 +161,32 @@ Markdownベース+LaTeX
 #### LaTeXお役立ちサービス
 
   - [Detexify LaTeX handwritten symbol recognition](http://detexify.kirelabs.org/classify.html)
-    - TeXのコマンドがわからないとき、手書き入力から候補をあげてくれる。
+    - TeXのコマンドがわからないとき、手書き入力から候補をあげてくれる
   - [Mathpix](https://mathpix.com/)
     - pdf上の数式を与えると、そのTeXコードを再現してくれるサービス
   - [MyScript](https://webdemo.myscript.com/)
     - 手書きの数式をtexに直してくれる
+  - [quiver](https://q.uiver.app/)
+    - 可換図式に特化したweb上のエディタ。tikzcd環境のコードが簡単に手に入る。quiverパッケージを読み込んだ上で使う
+    - [Announcing quiver: a new commutative diagram editor for the web](https://varkor.github.io/blog/2020/11/25/announcing-quiver.html)
   - [TikZiT](https://tikzit.github.io/)
-    - TikZによる図を簡単に書くツール。
+    - TikZによる図を簡単に書くツール
   - [TikzEdt](http://www.tikzedt.org/)
-    - tikzを用いたWYSIWYGエディタ。簡単にいえばtikzをリアルタイムレヴューで書ける
+    - TikZを用いたWYSIWYGエディタ。簡単にいえばTikZをリアルタイムレヴューで書ける
     - しかし、最新版がver.0.2.3beta(2013)で現在は更新されていない様子
   - [tikzcd-editor/yishn](https://github.com/yishn/tikzcd-editor)
-    - 可換図式を簡単に書くためのサービス。図式を書くと、それをTikZに直してくれる
+    - 可換図式を簡単に書くためのサービス。図式を書くと、それをTikZ(tikzcd環境のコード)に直してくれる
   - [MathKey](https://mathkey-app.com/)
     - 手書きの数式をTeXにおこしてくれる
   - [TeXclip](https://texclip.marutank.net/)
   - [数式入りの短い文章をブラウザ上でパパっと画像化](https://math-formula-image.oka-ryunoske.work/ja.html)
-  - もっとTeX
-    - [TeXでDTP](http://www.dab.hi-ho.ne.jp/t-wata/tex/)
-      - DTPとは、DeskTop Publishing (卓上出版)の略のこと
-    - [Stylish LaTeX Cover Page](https://latexdraw.com/stylish-latex-cover-page/)
-      - LaTeXで表紙デザインをするためのstep-by-stepチュートリアル
+
+もっとTeX/LaTeX
+  - [TeXとLaTeXの違い｜ラング・ラグー](https://blog.wtsnjp.com/2016/12/19/tex-and-latex/#SFNlmTM.twitter_responsive)
+  - [TeXでDTP](http://www.dab.hi-ho.ne.jp/t-wata/tex/)
+    - DTPとは、DeskTop Publishing (卓上出版)の略のこと
+  - [Stylish LaTeX Cover Page](https://latexdraw.com/stylish-latex-cover-page/)
+    - LaTeXで表紙デザインをするためのstep-by-stepチュートリアル
 
 
 <hr />
