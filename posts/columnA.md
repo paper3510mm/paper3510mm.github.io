@@ -23,6 +23,7 @@
   <li>alias 「別名は」</li>
   <li>inter alia 「とりわけ」</li>
   <li>vice versa 「逆もまた真なり」</li>
+  <li>ab initio 「最初から」</li>
   <li>q.e.d. = quod erat demonstrandum 「以上が証明されるべきであった」</li>
 </ul>
 
@@ -33,22 +34,26 @@
   <li>resp. = respectively</li>
   <li>a.k.a. = also known as</li>
   <li>w.r.t. = with respect to</li>
+  <li>w.l.o.g. = without loss of generality</li>
   <li>LHS = left hand side</li>
   <li>RHS = right hand side</li>
   <li>TFAE = the following are equivalent</li>
   <li>OTOH = on the other hand</li>
+  <li>WMA = we may assume</li>
   <li>w/ = with</li>
   <li>j/w = joint with</li>
   <li>o/w = otherwise</li>
   <li>b/w = between</li>
 </ul>
 
-フランス語語源
+フランス語表現
 <ul>
   <li>à la 「～流の」</li>
 </ul>
 
 
+
+cf. [List of mathematical abbreviations - wikipedia](https://en.wikipedia.org/wiki/List_of_mathematical_abbreviations)
 </p>
 
 
