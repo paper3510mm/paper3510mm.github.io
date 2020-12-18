@@ -20,7 +20,7 @@ MathJax.Hub.Config({
 
 ---
 #### [Math Advent Calendar 2020 の19日目](/posts/20201219)
-(2020/12/19 )
+(2020/12/19 00:08)
 
 <a href="https://adventar.org/calendars/5029">Math Advent Calendar 2020</a> に参加しました。コンパクト生成三角圏に対するBrownの表現定理を紹介します。
 
