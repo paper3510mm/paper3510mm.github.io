@@ -19,6 +19,13 @@ MathJax.Hub.Config({
 とりあえず旧ブログの記事を移動させました。新しい記事はまだないです。
 
 ---
+#### [Math Advent Calendar 2020 の19日目](/posts/20201219)
+(2020/12/19 )
+
+<a href="https://adventar.org/calendars/5029">Math Advent Calendar 2020</a> に参加しました。コンパクト生成三角圏に対するBrownの表現定理を紹介します。
+
+
+---
 #### [コラム：数学書でみかけたラテン語語源の単語](/posts/columnA)
 (2020/12/01 19:50)
 

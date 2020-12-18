@@ -5,6 +5,17 @@
 <ol reversed>
 
 
+<li><p><strong><a href="/pdf/Brown_representability.pdf">コンパクト生成三角圏に対するBrownの表現定理</a></strong></p>
+
+  <p>コンパクト生成三角圏T上の反変関手F:T^op→Abに対して、これがコホモロジー的であって余積を積にうつすとき、Fは表現可能であることが知られています。これはBrownの表現定理として知られていて、本稿ではこの定理を証明します。</p>
+
+  <ul>
+    <li><a href="https://adventar.org/calendars/5029">Math Advent Calendar 2020</a>, 19日目の記事</li>
+    <li>2020/12/19:公開 (12 pages)</li>
+  </ul>
+</li>
+
+
 <li><p><strong><a href="/pdf/generator.pdf">圏のgeneratorについて</a></strong></p>
 
   <p>圏の生成子(generator)の定義をいくつか見かけるので、一つにまとめました。</p>
