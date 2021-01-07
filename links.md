@@ -49,6 +49,7 @@
   - [もっとうまく書けるかもという妄執をやめれば速くうまく書ける－遅筆癖を破壊する劇作家 北村想の教え](https://readingmonkey.blog.fc2.com/blog-entry-759.html)
   - [数学は「人類の幸せ」のために何ができるのか－数学者フランシス・スーが語る「数の魔法」のストーリー](https://wired.jp/2017/07/21/francis-su/)
   - [なぜ研究者は学術書を翻訳すべきなのか？](https://note.com/suz_dg/n/nd855ba5b66b2)
+  - [第1回 科学の役割と物理学的世界観/須藤靖 (UTokyo OCW)](https://ocw.u-tokyo.ac.jp/lecture_1598/)
 
 
 
@@ -70,10 +71,11 @@ LaTeXの入門書。LaTeXを始めるには、まずはこれから！
 
   - [LaTeXで文章を書いてみよう/隅谷孝洋(2018)](https://speakerdeck.com/gnutar/introduction-to-latex?slide=2)
     - 最高のコンピュータ組版システムLaTeXを体験してみる講習会の資料
-  - [TeX講習会/y.(2016)](http://iso.2022.jp/math/texintro2016/resume.pdf) (pdf)
+  - [TeX講習会資料/y.(2016)](http://iso.2022.jp/math/texintro2016/resume.pdf) (pdf)
     - 必読
   - [TeXについて｜壱大整域](http://alg-d.com/math/tex.html)
     - [TikZの使い方(圏論編)/alg-d](http://alg-d.com/math/kan_extension/TikZ_for_cat.pdf) (pdf)
+  - [LaTeX文書作成方法](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/make_doc.html)
   - [LaTeXにおける正しい論文の書き方(2019)](https://qiita.com/birdwatcher/items/5ec42b35d84d3ee2ffbb)
   - [amsmathの数式環境まとめ(2018)](https://qiita.com/t_kemmochi/items/a4c390b4967b13f3afb7)
   - [卒論/修論/博論のためのモダンな LaTeX の書き方(2015)](http://webmem.hatenablog.com/entry/how-to-write-a-modern-latex-for-academic-papers)
@@ -82,6 +84,7 @@ LaTeXの入門書。LaTeXを始めるには、まずはこれから！
   - [数学論文の書き方 入門編/荒井迅(2007)](https://www.math.kyoto-u.ac.jp/~arai/latex/presen1.pdf) (pdf)
   - [数学論文の書き方 基礎編/荒井迅(2007)](https://www.math.kyoto-u.ac.jp/~arai/latex/presen2.pdf) (pdf)
  - [Short Math Guide for LATEX/Michael Downes(v2.0,2017)](http://ftp.jaist.ac.jp/pub/CTAN/info/short-math-guide/short-math-guide.pdf) (pdf)
+ - [はやわかりLaTeX数式組版](https://usermanual.wiki/Document/shortmathguidejpn.2084876734.pdf) (pdf)
  - [learnlatex.org](https://www.learnlatex.org/)
 
 LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの心構えに、黒木先生のページと小田先生のpdfは必読。書き方・構成は、荒井さんのpdfを参照。
@@ -214,6 +217,8 @@ Markdownベース+LaTeX
   - [立教大学大学教育開発・支援センター](https://www.rikkyo.ac.jp/about/activities/fd/cdshe.html)
   - [On writing/Terence Tao](https://terrytao.wordpress.com/advice-on-writing-papers/)
     - 数学論文を書くための心構えについて。英語文献がまとめられてます
+  - [Duke Graduate School Scientific Writing Resource
+](https://sites.duke.edu/scientificwriting/)
   - [How to write math papers clearly/Igor Pak](https://igorpak.wordpress.com/2017/07/12/how-to-write-math-papers-clearly/)
     - 引用の仕方について
   - [論文の読み方/渡辺宙志](https://speakerdeck.com/kaityo256/how-to-survey)

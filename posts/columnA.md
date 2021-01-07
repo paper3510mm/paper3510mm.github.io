@@ -53,7 +53,7 @@
 
 
 
-cf. [List of mathematical abbreviations - wikipedia](https://en.wikipedia.org/wiki/List_of_mathematical_abbreviations)
+cf. <a href="https://en.wikipedia.org/wiki/List_of_mathematical_abbreviations">List of mathematical abbreviations - wikipedia</a>
 </p>
 
 
