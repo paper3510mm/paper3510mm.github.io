@@ -99,6 +99,7 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
     - [イショティハドゥスにキレられないためのLaTeX論文執筆メソッド](https://qiita.com/Ishotihadus/items/bbbb85f54e6a4e7aaac0)
      - [TeXのことは嫌いになっても、LaTeXのことは嫌いにならないでください/藤原惟(2019)](https://github.com/sky-y/slide-2019-02-17-typesetting-darkness)
      - [[LaTeX][l2tabu] LaTeX2e タブー集](https://konoyonohana.blog.fc2.com/blog-entry-69.html?sp)
+     - [日本語 LaTeX の新常識 2021](https://qiita.com/wtsnjp/items/76557b1598445a1fc9da)
   - [SATySFi](https://github.com/gfngfn/SATySFi/blob/master/README-ja.md)
     - TeXに代わる新しい組版システム。発展途上中
     - [SATySFi wiki](https://github.com/gfngfn/SATySFi/wiki/SATySFi-Wiki)
