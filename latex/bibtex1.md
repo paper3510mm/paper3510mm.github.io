@@ -1,11 +1,11 @@
 ## **雰囲気でBibTeX入門（その１）**
 
-2021年1月7日、ぜんぜんわからない……雰囲気でLaTeXをいじっている……。
+--2021年1月7日、ぜんぜんわからない……雰囲気でLaTeXをいじっている……。
 
-BibTeXを導入したので、自分のような雰囲気でLaTeXを使っている人のためにも、忘れないうちにメモっておきます。
+BibTeXを導入したので、自分のような雰囲気でLaTeXを使っている数学系の人のためにも、忘れないうちにメモっておきます。
 
 以下、いくつかの段階に分けて導入していきます。ただし日本語環境でのLaTeXの設定は済んでいるとします（方法は[TeXworks/設定 - TeXWiki](https://texwiki.texjp.org/?TeXworks%2F%E8%A8%AD%E5%AE%9A)を見てください）。
-環境は、
+環境：
  - OS: Windows10
  - TeXディストリビューション: TeX Live 2020
  - タイプセット設定: pLaTeX(ptex2pdf)
@@ -15,7 +15,7 @@ BibTeXを導入したので、自分のような雰囲気でLaTeXを使ってい
 
 間違っている箇所やわかりにくい箇所があれば遠慮なく教えてください。
 
-目次
+**目次**
   1. [BibTeXとは？](#what_is_bibtex)
   2. [とりあえずBibTeXを使って参考文献を出力してみる](#intro_bibtex)
   3. [文献データベースを一つにまとめる](#mktexlsr)
@@ -24,8 +24,9 @@ BibTeXを導入したので、自分のような雰囲気でLaTeXを使ってい
 
 続く：[雰囲気でBibTeX入門（その２）](/latex/bibtex2)
 
-#### 参考文献
-<ul>
+
+#### 主な参考文献
+
 <li>奥村晴彦、黒木裕介。『LaTeX2e美文書作成入門 改訂第7版』、技術評論社、2017。（手元には第7版しかなかったので第7版を引用しています。2020年に改訂第8版が出版されましたが、第8版でもほとんど同じです）</li>
 <li><a href="http://otoguro.net/home/latex/bibtex/">BibTeX - Ryo Otoguro</a></li>
 <li><a href="http://www.yamamo10.jp/yamamoto/comp/latex/bibtex/bibtex.html">LaTeX参考文献処理(BibTeX)－文献データベースの作成と参照方法－</a></li>
@@ -33,7 +34,8 @@ BibTeXを導入したので、自分のような雰囲気でLaTeXを使ってい
 <li><a href="https://www.okomeda.net/wp/500/">[BiBTeX]BibTeX 概要 - 今西衞研究室</a></li>
 <li><a href="https://www.bibtex.com/">The quick BibTeX guide</a></li>
 <li><a href="https://qiita.com/SUZUKI_Masaya/items/14f9727845e020f8e7e9">BiBTeXとは</a></li>
-</ul>
+
+その他、個別にリンクを付けてあります。
 
 
 <hr />
@@ -51,15 +53,15 @@ BibTeXとは、LaTeXにおける文献参照のためのツールのこと。
   <li>bibファイルに文献のデータを保存しておけば、引用キーを指定するだけで参考文献を自動生成してくれる。よっていちいち手動で文献リストをならべずに済むし、リスト漏れすることもなくなる。</li>
   <li>著者名やタイトルの情報を意味論的に管理入力できる。よって参考文献を統一した形式で出力でき、指定の形式が変わっても簡単に対応できる。</li>
   <li>一度つくった参考文献データベースは使いまわるので、LaTeX文書ごとにbibファイルを作成する必要がない。</li>
-  <li></li>
-  <li></li>
+  <li>etc...</li>
 
 デメリット：
   <li>自分のようななんちゃってTeXユーザには、設定とか使い方がまるでわからん。</li>
 
-このページでは、自分がBibTeXを導入した方法を解説する。
 
-なおBibTeXの後続として[BibLaTeX](https://www.ctan.org/pkg/biblatex)が開発されていて、Unicode対応であったり、BibTeXよりも自由に文献表示のカスタマイズができたりする。しかし現状では和文に対応していない。
+さらに言えばBibTeXは欧文専用であり、日本語で利用するためにはpBibTeXの設定をする必要がある（以前はjBibTeXというのが使われていたらしい）。このページでは、自分がpBibTeXを導入した方法を解説する。以下、<span style="text-decoration:underline">BibTeXといえばpBibTeXのことを指すものとする</span>。
+
+なおBibTeXの後続として[BibLaTeX](https://www.ctan.org/pkg/biblatex)が開発されていて、Unicode対応であったり、BibTeXよりも自由に文献表示のカスタマイズができたりする。しかし現状では和文に対応していない（参考：[biblatexとBibTeX - 武田史郎のウェブログ](https://shirotakeda.org/blog-ja/?p=2660)）。
 
 
 ---
@@ -69,7 +71,7 @@ BibTeXとは、LaTeXにおける文献参照のためのツールのこと。
 
 BibTeXを使うために必要なのは、bibファイル（文献ファイル）とbstファイル（文献スタイルファイル）の二つ。これらはいずれもただのテキストファイルなので、いくらでも作れる。これらを処理するための`(p)bibtex`はTeXLiveに標準的に入っているので、特に追加で何かをインストールする必要はない。
 
-bstファイルも標準的なものは初めからインストールされているので、今は気にしない。とりあえず日本語用の一番シンプルなjplain.bstを使う．
+bstファイルも標準的なものは初めからインストールされているので、今は気にしない。とりあえず日本語用の一番シンプルなjplain.bstを使う。
 
 
 ①まずbibファイルを用意する。メモ帳を開いて、
@@ -98,8 +100,16 @@ bstファイルも標準的なものは初めからインストールされて�
   publisher = {岩波書店},
   year      = {2005},
 }
+
+@Book{ 飯高-上野-浪川1993,
+  author    = {飯高, 茂 and 上野, 健爾 and 浪川, 幸彦},
+  title     = {デカルトの精神と代数幾何},
+  publisher = {日本評論社},
+  year      = {1993},
+  edition   = {増補版},
+}
 ```
-をコピー＆ペーストし、myreferenceという名前をつけて保存する（ここで文字コードはUTF-8としておく）。メモ帳を閉じて、myreference.txtの拡張子を.bibに変更する。
+をコピー＆ペーストし、myrefという名前をつけて保存する（ここで文字コードはUTF-8としておく）。メモ帳を閉じて、myref.txtの拡張子を.bibに変更する。
 
 
 ②次にTeXworksで適当なtexファイル（例えばtest.tex）を作って、
@@ -107,15 +117,15 @@ bstファイルも標準的なものは初めからインストールされて�
 % test.tex
 \documentclass{jsarticle}
 \begin{document}
-Hartshorne~\cite{Hartshorne1977}．% myreference.bib で登録したラベルを参照
+Hartshorne~\cite{Hartshorne1977}．% myref.bib で登録したラベルを参照
 
 Bridgeland~\cite{Bridgeland2007}．
 
 \bibliographystyle{jplain} % jplain.bstの読み込み。参考文献の表示形式を指定する
-\bibliography{myreference} % myreference.bibの読み込み
+\bibliography{myref} % myref.bibの読み込み
 \end{document}
 ```
-と書く。myreference.bibをtest.texと同じフォルダ（ディレクトリ）に移動させておく。
+と書く。myref.bibをtest.texと同じフォルダ（ディレクトリ）に移動させておく。
 
 
 ③最後にTeXworksで`pbibtex`を実行できるように設定する。TeXworksを開いている状態から、編集->設定->タイプセットと進み、「タイプセットの方法」枠内の `+` ボタンを押す。「タイプセットの設定をする」ウインドウにて
@@ -125,7 +135,7 @@ Bridgeland~\cite{Bridgeland2007}．
     - -kanji=utf8
     - $basename
 
-と記入し、「実行後、PDFを表示する」のチェックを外してから、OKボタンを押す（わからなければ[TeXworks/設定 - TeXWiki](https://texwiki.texjp.org/?TeXworks%2F%E8%A8%AD%E5%AE%9A)の画像を見てください）。すると「タイプセットの方法」の一覧にpBibTeXが追加されていることが確認できる。
+と記入し、「実行後、PDFを表示する」のチェックを外してから、OKボタンを押す（わからなければ[TeXworksでBibTeXを扱う - hanzomemo](http://hanzomemo.blogspot.com/2013/05/texworksbibtex.html)の画像を見てください）。すると「タイプセットの方法」の一覧にpBibTeXが追加されていることが確認できる。`$basename`などの意味に関しては、[Defining new typesetting tools](https://github.com/TeXworks/texworks/wiki/AdvancedTypesettingTools#defining-new-typesetting-tools)を参照してください。
 
 これで準備は完了。
 
@@ -162,14 +172,14 @@ Bridgeland~\cite{Bridgeland2007}．
 
 ### 文献データベースを一つにまとめる
 
-myreference.bibに文献情報をどんどん加えていけば、自分だけの文献リストが出来上がってくる。同じmyreference.bibを他のtexファイルでも読み込んで使っていきたい。
+myref.bibに文献情報をどんどん加えていけば、自分だけの文献リストが出来上がってくる。同じmyref.bibを他のtexファイルでも読み込んで使っていきたい。
 このようなとき（bibでもbstでもstyでも新しくファイルを追加したときに行う必要があることだが）、`tex`が見つけてくれるように一覧表(ls-R)の更新を行う必要がある（参考：<a href="https://ossyaritoori.hatenablog.com/entry/2016/10/13/032502">styファイルを置く場所・置いた後にすること - 粗大メモ置き場</a>）。
 
 簡単に言えば次の操作を行う。
   - bibファイルを <span style="color: green; ">C:\texlive\texmf-local\bibtex\bib</span> の中に置く。texmf-localはTeXのシステム更新に影響を受けないため、個人で用意したファイルはtexmf-local以下の場所が推奨される。
   - そこから、ウィンドウの上部をクリックして”cmd”と打ち、立ち上がったコマンドプロンプトに`mktexlsr`と打って実行する（Enterを押す）。これでタイプセット時に`tex`がこの場所を探してくれるようになる。
   
-  つまり、毎回「myreference.bibをtexファイルと同じフォルダに置く」をする必要なく、`\bibliography{myreference}`と書いておけば、ちゃんと <span style="color: green; ">C:\texlive\texmf-local\bibtex\bib</span> にあるmyreference.bibを読み込んでくれるようになる。
+  つまり、毎回「myref.bibをtexファイルと同じフォルダに置く」をする必要なく、`\bibliography{myreference}`と書いておけば、ちゃんと <span style="color: green; ">C:\texlive\texmf-local\bibtex\bib</span> にあるmyref.bibを読み込んでくれるようになる。
 
 もっと違う場所（例えば自前のバックアップフォルダなど）に置いて使いたいときは、環境変数`BIBINPUTS`にパスを追加する必要がある。
 <li><a href="http://hnsn1202.hateblo.jp/entry/2012/06/07/030443">初心者がutf8でLaTeXとBibTeXを使うための一通りの準備（Windows編）</a></li>
@@ -240,5 +250,7 @@ TeXstudioでもlatexmkの設定ができる。上の.latexmkrcのファイルは
 
 
 ---
+
+続く：[雰囲気でBibTeX入門（その２）](/latex/bibtex2)
 
 **[戻る](/latex)**
