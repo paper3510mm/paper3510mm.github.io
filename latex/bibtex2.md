@@ -1,6 +1,8 @@
 ## **雰囲気でBibTeX入門（その２）**
 
-[雰囲気でBibTeX入門（その１）](/latex/bibtex1)の続き。主に数学系向けの内容を含む部分があります。
+[雰囲気でBibTeX入門（その１）](/latex/bibtex1)の続き。
+
+主に数学系向けの内容を含む部分があります。
 
 
 
@@ -27,9 +29,11 @@
 
 
 などがある。今はJabRefを使ってみる。
+<ul>
 <li><a href="http://hnsn1202.hateblo.jp/entry/2012/06/07/030443">初心者がutf8でLaTeXとBibTeXを使うための一通りの準備（Windows編）</a></li>
 <li><a href="https://keijisaito.info/arc/biblio/jabref_jbib.htm">[JabRefによるBibTeX文献管理とJab2HTML]</a></li>
 <li><a href="http://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToUseJabRef.html">論文情報管理ツールJabRef</a></li>
+</ul>
 あたりを参考にした。
 
 JabRefは[公式サイト](https://www.jabref.org/)からダウンロードできる。Javaで動くのでJavaが入っている必要がある。
@@ -39,7 +43,8 @@ JabRefはパソコン内にダウンロードした文献の管理にも使え�
 その他詳しい使い方はまた今度。
 
 
-
+また、arXiv IDやMR IDを`\cite`するだけで、自動でarXivやMathSciNetから文献情報をダウンロードしてくれるプログラムも存在する。
+- [bibgetter](https://bibgetter.github.io/)
 
 
 ---
@@ -56,9 +61,10 @@ JabRefはパソコン内にダウンロードした文献の管理にも使え�
 
 BibTeX形式の文献情報は、自分で入力しても良いが、
  - 雑誌の出版社（Springer, Elsevier, etc.）のページ
- - Google Scholar
  - MathSciNet
- - Cinii（主に日本語の文献のデータベース。英語の論文のデータもある）
+ - zbMath
+ - CiNii（主に日本語の文献のデータベース。英語の論文のデータもある）
+ - Google Scholar
  - Mendeley（文献管理ソフトMendeleyからの出力）
  
  などからも手に入れることができる。ただし、文献のBibTeXデータはこれらの情報提供元によって、形式が異なることが多い（参考：[BibTeX用の文献データベース - 武田史郎のウェブログ](https://shirotakeda.org/blog-ja/?p=3654)）。
@@ -72,7 +78,7 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
 ```
 である。フィールドの中身を囲う`{ }`は`" "`でも良い。
 
-文献タイプには、主に
+文献タイプ（エントリ）には、主に
  - Article：雑誌記事や論文誌の論文
  - Book：出版社のある書籍
  - Booklet：出版社のない書籍
@@ -89,7 +95,7 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
  - Misc：そのほか
  - Comment：コメント用。ここに書いたものは無視される
  
- の15種類ある。フィールドの種類は無数にあるが、各文献タイプに対して必須フィールド・任意フィールド・無視されるフィールドであるかどうかが決まっている。
+ の15種類ある。フィールドの種類はいくつもあるが、各文献タイプに対して必須フィールド・任意フィールド・無視されるフィールドであるかどうかが決まっている。
 
  - 必須フィールド：必要なフィールド。記述がなければエラーが出る。
  - 任意フィールド：記述があれば文献情報として出力されるが、無くてもいい。
@@ -122,6 +128,7 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
 
 これら以外は(j)plain.bstでは無視される。例えば、`memo = {メモ欄}`と書いていても出力には反映されないので、しばしばメモ用に用いられたりする。もちろん、使用するbstファイルによって有効なフィールドは異なり、
  - crossref
+ - language
  - url
  - eprint
  - doi
@@ -129,7 +136,6 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
  - zblnumber
  - issn
  - isbn
- - language
 
 なども用いられる。より詳しくは、冒頭の参考文献や[Format - The quick BibTeX guide](https://www.bibtex.com/format/)を参照されたい。
 
@@ -146,6 +152,7 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
 - 日本人名もふつう姓→名の順で書くので「姓, 名」とする。
 - 同一著者の異なる名義がある場合、参考文献での並び替えが期待通りにならない可能性もある。例えば著者がDonald E. KnuthともD. E. Knuthとも名乗っているときは、後者をD[onald] E. Knuthとしておく。並び替えのとき記号`[`と`]`は無視され、Donal E. Knuthとして並び替えられる。
 - 著者が日本人名の場合、yomiフィールドを使って読み方を指定する。著者が「米田, 信夫」の場合、`yomi = {Nobuo Yoneda}`とすれば欧文の著者に交じって並び、`yomi = {よねだ のぶお}`とすれば欧文の著者が並んだあとに和文の著者が並ぶ。
+- yomiフィールドがなければ、欧文と同様に扱われ、著者名の表示が「信夫 米田」となる。
 - 日本語文献だと、例えばjalphaスタイルでのラベルが[米田54]にならず、yomiフィールドの入力によって[Yon54]だとか[よねだ54]だとかになってしまう。この場合、bibファイルの冒頭に `@preamble{"\newcommand{\noop}[1]{}"}` と書き、yomiフィールドを `yomi = "{\noop{よねだ のぶお}米田}"` のように書けばよい。詳しくは美文書11.10節を参照。
 - etc...
 
@@ -185,7 +192,7 @@ pBibTeX標準のbstファイル：
  - jname：「[Kin80] 木下：理科系の作文技術…」の形式で出力される
  - jipsj, jorsj, tieice, tipsj：その他各学会用
 
-数学系の人にとっては、後述のMathSciNetとの連携から amsplain / amsalpha もよく使われる。
+数学系の人にとっては、後述のMathSciNetとの連携から amsplain / amsalpha も使われる。
 
 どのように出力されるかは、[Full bibliography styles compilation](https://www.bibtex.com/bibliography-styles/)でサンプルを見ることができる。
 
@@ -209,7 +216,7 @@ pBibTeX標準のbstファイル：
 
 ### 文献情報の識別と分類
 
-文献情報にはさまざまな情報が付随してくる。例えば、標準でないフィールドurl, doi, eprint, mrnumber, zblnumber, issn, isbnの中身として提供される情報など。
+文献情報にはさまざまな情報が付随し、その識別と分類がなされている。例えば、標準でないフィールドurl, doi, eprint, mrnumber, zblnumber, issn, isbnの中身として提供される情報など。
 
 #### デジタルオブジェクト識別子(Digital Object Identifier; DOI)
 
@@ -226,7 +233,7 @@ BibTeXでは、doiフィールドが用いられる。
 
 #### arXiv ID
 
-プレプリントサーバー [arXiv](https://arxiv.org/) で用いられる識別子。2007年3月までの旧式（arXiv:math.DG/0211159という形のもの）と2007年4月以降の新式（arXiv:0711.4630v2という形のもの）がある（参考：[arXiv - wikipedia](https://ja.wikipedia.org/wiki/ArXiv)）。主要なbstファイルには、このarXiv IDを出力するフィールドをサポートしたバージョンがある：
+arXiv identifierは、プレプリントサーバー [arXiv](https://arxiv.org/) で用いられる識別子。2007年3月までの旧式（arXiv:math.DG/0211159という形のもの）と2007年4月以降の新式（arXiv:0711.4630v2という形のもの）がある（参考：[arXiv - wikipedia](https://ja.wikipedia.org/wiki/ArXiv)）。主要なbstファイルには、このarXiv IDを出力するフィールドをサポートしたバージョンがある：
 
  - [BibTeX and Eprints](https://arxiv.org/help/hypertex/bibstyles)
 
@@ -275,5 +282,7 @@ ISBN（International Standard Book Number: 国際標準図書番号） は、書
 
 
 ---
+戻る：[雰囲気でBibTeX入門（その１）](/latex/bibtex1)
 
-**[戻る](/latex)**
+
+**[「LaTeXについて」に戻る](/latex)**

@@ -27,6 +27,7 @@ BibTeXを導入したので、自分のような雰囲気でLaTeXを使ってい
 
 #### 主な参考文献
 
+<ul>
 <li>奥村晴彦、黒木裕介。『LaTeX2e美文書作成入門 改訂第7版』、技術評論社、2017。（手元には第7版しかなかったので第7版を引用しています。2020年に改訂第8版が出版されましたが、第8版でもほとんど同じです）</li>
 <li><a href="http://otoguro.net/home/latex/bibtex/">BibTeX - Ryo Otoguro</a></li>
 <li><a href="http://www.yamamo10.jp/yamamoto/comp/latex/bibtex/bibtex.html">LaTeX参考文献処理(BibTeX)－文献データベースの作成と参照方法－</a></li>
@@ -34,7 +35,7 @@ BibTeXを導入したので、自分のような雰囲気でLaTeXを使ってい
 <li><a href="https://www.okomeda.net/wp/500/">[BiBTeX]BibTeX 概要 - 今西衞研究室</a></li>
 <li><a href="https://www.bibtex.com/">The quick BibTeX guide</a></li>
 <li><a href="https://qiita.com/SUZUKI_Masaya/items/14f9727845e020f8e7e9">BiBTeXとは</a></li>
-
+</ul>
 その他、個別にリンクを付けてあります。
 
 
@@ -50,14 +51,16 @@ BibTeXを導入したので、自分のような雰囲気でLaTeXを使ってい
 BibTeXとは、LaTeXにおける文献参照のためのツールのこと。
 
 メリット：
+  <ul>
   <li>bibファイルに文献のデータを保存しておけば、引用キーを指定するだけで参考文献を自動生成してくれる。よっていちいち手動で文献リストをならべずに済むし、リスト漏れすることもなくなる。</li>
   <li>著者名やタイトルの情報を意味論的に管理入力できる。よって参考文献を統一した形式で出力でき、指定の形式が変わっても簡単に対応できる。</li>
   <li>一度つくった参考文献データベースは使いまわるので、LaTeX文書ごとにbibファイルを作成する必要がない。</li>
   <li>etc...</li>
-
+  </ul>
 デメリット：
+  <ul>
   <li>自分のようななんちゃってTeXユーザには、設定とか使い方がまるでわからん。</li>
-
+  </ul>
 
 さらに言えばBibTeXは欧文専用であり、日本語で利用するためにはpBibTeXの設定をする必要がある（以前はjBibTeXというのが使われていたらしい）。このページでは、自分がpBibTeXを導入した方法を解説する。以下、<span style="text-decoration:underline">BibTeXといえばpBibTeXのことを指すものとする</span>。
 
@@ -172,18 +175,38 @@ Bridgeland~\cite{Bridgeland2007}．
 
 ### 文献データベースを一つにまとめる
 
-myref.bibに文献情報をどんどん加えていけば、自分だけの文献リストが出来上がってくる。同じmyref.bibを他のtexファイルでも読み込んで使っていきたい。
+
+myref.bibに文献情報をどんどん加えていけば、自分だけの文献リストが出来上がってくる。同じmyref.bibを他のtexファイルでも読み込んで使っていきたい。そんなときは、bibファイルを <span style="color: green; ">C:\Users\ユーザー名\texmf\bibtex\bib</span> の中に移動させるだけでよい。なければ作る。すなわち
+  - <span style="color: green; ">C:\Users\ユーザー名</span> を開き、「texmf」という名前のフォルダを作る
+  - 今作った「texmf」フォルダを開いて、「bibtex」という名前のフォルダを作る
+  - 今作った「bibtex」フォルダを開いて、「bib」 という名前のフォルダを作る
+  - 今作った「bib」フォルダを開き、ここにbibファイルを置く
+
+とする。これで、毎回「myref.bibをtexファイルと同じフォルダに置く」をする必要なく、`\bibliography{myref}`と書いておけば、ちゃんと <span style="color: green; ">C:\Users\ユーザー名\texmf\bibtex\bib</span> にあるmyref.bibを読み込んで使ってくれるようになる。
+
+なお、<span style="color: green; ">C:\Users\ユーザー名\texmf</span> という場所は、デフォルトで変数 `TEXMFHOME` に入力されている場所で、TeXのシステム更新に影響を受けない。個人のユーザが用意したファイル（styファイルやbibファイルやbstファイルなど）はこの場所に置くのが基本。[ユーザがファイルを追加したい場合は（ローカルな追加） - TeXwiki](https://texwiki.texjp.org/?TeX%20%E3%81%AE%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E6%A7%8B%E6%88%90#local)が参考になる。
+
+
+もしシステム全体で共通して用いるのであれば、デフォルトで変数 `TEXMFLOCAL` に入力されている <span style="color: green; ">C:\texlive\texmf-local</span> 以下の場所に置く。この場合は、`TEXMFHOME` に置いたときと違って`tex`が見つけてくれないので、探して読む込んでくれるように一覧表(ls-R)の更新を行う必要がある（一覧表の更新、つまり`mktexlsr`の実行については<a href="https://ossyaritoori.hatenablog.com/entry/2016/10/13/032502">styファイルを置く場所・置いた後にすること - 粗大メモ置き場</a>が参考になる）。しかし、ことbibファイルについては自分用のファイルなので、 `TEXMFHOME` の場所に置くべきだろう。
+
+
+<!--良くないこと言ってる部分
+
 このようなとき（bibでもbstでもstyでも新しくファイルを追加したときに行う必要があることだが）、`tex`が見つけてくれるように一覧表(ls-R)の更新を行う必要がある（参考：<a href="https://ossyaritoori.hatenablog.com/entry/2016/10/13/032502">styファイルを置く場所・置いた後にすること - 粗大メモ置き場</a>）。
 
 簡単に言えば次の操作を行う。
   - bibファイルを <span style="color: green; ">C:\texlive\texmf-local\bibtex\bib</span> の中に置く。texmf-localはTeXのシステム更新に影響を受けないため、個人で用意したファイルはtexmf-local以下の場所が推奨される。
   - そこから、ウィンドウの上部をクリックして”cmd”と打ち、立ち上がったコマンドプロンプトに`mktexlsr`と打って実行する（Enterを押す）。これでタイプセット時に`tex`がこの場所を探してくれるようになる。
   
-  つまり、毎回「myref.bibをtexファイルと同じフォルダに置く」をする必要なく、`\bibliography{myreference}`と書いておけば、ちゃんと <span style="color: green; ">C:\texlive\texmf-local\bibtex\bib</span> にあるmyref.bibを読み込んでくれるようになる。
+つまり、毎回「myref.bibをtexファイルと同じフォルダに置く」をする必要なく、`\bibliography{myreference}`と書いておけば、ちゃんと <span style="color: green; ">C:\texlive\texmf-local\bibtex\bib</span> にあるmyref.bibを読み込んでくれるようになる。
+
+-->
 
 もっと違う場所（例えば自前のバックアップフォルダなど）に置いて使いたいときは、環境変数`BIBINPUTS`にパスを追加する必要がある。
+<ul>
 <li><a href="http://hnsn1202.hateblo.jp/entry/2012/06/07/030443">初心者がutf8でLaTeXとBibTeXを使うための一通りの準備（Windows編）</a></li>
 <li><a href="https://qiita.com/MoriKen/items/d5bb3c07f899d80b2309">BibTex の導入方法</a></li>
+</ul>
 あたりを参考のこと。
 
 
@@ -198,10 +221,12 @@ BibTeXを使って参考文献を出力するとき、`platex`->`pbibtex`->`plat
 そこでlatexmkというツールを使って、文書を作成するのに必要な回数タイプセットしてくれるように設定する。これはBibTeXやMakeindexなど複数の実行が必要なものに対して役に立つ。なお、latexmkの後続としてllmkというツールも開発されている（<a href="https://blog.wtsnjp.com/2018/08/13/llmk-launch/">llmk プロジェクトが始動しました - ラング・ラグー</a>）。
 
 Latexmkについては
+<ul>
 <li><a href="https://qiita.com/denkiuo604/items/1dce7666bf67a5bd7ab4">TeXworks で Latexmk を使えるようにする2つの方法</a></li>
 <li><a href="https://konn-san.com/prog/why-not-latexmk.html">latexmk で楽々 TeX タイプセットの薦め（＆ biblatex+biberで先進的な参考文献処理）</a></li>
 <li><a href="http://www2.yukawa.kyoto-u.ac.jp/~koudai.sugimoto/dokuwiki/doku.php?id=latex:latexmk%E3%81%AE%E8%A8%AD%E5%AE%9A">latexmkの設定 - コンピュータ関係の雑多な記録</a></li>
 <li><a href="https://texwiki.texjp.org/?Latexmk">Latexmk - TeX Wiki</a></li>
+</ul>
 に大体書いてある。
 
 ①まずメモ帳で
@@ -253,4 +278,4 @@ TeXstudioでもlatexmkの設定ができる。上の.latexmkrcのファイルは
 
 続く：[雰囲気でBibTeX入門（その２）](/latex/bibtex2)
 
-**[戻る](/latex)**
+**[「LaTeXについて」に戻る](/latex)**
