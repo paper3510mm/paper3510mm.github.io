@@ -1,6 +1,6 @@
 ## **雰囲気でBibTeX入門（その１）**
 
---2021年1月7日、ぜんぜんわからない……雰囲気でLaTeXをいじっている……。
+---2021年1月7日、ぜんぜんわからない……雰囲気でLaTeXをいじっている……。
 
 BibTeXを導入したので、自分のような雰囲気でLaTeXを使っている数学系の人のためにも、忘れないうちにメモっておきます。
 
@@ -88,30 +88,21 @@ bstファイルも標準的なものは初めからインストールされて�
   year    = {1977},
 }
 
-@Article{Bridgeland2007,
-  author = {Tom Bridgeland},
-  title = {Stability conditions on triangulated categories},
-  journal = {Annals of Mathematics},
-  volume = {166},
-  pages = {317--345},
-  year = {2007},
-}
-
 @Book{上野2005,
-  author    = {上野, 健爾},
+  author    = {上野 健爾},
   title     = {代数幾何},
   publisher = {岩波書店},
   year      = {2005},
 }
-
+```
+<!--
 @Book{ 飯高-上野-浪川1993,
   author    = {飯高, 茂 and 上野, 健爾 and 浪川, 幸彦},
   title     = {デカルトの精神と代数幾何},
   publisher = {日本評論社},
   year      = {1993},
   edition   = {増補版},
-}
-```
+}-->
 をコピー＆ペーストし、myrefという名前をつけて保存する（ここで文字コードはUTF-8としておく）。メモ帳を閉じて、myref.txtの拡張子を.bibに変更する。
 
 
@@ -120,9 +111,8 @@ bstファイルも標準的なものは初めからインストールされて�
 % test.tex
 \documentclass{jsarticle}
 \begin{document}
-Hartshorne~\cite{Hartshorne1977}．% myref.bib で登録したラベルを参照
-
-Bridgeland~\cite{Bridgeland2007}．
+% myref.bib で登録したラベルを参照する
+Hartshorne~\cite{Hartshorne1977}は代数幾何学の定番の教科書である．和書で言えば上野~\cite{上野2005}がある．
 
 \bibliographystyle{jplain} % jplain.bstの読み込み。参考文献の表示形式を指定する
 \bibliography{myref} % myref.bibの読み込み
@@ -162,9 +152,12 @@ Bridgeland~\cite{Bridgeland2007}．
 > Hartshorne[1]は代数幾何学の定番の教科書である．和書で言えば上野[2]がある．
 > 
 > 参考文献
-> [1] Robin Hartshorne. Algebraic Geomtry. 
+>
+> [1] Robin Hartshorne. *Algebraic Geomtry*, Vol. 52 of *Graduate Texts in Mathematics*. Springer-Verlag, 1977.
+>
+> [2] 上野健爾. 代数幾何. 岩波書店, 2005.
 
-といった文章が出ているはず。
+といった文章が出ているはず。詳しいbibファイルの書き方は、[雰囲気でBibTeX入門（その２）](/latex/bibtex2)を見てください。
 
 とりあえずBibTeXが使えるようになったが、まだまだやっておくことがある。
 
@@ -198,7 +191,7 @@ myref.bibに文献情報をどんどん加えていけば、自分だけの文�
   - bibファイルを <span style="color: green; ">C:\texlive\texmf-local\bibtex\bib</span> の中に置く。texmf-localはTeXのシステム更新に影響を受けないため、個人で用意したファイルはtexmf-local以下の場所が推奨される。
   - そこから、ウィンドウの上部をクリックして”cmd”と打ち、立ち上がったコマンドプロンプトに`mktexlsr`と打って実行する（Enterを押す）。これでタイプセット時に`tex`がこの場所を探してくれるようになる。
   
-つまり、毎回「myref.bibをtexファイルと同じフォルダに置く」をする必要なく、`\bibliography{myreference}`と書いておけば、ちゃんと <span style="color: green; ">C:\texlive\texmf-local\bibtex\bib</span> にあるmyref.bibを読み込んでくれるようになる。
+つまり、毎回「myref.bibをtexファイルと同じフォルダに置く」をする必要なく、`\bibliography{myref}`と書いておけば、ちゃんと <span style="color: green; ">C:\texlive\texmf-local\bibtex\bib</span> にあるmyref.bibを読み込んでくれるようになる。
 
 -->
 
