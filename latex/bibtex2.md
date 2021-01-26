@@ -9,7 +9,7 @@
   <li><a href="#jabref">文献管理とBibTeXエディタ</a></li>
   <li><a href="#bib">文献情報の入力と引用の仕方</a></li>
   <li><a href="#bst">bstファイル</a></li>
-  <li><a href="#indentifier">文献情報と識別子</a>（飛ばしてもいい）</li>
+  <li><a href="#indentifier">文献情報の識別と分類</a>（飛ばしてもいい）</li>
 </ol>
 
 <hr />
@@ -207,7 +207,7 @@ pBibTeX標準のbstファイル：
 ---
 <a id="indentifier"></a>
 
-### 文献情報と識別子
+### 文献情報の識別と分類
 
 文献情報にはさまざまな情報が付随してくる。例えば、標準でないフィールドurl, doi, eprint, mrnumber, zblnumber, issn, isbnの中身として提供される情報など。
 
@@ -236,7 +236,7 @@ BibTeXでは、doiフィールドが用いられる。
 #### MR番号
 
 [MathSciNet](https://mathscinet.ams.org/mathscinet/index.html)はアメリカ数学会 (AMS) が提供する、世界の数学文献・数学論文をカバーする包括的な書誌・レビューデータベース。
-MR番号とは、MathSciNetの各記録物に付与されているMathematical Reviewデータベース固有の番号のこと。
+MR番号とは、MathSciNetの各記録物に付与されているMathematical Review (MR)データベース固有の番号のこと。
 
  - [MathSciNet - wikipedia](https://ja.wikipedia.org/wiki/MathSciNet)
  - [Mathematical Reviews - AMS](https://www.ams.org/mr-database)
@@ -249,6 +249,10 @@ BibTeXでは、mrnumberフィールドが用いられる。
 
 BibTeXでは、zblnumberフィールドが用いられる。
 
+
+#### Mathematics Subject Classification (MSC)
+
+Mathematics Subject Classification (MSC)は、MRとzbMathが共同で開発している、数学研究文献をその研究内容に応じて分類する枠組み。約10年ごとに更新されていて、現行では[MSC2020](https://msc2020.org/)が用いられている。
 
 #### ほか
 
