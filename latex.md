@@ -2,7 +2,7 @@
 
 LeTeXについて自分で書いたメモのページです。
 
-LaTeX関連のリンクは <a href="/links#latex">Links</a> にまとめてあります。
+LaTeX関連のリンクは <a href="/links#latex">Links/LaTeX関連</a> にまとめてあります。
 
 ---
 ### BibTeXの導入についてのメモ
@@ -11,11 +11,11 @@ LaTeX関連のリンクは <a href="/links#latex">Links</a> にまとめてあ�
 
 - [雰囲気でBibTeX入門（その１）](/latex/bibtex1)
   <ol start="1">
-    <li><a href="https://paper3510mm.github.io/latex/bibtex1#what_is_bibtex">BibTeXとは？</a></li>
-    <li><a href="https://paper3510mm.github.io/latex/bibtex1/#intro_bibtex">とりあえずBibTeXを使って参考文献を出力してみる</a></li>
-    <li><a href="https://paper3510mm.github.io/latex/bibtex1/#mktexlsr">文献データベースを一つにまとめる</a></li>
-    <li><a href="https://paper3510mm.github.io/latex/bibtex1/#latexmk">Latexmkと自動コンパイル</a>（飛ばしてもいい）</li>
-    <li><a href="https://paper3510mm.github.io/latex/bibtex1/#for_texstudio">TeXstudioの設定</a>（飛ばしてもいい）</li>
+    <li><a href="/latex/bibtex1#what_is_bibtex">BibTeXとは？</a></li>
+    <li><a href="/latex/bibtex1#intro_bibtex">とりあえずBibTeXを使って参考文献を出力してみる</a></li>
+    <li><a href="/latex/bibtex1#mktexlsr">文献データベースを一つにまとめる</a></li>
+    <li><a href="/latex/bibtex1#latexmk">Latexmkと自動コンパイル</a>（飛ばしてもいい）</li>
+    <li><a href="/latex/bibtex1#for_texstudio">TeXstudioの設定</a>（飛ばしてもいい）</li>
   </ol>
 - [雰囲気でBibTeX入門（その２）](/latex/bibtex2)
   <ol start="6">
