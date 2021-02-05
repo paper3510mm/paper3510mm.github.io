@@ -223,10 +223,13 @@ Markdownベース+LaTeX
   - [How to write math papers clearly/Igor Pak](https://igorpak.wordpress.com/2017/07/12/how-to-write-math-papers-clearly/)
     - 引用の仕方について
   - [論文の読み方/渡辺宙志](https://speakerdeck.com/kaityo256/how-to-survey)
+  - [修士論文や夏の学校の集録や学振申請書を書く皆さんへ (書き方、注意点、心得)/奥村曉](https://oxon.hatenablog.com/entry/20130615/1371228320)
+  - 「添削者を困らせることのない修士論文の書き方の研究」 from [修士論文 LaTeX テンプレート/奥村曉](https://github.com/akira-okumura/MasterThesisTemplate)
   - [これから論文を書く若者のために/酒井聡樹](http://www7b.biglobe.ne.jp/~satoki/ronbun/kyo/korekara/korekara.html)
   - [論文作成に関する注意/落合理](http://www4.math.sci.osaka-u.ac.jp/~ochiai/ronbunsakusei.html)
   - [修論(D論)参考/歴本純一](http://d.hatena.ne.jp/rkmt/touch/20101217/1292573279)
   - [博士論文執筆の際にお願いしたいこと/立川裕二](https://member.ipmu.jp/yuji.tachikawa/misc/dron.html)
+  - [(修士/博士/普通の)論文執筆の際にお願いしたいこと、その二/立川裕二](https://member.ipmu.jp/yuji.tachikawa/misc/dron2.html)
   - [修士論文の書き方/伊藤貴之](http://itolab.is.ocha.ac.jp/~itot/message/msthesis.html)
   - [修士論文LaTeXテンプレート](https://github.com/akira-okumura/MasterThesisTemplate/)
   - [添削者を困らせることのない修士論文の書き方の研究/奥村曉](http://www.isee.nagoya-u.ac.jp/~okumura/files/MasterThesisTemplate_v2.0.0.pdf) (pdf)
@@ -249,6 +252,7 @@ Markdownベース+LaTeX
 
 #### プレゼンする
 
+  - [発表スライドについての基本的なルール/田崎晴明](https://www.gakushuin.ac.jp/~881791/presentation/slide.html)
   - [TeXでプレゼン-LaTeX Beamerを使う人のためのTips集](https://blog.tokor.org/2016/06/04/TeX%E3%81%A7%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3-LaTeX-Beamer%E3%82%92%E4%BD%BF%E3%81%86%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AETips%E9%9B%86/)
   - [発表スライドにこだわろう](http://pst-ic.hatenadiary.jp/entry/2017/12/12/000038)
   - [伝わるデザイン 研究発表のユニバーサルデザイン](http://tsutawarudesign.com/)
@@ -275,6 +279,17 @@ Markdownベース+LaTeX
     - etc.
 
 
+
+<hr />
+その他
+
+ - パソコンでの作業環境について
+   - [情報機器作業における労働衛生管理のためのガイドラインについて（基発0712第3号）](https://www.mhlw.go.jp/content/000539604.pdf) (pdf)
+   - [職場における労働衛生対策 - 厚生労働省](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/anzen/anzeneisei02.html)の項目「情報機器作業」より
+
+ - GitHub PagesによるHPの作成について
+   - [GitHubを使ってMarkdown文書を５ステップでホームページとして公開する方法](https://qiita.com/MahoTakara/items/3800e9dc83b530d0a050)
+   - [ここまで出来る! GitHubのMarkdownで書くウェブページ　独自テーマの開発](https://qiita.com/MahoTakara/items/e3d88a0d5d128bb07b27)
 
 
 <hr />

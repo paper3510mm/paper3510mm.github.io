@@ -1,6 +1,6 @@
 ## **雰囲気でBibTeX入門（その１）**
 
----2021年1月7日、ぜんぜんわからない……雰囲気でLaTeXをいじっている……。
+---ぜんぜんわからない……雰囲気でLaTeXをいじっている……。
 
 BibTeXを導入したので、自分のような雰囲気でLaTeXを使っている数学系の人のためにも、忘れないうちにメモっておきます。
 
@@ -34,7 +34,7 @@ BibTeXを導入したので、自分のような雰囲気でLaTeXを使ってい
 <li><a href="https://hydrocoast.jp/index.php?LaTeX/BibTeX">BibTeX 使い方 メモ</a></li>
 <li><a href="https://www.okomeda.net/wp/500/">[BiBTeX]BibTeX 概要 - 今西衞研究室</a></li>
 <li><a href="https://www.bibtex.com/">The quick BibTeX guide</a></li>
-<li><a href="https://qiita.com/SUZUKI_Masaya/items/14f9727845e020f8e7e9">BiBTeXとは</a></li>
+<li><a href="https://qiita.com/SUZUKI_Masaya/items/14f9727845e020f8e7e9">BiBTeXとは - Qiita</a></li>
 </ul>
 その他、個別にリンクを付けてあります。
 
@@ -79,17 +79,18 @@ bstファイルも標準的なものは初めからインストールされて�
 
 ①まずbibファイルを用意する。メモ帳を開いて、
 ```
-@Book{Hartshorne1977,
-  author  = {Robin Hartshorne},
-  title   = {Algebraic Geometry},
-  series = {Graduate Texts in Mathematics},
-  volume  = {52},
+@Book{Hartshorne:1977,
+  author    = {Robin Hartshorne},
+  title     = {Algebraic Geometry},
+  series    = {Graduate Texts in Mathematics},
+  volume    = {52},
   publisher = {Springer-Verlag},
-  year    = {1977},
+  year      = {1977},
 }
 
-@Book{上野2005,
+@Book{上野:2005,
   author    = {上野 健爾},
+  yomi      = {うえの けんじ},
   title     = {代数幾何},
   publisher = {岩波書店},
   year      = {2005},
@@ -108,14 +109,14 @@ bstファイルも標準的なものは初めからインストールされて�
 
 ②次にTeXworksで適当なtexファイル（例えばtest.tex）を作って、
 ```
-% test.tex
+%%% test.tex %%%
 \documentclass{jsarticle}
 \begin{document}
 % myref.bib で登録したラベルを参照する
-Hartshorne~\cite{Hartshorne1977}は代数幾何学の定番の教科書である．和書で言えば上野~\cite{上野2005}がある．
+Hartshorne~\cite{Hartshorne:1977}は代数幾何学の定番の教科書である．和書で言えば上野~\cite{上野:2005}がある．
 
-\bibliographystyle{jplain} % jplain.bstの読み込み。参考文献の表示形式を指定する
-\bibliography{myref} % myref.bibの読み込み
+\bibliographystyle{jplain} % jplain.bstの読み込み。参考文献の表示形式を指定する。拡張子はつけない
+\bibliography{myref} % myref.bibの読み込み。複数のbibファイルを読み込む場合は {myref,myref2} とスペースを入れないで書く
 \end{document}
 ```
 と書く。myref.bibをtest.texと同じフォルダ（ディレクトリ）に移動させておく。
@@ -149,15 +150,15 @@ Hartshorne~\cite{Hartshorne1977}は代数幾何学の定番の教科書である
 </ol>
 ということ。これでとりあえずBibTeXが使えているはずで、表示されるpdfには
 
-> Hartshorne[1]は代数幾何学の定番の教科書である．和書で言えば上野[2]がある．
+> Hartshorne [1] は代数幾何学の定番の教科書である．和書で言えば上野 [2] がある．
 > 
-> 参考文献
->
+> **参考文献**
+> 
 > [1] Robin Hartshorne. *Algebraic Geomtry*, Vol. 52 of *Graduate Texts in Mathematics*. Springer-Verlag, 1977.
->
+> 
 > [2] 上野健爾. 代数幾何. 岩波書店, 2005.
 
-といった文章が出ているはず。詳しいbibファイルの書き方は、[雰囲気でBibTeX入門（その２）](/latex/bibtex2)を見てください。
+といった文章が出ているはず。bibファイルの詳しい書き方は、[雰囲気でBibTeX入門（その２）](/latex/bibtex2)を見てください。
 
 とりあえずBibTeXが使えるようになったが、まだまだやっておくことがある。
 
@@ -177,10 +178,10 @@ myref.bibに文献情報をどんどん加えていけば、自分だけの文�
 
 とする。これで、毎回「myref.bibをtexファイルと同じフォルダに置く」をする必要なく、`\bibliography{myref}`と書いておけば、ちゃんと <span style="color: green; ">C:\Users\ユーザー名\texmf\bibtex\bib</span> にあるmyref.bibを読み込んで使ってくれるようになる。
 
-なお、<span style="color: green; ">C:\Users\ユーザー名\texmf</span> という場所は、デフォルトで変数 `TEXMFHOME` に入力されている場所で、TeXのシステム更新に影響を受けない。個人のユーザが用意したファイル（styファイルやbibファイルやbstファイルなど）はこの場所に置くのが基本。[ユーザがファイルを追加したい場合は（ローカルな追加） - TeXwiki](https://texwiki.texjp.org/?TeX%20%E3%81%AE%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E6%A7%8B%E6%88%90#local)が参考になる。
+なお、<span style="color: green; ">C:\Users\ユーザー名\texmf</span> という場所は、デフォルトで変数 `TEXMFHOME` に入力されている場所で、TeXのシステム更新に影響を受けない。個人のユーザが用意したファイル（ダウンロードしたstyファイルやbibファイルやbstファイルなど）はこの場所に置くのが基本（参考：[ユーザがファイルを追加したい場合は（ローカルな追加） - TeXwiki](https://texwiki.texjp.org/?TeX%20%E3%81%AE%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E6%A7%8B%E6%88%90#local)）。
 
 
-もしシステム全体で共通して用いるのであれば、デフォルトで変数 `TEXMFLOCAL` に入力されている <span style="color: green; ">C:\texlive\texmf-local</span> 以下の場所に置く。この場合は、`TEXMFHOME` に置いたときと違って`tex`が見つけてくれないので、探して読む込んでくれるように一覧表(ls-R)の更新を行う必要がある（一覧表の更新、つまり`mktexlsr`の実行については<a href="https://ossyaritoori.hatenablog.com/entry/2016/10/13/032502">styファイルを置く場所・置いた後にすること - 粗大メモ置き場</a>が参考になる）。しかし、ことbibファイルについては自分用のファイルなので、 `TEXMFHOME` の場所に置くべきだろう。
+もしシステム全体で共通して用いるのであれば、デフォルトで変数 `TEXMFLOCAL` に入力されている <span style="color: green; ">C:\texlive\texmf-local</span> 以下の場所に置く。この場合は、`TEXMFHOME` に置いたときと違って`tex`が見つけてくれないので、探して読む込んでくれるように一覧表(ls-R)の更新を行う必要がある（一覧表の更新、つまり`mktexlsr`の実行については<a href="https://ossyaritoori.hatenablog.com/entry/2016/10/13/032502">styファイルを置く場所・置いた後にすること - 粗大メモ置き場</a>が参考になる）。しかし、ことbibファイルについては自分用の文献データベースファイルなので、 `TEXMFHOME` の場所に置くべきだろう。
 
 
 <!--良くないこと言ってる部分
@@ -209,9 +210,9 @@ myref.bibに文献情報をどんどん加えていけば、自分だけの文�
 
 ### Latexmkと自動コンパイル
 
-BibTeXを使って参考文献を出力するとき、`platex`->`pbibtex`->`platex`>`platex`と四回もコンパイルしないといけない。人によっては、これを大変面倒だと思う人がいるかもしれない。
+BibTeXを使って参考文献を出力するとき、`platex`->`pbibtex`->`platex`->`platex`と四回もコンパイルしないといけない。人によっては、これを大変面倒だと思う人がいるかもしれない。
 
-そこでlatexmkというツールを使って、文書を作成するのに必要な回数タイプセットしてくれるように設定する。これはBibTeXやMakeindexなど複数の実行が必要なものに対して役に立つ。なお、latexmkの後続としてllmkというツールも開発されている（<a href="https://blog.wtsnjp.com/2018/08/13/llmk-launch/">llmk プロジェクトが始動しました - ラング・ラグー</a>）。
+そこでlatexmkというツールを使って、文書を作成するのに必要な回数タイプセットしてくれるように設定する。これはBibTeXやMakeindexなど複数の実行が必要なものに対して役に立つ。なお、latexmkの後続としてllmkというツールも開発されている（参考：<a href="https://blog.wtsnjp.com/2018/08/13/llmk-launch/">llmk プロジェクトが始動しました - ラング・ラグー</a>）。
 
 Latexmkについては
 <ul>
@@ -219,6 +220,7 @@ Latexmkについては
 <li><a href="https://konn-san.com/prog/why-not-latexmk.html">latexmk で楽々 TeX タイプセットの薦め（＆ biblatex+biberで先進的な参考文献処理）</a></li>
 <li><a href="http://www2.yukawa.kyoto-u.ac.jp/~koudai.sugimoto/dokuwiki/doku.php?id=latex:latexmk%E3%81%AE%E8%A8%AD%E5%AE%9A">latexmkの設定 - コンピュータ関係の雑多な記録</a></li>
 <li><a href="https://texwiki.texjp.org/?Latexmk">Latexmk - TeX Wiki</a></li>
+<li><a href="https://github.com/PMOB/study-tex/blob/master/Tips/latexmk.md">latexmk - TeX学習用リポジトリ</a></li>
 </ul>
 に大体書いてある。
 
@@ -230,7 +232,7 @@ $latex = 'platex -synctex=1 -halt-on-error -interaction=nonstopmode -file-line-e
 $bibtex = 'pbibtex %O %S';
 $makeindex = 'mendex %O -o %D %S';
 $dvipdf = 'dvipdfmx %O -o %D %S';
- 
+
 $max_repeat = 5;
 $pdf_mode = 3;
 ```
@@ -246,6 +248,8 @@ $pdf_mode = 3;
 と記入し、「実行後、PDFを表示する」のチェックを入れたまま、OKボタンを押す。すると「タイプセットの方法」の一覧にLatexmkが追加されていることが確認できる。ここで「プログラム: latexmk」としているのは、①で作った.latexmkrcを読み込んでいるという意味（たぶん）。.latexmkrcに書いたものを、引数に直接書いておいても良い。
 
 ③あとはタイプセットのプルダウンからLatexmkを選択してひとたびタイプセットを実行すれば、必要に応じて自動的に`pbibtex`を実行したり`platex`を複数回実行してくれる。
+
+ただし、普通にコンパイルする場合より時間がかかるので注意されたい（私はこの点をストレスフルに感じるので、普段は設定していない）。
 
 
 
