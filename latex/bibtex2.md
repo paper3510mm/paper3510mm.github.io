@@ -92,8 +92,8 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
  - Masterthesis：修士論文
  - Phdthesis：博士論文
  - Techreport：研究機関の発行するテクニカルレポート
- - Unpublished：公式な出版物ではないもの
  - Manual：マニュアル
+ - Unpublished：公式な出版物ではないもの
  - Misc：そのほか
  - Comment：コメント用。ここに書いたものは無視される
  

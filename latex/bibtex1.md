@@ -9,7 +9,7 @@ BibTeXを導入したので、自分のような雰囲気でLaTeXを使ってい
 環境は次の通りですが、他の環境でもだいたい同じだとは思います：
  - OS: Windows10
  - TeXディストリビューション: TeX Live 2020
- - タイプセット設定: pLaTeX(ptex2pdf)
+ - タイプセット設定: pLaTeX(ptex2pdf) （LuaLaTeXに移行するべきだが）
  - 使用エディタ: TeXworks （あとでTeXstudioの話もする）
 
 間違っている箇所やわかりにくい箇所があれば遠慮なく教えてください。
@@ -211,7 +211,7 @@ myref.bibに文献情報をどんどん加えていけば、自分だけの文�
 
 BibTeXを使って参考文献を出力するとき、`platex`->`pbibtex`->`platex`->`platex`と四回もコンパイルしないといけない。人によっては、これを大変面倒だと思う人がいるかもしれない。
 
-そこでlatexmkというツールを使って、文書を作成するのに必要な回数タイプセットしてくれるように設定する。これはBibTeXやMakeindexなど複数の実行が必要なものに対して役に立つ。なお、latexmkの後続としてllmkというツールも開発されている（参考：<a href="https://blog.wtsnjp.com/2018/08/13/llmk-launch/">llmk プロジェクトが始動しました - ラング・ラグー</a>）。
+そこでlatexmkというツールを使って、文書を作成するのに必要な回数タイプセットしてくれるように設定する。これはBibTeXやMakeindexなど複数の実行が必要なものに対して役に立つ。なお、latexmkの代替としてllmkというツールも開発されている（参考：<a href="https://blog.wtsnjp.com/2018/08/13/llmk-launch/">llmk プロジェクトが始動しました - ラング・ラグー</a>）。そのほか、ClutTeXという自動化ツールもある（参考：[LaTeX処理自動化ツール ClutTeX をリリースした - 雑記帳](https://blog.miz-ar.info/2018/10/cluttex-release/)）。
 
 Latexmkについては
 <ul>
