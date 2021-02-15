@@ -26,12 +26,12 @@ LaTeX関連のリンクは <a href="/links#latex">Links/LaTeX関連</a> にま�
   </ol>
 - [雰囲気でBibTeX入門（その３）](/latex/bibtex3)
   <ol start="10">
-  <li><a href="#examples">例</a>（まだ何もない）</li>
-  <li><a href="#custom">文献リストのカスタマイズ</a></li>
+  <li><a href="/latex/bibtex3#examples">例</a>（まだ何もない）</li>
+  <li><a href="/latex/bibtex3#custom">文献リストのカスタマイズ</a></li>
   </ol>
 - [Bibulousの紹介](/latex/bibulous)
   <ol start="12">
-  <li><a href="#bibulous">Bibulous</a></li>
+  <li><a href="/latex/bibulous#bibulous">Bibulous</a></li>
   </ol>
 
 
