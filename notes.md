@@ -4,6 +4,15 @@
 
 <ol reversed>
 
+<li><p><strong><a href="/pdf/Gabriel_Popescu.pdf">Gabriel-Popescuの定理</a></strong></p>
+
+  <p>任意のGrothendieck圏は、ある加群圏の"良い"部分圏として実現できることが知られています。すなわち任意のGrothendieck圏は、加群圏の反映的充満部分圏(すなわち包含関手が左随伴を持つ部分圏)であって、さらに包含関手の左随伴が完全関手となるような部分圏になります(Gabriel-Popescuの定理)。本稿ではこの定理を証明します。</p>
+
+  <ul>
+    <li>2021/02/15:公開 (10 pages)</li>
+  </ul>
+</li>
+
 
 <li><p><strong><a href="/pdf/Brown_representability.pdf">コンパクト生成三角圏に対するBrownの表現定理</a></strong></p>
 

@@ -38,7 +38,7 @@ title-heading: false
 - 2020/01/17 : Notesページを作りました
 - 2020/01/20 : Linksページを作りました
 - 2020/08/27 : Postsページを作りました
-- 2020/12/19 : 最終更新日
+- 2021/02/15 : 最終更新日
 
 #### <span style="font-size:11pt;">連絡先</span>
 - HN: ペーパー/paper3510mm
