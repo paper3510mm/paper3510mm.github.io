@@ -9,7 +9,7 @@ BibTeXを導入したので、自分のような雰囲気でLaTeXを使ってい
 環境は次の通りですが、他の環境でもだいたい同じだとは思います：
  - OS: Windows10
  - TeXディストリビューション: TeX Live 2020
- - タイプセット設定: pLaTeX(ptex2pdf) （LuaLaTeXに移行するべきだが）
+ - タイプセット設定: pLaTeX(ptex2pdf) （LuaLaTeXに移行するべきなのだが……）
  - 使用エディタ: TeXworks （あとでTeXstudioの話もする）
 
 間違っている箇所やわかりにくい箇所があれば遠慮なく教えてください。
@@ -274,4 +274,4 @@ TeXstudioでもlatexmkの設定ができる。上の.latexmkrcのファイルは
 
 続く：[雰囲気でBibTeX入門（その２）](/latex/bibtex2)
 
-**[「LaTeXについて」に戻る](/latex)**
+**[「LaTeXについてのメモ」に戻る](/latex)**

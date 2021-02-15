@@ -271,7 +271,7 @@ ISSN (International Standard Serial Number: 国際標準逐次刊行物番号) �
 ISBN（International Standard Book Number: 国際標準図書番号） は、書籍および資料を識別するための国際的なコード番号。BibTeXでは、isbnフィールドが用いられる。
 
 
-
+<a id="problems"></a>
 #### 問題点
 
 しかし、標準のplain.bstはこれらのフィールドをサポートしておらず、こうした情報を出力させるためには他のbstファイルを使用するか、bstファイルを自分で編集しなければならない。
@@ -286,4 +286,4 @@ ISBN（International Standard Book Number: 国際標準図書番号） は、書
 戻る：[雰囲気でBibTeX入門（その１）](/latex/bibtex1)
 
 
-**[「LaTeXについて」に戻る](/latex)**
+**[「LaTeXについてのメモ」に戻る](/latex)**

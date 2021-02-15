@@ -1,4 +1,4 @@
-## **LaTeXについて**
+## **LaTeXについてのメモ**
 
 LeTeXについて自分で書いたメモのページです。
 
@@ -23,6 +23,15 @@ LaTeX関連のリンクは <a href="/links#latex">Links/LaTeX関連</a> にま�
     <li><a href="/latex/bibtex2#bib">文献情報の入力と引用の仕方</a></li>
     <li><a href="/latex/bibtex2#bst">bstファイル</a></li>
     <li><a href="/latex/bibtex2#indentifier">文献情報の識別と分類</a>（飛ばしてもいい）</li>
+  </ol>
+- [雰囲気でBibTeX入門（その３）](/latex/bibtex3)
+  <ol start="10">
+  <li><a href="#examples">例</a>（まだ何もない）</li>
+  <li><a href="#custom">文献リストのカスタマイズ</a></li>
+  </ol>
+- [Bibulousの紹介](/latex/bibulous)
+  <ol start="12">
+  <li><a href="#bibulous">Bibulous</a></li>
   </ol>
 
 
