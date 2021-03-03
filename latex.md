@@ -5,7 +5,7 @@ LeTeXについて自分で書いたメモのページです。
 LaTeX関連のリンクは <a href="/links#latex">Links/LaTeX関連</a> にまとめてあります。
 
 ---
-### BibTeXの導入についてのメモ
+### BibTeXの導入メモ
   
 **目次**
 
@@ -22,7 +22,7 @@ LaTeX関連のリンクは <a href="/links#latex">Links/LaTeX関連</a> にま�
     <li><a href="/latex/bibtex2#jabref">文献管理とBibTeXエディタ</a></li>
     <li><a href="/latex/bibtex2#bib">文献情報の入力と引用の仕方</a></li>
     <li><a href="/latex/bibtex2#bst">bstファイル</a></li>
-    <li><a href="/latex/bibtex2#indentifier">文献情報の識別と分類</a>（飛ばしてもいい）</li>
+    <li><a href="/latex/bibtex2#indentifier">文献の識別と分類</a>（飛ばしてもいい）</li>
   </ol>
 - [雰囲気でBibTeX入門（その３）](/latex/bibtex3)
   <ol start="10">

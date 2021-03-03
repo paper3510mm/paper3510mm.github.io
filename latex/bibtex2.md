@@ -11,7 +11,7 @@
   <li><a href="#jabref">文献管理とBibTeXエディタ</a></li>
   <li><a href="#bib">文献情報の入力と引用の仕方</a></li>
   <li><a href="#bst">bstファイル</a></li>
-  <li><a href="#indentifier">文献情報の識別と分類</a>（飛ばしてもいい）</li>
+  <li><a href="#indentifier">文献の識別と分類</a>（飛ばしてもいい）</li>
 </ol>
 
 <hr />
@@ -215,9 +215,9 @@ pBibTeX標準のbstファイル：
 ---
 <a id="indentifier"></a>
 
-### 文献情報の識別と分類
+### 文献の識別と分類
 
-文献情報にはさまざまな情報が付随し、その識別と分類がなされている。例えば、標準でないフィールドurl, doi, eprint, mrnumber, zblnumber, issn, isbnの中身として提供される情報など。
+文献にはさまざまな情報が付随し、その識別と分類がなされている。例えば、標準でないフィールドurl, doi, eprint, mrnumber, zblnumber, issn, isbnの中身として提供される情報など。
 
 #### デジタルオブジェクト識別（Digital Object Identifier; DOI）
 

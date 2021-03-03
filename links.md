@@ -39,6 +39,8 @@
   - [数学科の大学院に進むとはどういうことか？](http://wofwof.blog60.fc2.com/blog-entry-594.html)
   - [私の学生時代](http://eman-physics.net/columns/schooldays.html)
   - [学生時代をどう過ごすか/篠本滋](http://www.ton.scphys.kyoto-u.ac.jp/~shino/students.html)
+  - [東京大学理学部数学科 学位記授与式祝辞/古田幹雄 (2020年3月)](https://www.ms.u-tokyo.ac.jp/kyoumu/11856a071aa06cce122ee117b45c2a3a3c7732be.pdf) (pdf)
+  - [東京大学大学院数理科学研究科 学位記授与式祝辞/古田幹雄 (2020年3月)](https://www.ms.u-tokyo.ac.jp/kyoumu/5d8c24abb32df1e600c62790fc31b7f3906cc21a.pdf) (pdf)
   - [日々の雑感的なもの/田崎晴明 2/2/2003](http://www.gakushuin.ac.jp/~881791/d/0302.html#02)
   - [夢のない理系](https://anond.hatelabo.jp/touch/20170922053438?mode=amp)
   - [なぜ博士号をとったのに大学教員にならないのか](https://www.ki1tos.com/entry/2020/05/21/181426)
@@ -75,7 +77,6 @@ LaTeXの入門書。LaTeXを始めるには、まずはこれから！
     - 必読
   - [TeXについて｜壱大整域](http://alg-d.com/math/tex.html)
     - [TikZの使い方(圏論編)/alg-d](http://alg-d.com/math/kan_extension/TikZ_for_cat.pdf) (pdf)
-  - [LaTeX文書作成方法](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/make_doc.html)
   - [LaTeXにおける正しい論文の書き方(2019)](https://qiita.com/birdwatcher/items/5ec42b35d84d3ee2ffbb)
   - [amsmathの数式環境まとめ(2018)](https://qiita.com/t_kemmochi/items/a4c390b4967b13f3afb7)
   - [卒論/修論/博論のためのモダンな LaTeX の書き方(2015)](http://webmem.hatenablog.com/entry/how-to-write-a-modern-latex-for-academic-papers)
@@ -91,6 +92,7 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
 
 
   - TeXの作法・小ネタ
+    - [LaTeX文書作成方法](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/make_doc.html)
     - [使ってはいけない LaTeX のコマンド・パッケージ・作法(2013)](https://ichiro-maruta.blogspot.com/2013/03/latex.html?m=1)
     - [TeX・LaTeXについての覚え書き](http://tony.in.coocan.jp/latex/index.html)
     - [LaTeXのちょっと便利な小技集/長島順清](http://osksn2.hep.sci.osaka-u.ac.jp/~naga/miscellaneous/tex/tex-tips0.html)
@@ -101,7 +103,7 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
      - [[LaTeX][l2tabu] LaTeX2e タブー集](https://konoyonohana.blog.fc2.com/blog-entry-69.html?sp)
      - [日本語 LaTeX の新常識 2021](https://qiita.com/wtsnjp/items/76557b1598445a1fc9da)
   - [SATySFi](https://github.com/gfngfn/SATySFi/blob/master/README-ja.md)
-    - TeXに代わる新しい組版システム。発展途上中
+    - TeXに代わる新しい組版システム
     - [SATySFi wiki](https://github.com/gfngfn/SATySFi/wiki/SATySFi-Wiki)
     - [The SATySFibook](https://github.com/gfngfn/SATySFi/wiki/The-SATySFi%E2%80%8Bbook-Web%E5%85%AC%E9%96%8B%E7%89%88-%E7%AC%AC1%E7%89%88)
     - [SATySFi Playground](http://satysfi-playground.tech/)
@@ -213,15 +215,23 @@ Markdownベース+LaTeX
 
 <a id="on_academic_writing"></a>
 
-#### レポート・論文を書く
+#### レポートを書く
   - [名古屋大学生のためのアカデミック・ライティング・ガイド](http://www.cshe.nagoya-u.ac.jp/asg/index.html)
   - [立教大学大学教育開発・支援センター](https://www.rikkyo.ac.jp/about/activities/fd/cdshe.html)
-  - [On writing/Terence Tao](https://terrytao.wordpress.com/advice-on-writing-papers/)
-    - 数学論文を書くための心構えについて。英語文献がまとめられてます
-  - [Duke Graduate School Scientific Writing Resource
-](https://sites.duke.edu/scientificwriting/)
-  - [How to write math papers clearly/Igor Pak](https://igorpak.wordpress.com/2017/07/12/how-to-write-math-papers-clearly/)
-    - 引用の仕方について
+  - [Duke Graduate School Scientific Writing Resource](https://sites.duke.edu/scientificwriting/)
+
+
+<a id="toward_researcher"></a>
+
+#### 研究者を志望すること
+
+  - [博士進学が決まったあなたが今すぐに始めるべきこと（2015年版）](http://next49.hatenadiary.jp/entry/20150201/p4)
+  - [お茶の水女子大学 教授 伊藤貴之](http://itolab.is.ocha.ac.jp/~itot/)先生のHPから
+    - [研究分野をサーベイする](https://www.slideshare.net/iTooooooooooooT/itolab-how-to-survey-2017)
+    - [研究発表を準備する](https://www.slideshare.net/iTooooooooooooT/itolab-presentation2015)
+    - [査読の仕組みと論文投稿上の対策](https://www.slideshare.net/iTooooooooooooT/review20060923)
+    - [はじめての論文執筆](http://itolab.is.ocha.ac.jp/~itot/message/ItolabWriting2018.pdf) (pdf)
+    - etc.
   - [論文の読み方/渡辺宙志](https://speakerdeck.com/kaityo256/how-to-survey)
   - [修士論文や夏の学校の集録や学振申請書を書く皆さんへ (書き方、注意点、心得)/奥村曉](https://oxon.hatenablog.com/entry/20130615/1371228320)
   - 「添削者を困らせることのない修士論文の書き方の研究」 from [修士論文 LaTeX テンプレート/奥村曉](https://github.com/akira-okumura/MasterThesisTemplate)
@@ -230,53 +240,61 @@ Markdownベース+LaTeX
   - [修論(D論)参考/歴本純一](http://d.hatena.ne.jp/rkmt/touch/20101217/1292573279)
   - [博士論文執筆の際にお願いしたいこと/立川裕二](https://member.ipmu.jp/yuji.tachikawa/misc/dron.html)
   - [(修士/博士/普通の)論文執筆の際にお願いしたいこと、その二/立川裕二](https://member.ipmu.jp/yuji.tachikawa/misc/dron2.html)
-  - [修士論文の書き方/伊藤貴之](http://itolab.is.ocha.ac.jp/~itot/message/msthesis.html)
-  - [修士論文LaTeXテンプレート](https://github.com/akira-okumura/MasterThesisTemplate/)
-  - [添削者を困らせることのない修士論文の書き方の研究/奥村曉](http://www.isee.nagoya-u.ac.jp/~okumura/files/MasterThesisTemplate_v2.0.0.pdf) (pdf)
   - [松尾ぐみの論文の書き方](http://ymatsuo.com/japanese/ronbun_jpn.html)
   - [松尾ぐみの論文の書き方：英語論文](http://ymatsuo.com/japanese/ronbun_eng.html)
+  - [On writing/Terence Tao](https://terrytao.wordpress.com/advice-on-writing-papers/)
+    - 数学論文を書くための心構えについて。英語文献がまとめられてます
+  - [How to write math papers clearly/Igor Pak](https://igorpak.wordpress.com/2017/07/12/how-to-write-math-papers-clearly/)
+    - 引用の仕方について
 
-英語について
-  - [科学英語を考える](https://www.s.u-tokyo.ac.jp/ja/story/newsletter/english/)
+#### 英語について
+
+英語ライティングについては
+  - The Elements of Style, Fourth Edition/William Strunk, Jr.
+    - [1st edition](http://www.gutenberg.org/ebooks/37134?msg=welcome_stranger)はオープンソース化されている
+    - [初版日本語訳](http://www.kt.rim.or.jp/~hisashim/elementsofstyle/)もある
+  - 英語ライティングルールブック 第3版/デイビッド・セイン
+  - 英語ライティングワークブック 増強版/デイビッド・セイン (絶版)
+
+がわかりやすい。実際に(数学の)論文を書く際は
   - [正しい英語で論文を書くために/木田雅成](https://www.rs.tus.ac.jp/kida/english.html)
-  - [Stanford大学流科学技術論文の書き方](http://hontolab.org/tips-for-research-activity/tips-for-writing-technical-papers/)
   - [The Grammar According to West by Douglas B. West](https://faculty.math.illinois.edu/~west/grammar.html)
-  - William Strunk, Jr., "The Elements of Style"
-    - [1st edition](http://www.gutenberg.org/ebooks/37134?msg=welcome_stranger)は公開されている
-    - [初版日本語訳](http://www.kt.rim.or.jp/~hisashim/elementsofstyle/)
+ - 志学数学/伊原康隆
+ - [数学の常識・非常識—由緒正しいTEX入力法/小田忠雄(1999)](http://www.math.titech.ac.jp/~taguchi/nihongo/gakusei/typesetting.html)
+ - Writing Mathematical Papers in English/Jerzy Trzeciak
+ - 数学のための英語教本/服部久美子
+
+も見よ。より広く科学英語は
+  - [科学英語を考える](https://www.s.u-tokyo.ac.jp/ja/story/newsletter/english/)
+  - [Stanford大学流科学技術論文の書き方](http://hontolab.org/tips-for-research-activity/tips-for-writing-technical-papers/)
+  
+など。フランス語で書かれた数学書を読むときは
   - [数学フランス語文法/松本雄也](http://yuyamatsumoto.com/mfr2.html)
   - [数学フランス語小辞典/松本雄也](http://yuyamatsumoto.com/mfr.html)
 
+が参考になる。
 
 <a id="presentation"></a>
 
 #### プレゼンする
-
-  - [発表スライドについての基本的なルール/田崎晴明](https://www.gakushuin.ac.jp/~881791/presentation/slide.html)
-  - [TeXでプレゼン-LaTeX Beamerを使う人のためのTips集](https://blog.tokor.org/2016/06/04/TeX%E3%81%A7%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3-LaTeX-Beamer%E3%82%92%E4%BD%BF%E3%81%86%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AETips%E9%9B%86/)
   - [発表スライドにこだわろう](http://pst-ic.hatenadiary.jp/entry/2017/12/12/000038)
+  - [発表スライドについての基本的なルール/田崎晴明](https://www.gakushuin.ac.jp/~881791/presentation/slide.html)
+
+より一般のデザイン論は  
   - [伝わるデザイン 研究発表のユニバーサルデザイン](http://tsutawarudesign.com/)
   - [伝わるデザイン 高校生のための研究発表の手引き](https://student.tsutawarudesign.com/powerpoint_slide/)
   - [これだけ守れば見やすくなるデザインの基礎](https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu)
   - [キレイな提案書を作るためのデザインの基礎知識](https://the.alleslide.com/557)
   - [見やすいプレゼン資料の作り方](https://www.slideshare.net/yutamorishige50/ss-41321443)
   - [プレゼン講座等のリンク](http://www2.yukawa.kyoto-u.ac.jp/~akio.tomiya/slides.html)
+
+がかなり参考になる。作る段階では
+  - [TeXでプレゼン―LaTeX Beamerを使う人のためのTips集](https://blog.tokor.org/2016/06/04/TeX%E3%81%A7%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3-LaTeX-Beamer%E3%82%92%E4%BD%BF%E3%81%86%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AETips%E9%9B%86/)
   - [EdrawMax](https://www.edrawsoft.com/jp/tour/edrawmax.html)
     - [【EdrawMax】簡単操作で印象的にアイデアを視覚化できるプレゼン作図ツール【プレゼンに最適】](https://www.youtube.com/watch?v=ZpCRSg7SAOg&feature=youtu.be)
 
+など。
 
-<a id="toward_researcher"></a>
-
-#### 研究者を志望すること
-
-  - [博士進学が決まったあなたが今すぐに始めるべきこと（2015年版）](http://next49.hatenadiary.jp/entry/20150201/p4)
-  
-  - [お茶の水女子大学 教授 伊藤貴之](http://itolab.is.ocha.ac.jp/~itot/)先生のHPから
-    - [研究分野をサーベイする](https://www.slideshare.net/iTooooooooooooT/itolab-how-to-survey-2017)
-    - [研究発表を準備する](https://www.slideshare.net/iTooooooooooooT/itolab-presentation2015)
-    - [査読の仕組みと論文投稿上の対策](https://www.slideshare.net/iTooooooooooooT/review20060923)
-    - [はじめての論文執筆](http://itolab.is.ocha.ac.jp/~itot/message/ItolabWriting2018.pdf) (pdf)
-    - etc.
 
 
 
@@ -300,10 +318,10 @@ Markdownベース+LaTeX
   - [炬燵論法](https://litharge3141.github.io/)<br />
     数値計算をしている友人のサイトです。HPを更新しろとうるさいので、リンクを付けてやりました。
 
-
 More to be added...
 
-
+  - [前田洋太のホームページ](https://www.math.kyoto-u.ac.jp/~y.maeda/)<br />
+    友人の研究者です。
 
 
 
