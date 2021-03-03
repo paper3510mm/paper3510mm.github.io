@@ -27,7 +27,7 @@ title-heading: false
 #### <a href="/notes">Notes</a>
 これまでに書いた記事やノートを公開しています。
 
-#### <a href="/notes">LaTeXについてのメモ</a>
+#### <a href="/latex">LaTeX<span style="font-size:12pt;">についてのメモ</span></a>
 LeTeXについて自分で書いたメモのページです。
 
 #### <a href="/links">Links</a>
