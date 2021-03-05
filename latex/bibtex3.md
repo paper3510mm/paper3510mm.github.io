@@ -1,4 +1,7 @@
 ## **雰囲気でBibTeX入門（その３）**
+(2021/03/06)
+
+---
 
 [雰囲気でBibTeX入門（その１）](/latex/bibtex1)と [雰囲気でBibTeX入門（その２）](/latex/bibtex2)の続き。
 
@@ -19,6 +22,7 @@
 
 ### 例
 
+（追加予定）
 
 
 
@@ -32,6 +36,7 @@
      - <a href="https://qiita.com/HexagramNM/items/7c59f307e55010caf693">Bibtexのスタイルファイル：bstファイルの文法</a>
      - <a href="https://qiita.com/HexagramNM/items/3ad757a9f5ee5d15e363">日本語と英語を混ぜられるようにbibtexスタイルファイルを改造しよう</a>
      - <a href="https://www.okomeda.net/wp/506/">[BiBTeX] bst ファイルのカスタマイズ - 今西衞研究室</a>
+     - <a href="http://tug.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf">Tame the BeaST</a>
   1. BibLaTeXを用いる。
      - [Bibliography management with biblatex -Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex)
      - [[LaTeX] biblatex ～初歩の初歩～―もう一つの［参考文献］生成ツール](https://konoyonohana.blog.fc2.com/blog-entry-96.html)

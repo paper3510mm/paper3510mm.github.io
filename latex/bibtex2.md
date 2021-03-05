@@ -1,4 +1,7 @@
 ## **雰囲気でBibTeX入門（その２）**
+(2021/03/06)
+
+---
 
 [雰囲気でBibTeX入門（その１）](/latex/bibtex1)の続き。
 
@@ -152,8 +155,8 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
 - 複数著者や編者がいる場合は、A and B and C and Dのようにすべての名前の間にandをいれる。多すぎる場合は、最後を and others としておくと、英文では「et al.」、和文では「ほか」と付く。
 - 姓にスペースが入る場合「名 姓」ではなく「姓, 名」としてauthorフィールドに書き込む。Robert Van Valinではなく、Van Valin, Robertと書く（でないとValinが姓、Vanがミドルネームとみなされる）。またJr.やIIIなどは、Van Valin, Jr., Robertのように姓と名の間にいれる。
 - 日本人名の場合は、姓→名の順で表示したいので「姓 名」と書き込む。jplain.bstなどのpBibTeX標準のbstファイルでは、日本人名の姓と名の間の空白が取り除かれる。
-- 同一著者の異なる名義がある場合、参考文献での並び替えが期待通りにならない可能性もある。例えば著者がDonald E. KnuthともD. E. Knuthとも名乗っているときは、後者をD[onald] E. Knuthとしておく。並び替えのとき記号`[`と`]`は無視され、Donal E. Knuthとして並び替えられる。
-- 著者が日本人名の場合、yomiフィールドを使って読み方を指定する。著者が「米田, 信夫」の場合、`yomi = {Nobuo Yoneda}`とすれば欧文の著者に交じって並び、`yomi = {よねだ のぶお}`とすれば欧文の著者が並んだあとに和文の著者が並ぶ。
+- 同一著者の異なる名義がある場合、参考文献での並び替えが期待通りにならない可能性もある。例えば著者がDonald E. KnuthともD. E. Knuthとも名乗っているときは、後者をD[onald] E. Knuthとしておく。並び替えのとき記号`[`と`]`は無視され、Donald E. Knuthとして並び替えられる。
+- 著者が日本人名の場合、yomiフィールドを使って読み方を指定する。著者が「米田 信夫」の場合、`yomi = {Nobuo Yoneda}`とすれば欧文の著者に交じって並び、`yomi = {よねだ のぶお}`とすれば欧文の著者が並んだあとに和文の著者が並ぶ。
 - 日本語文献だと、例えばjalphaスタイルでのラベルが[米田54]にならず、yomiフィールドの入力によって[Yon54]だとか[よねだ54]だとかになってしまう。この場合、bibファイルの冒頭に `@preamble{"\newcommand{\noop}[1]{}"}` と書き、yomiフィールドを `yomi = "{\noop{よねだ のぶお}米田}"` のように書けばよい。詳しくは美文書11.10節を参照。
 - etc...
 
@@ -206,8 +209,9 @@ pBibTeX標準のbstファイル：
 - <a href="https://qiita.com/HexagramNM/items/7c59f307e55010caf693">Bibtexのスタイルファイル：bstファイルの文法</a>
 - <a href="https://qiita.com/HexagramNM/items/3ad757a9f5ee5d15e363">日本語と英語を混ぜられるようにbibtexスタイルファイルを改造しよう</a>
 - <a href="https://www.okomeda.net/wp/506/">[BiBTeX] bst ファイルのカスタマイズ - 今西衞研究室</a>
+- <a href="http://tug.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf">Tame the BeaST</a>
 
-が参考になる。
+が参考になる。が、あまりおすすめはされない。文献リストのカスタマイズについては[雰囲気でBibTeX入門（その３）](/latex/bibtex3)も見てみてください。
 
 
 
@@ -283,7 +287,7 @@ ISBN（International Standard Book Number: 国際標準図書番号） は、書
 
 
 ---
-戻る：[雰囲気でBibTeX入門（その１）](/latex/bibtex1)
-
+戻る：[雰囲気でBibTeX入門（その１）](/latex/bibtex1)</br>
+続く：[雰囲気でBibTeX入門（その３）](/latex/bibtex3)
 
 **[「LaTeXについてのメモ」に戻る](/latex)**

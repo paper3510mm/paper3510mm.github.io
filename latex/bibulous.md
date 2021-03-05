@@ -1,4 +1,7 @@
 ## **Bibulousの紹介**
+(2021/03/06)
+
+---
 
 雰囲気でBibTeX入門（その２）の[問題点](/latex/bibtex2#problems)において、文献リストのカスタマイズの不自由さを解決するツールとして[Bibulous](http://nzhagen.github.io/bibulous/)を言及しました。
 
@@ -26,7 +29,7 @@ Bibulousについては
  - Nathan Hagen. ``Bibulous — A drop-in BIBTEX replacement
 based on style templates'', TUGboat, Volume 34, No. 3, 332--229, 2013. [https://tug.org/TUGboat/tb34-3/tb108hagen.pdf](https://tug.org/TUGboat/tb34-3/tb108hagen.pdf).
 
-を参考にこと。BibLaTeX(+Biber)との一番の違いは、BibLaTeXがstyleを作るのにTeXのマクロを使っていてわかりにくいのに対して、Bibulousでは直感的でコンパクトなstyle templateファイルを使うという点（参考：[1. What is the difference between using Bibulous and using BibLatex+Biber? - Bibulous](http://nzhagen.github.io/bibulous/faq.html#what-is-the-difference-between-using-bibulous-and-using-biblatex-biber)）。
+を参考のこと。BibLaTeX(+Biber)との一番の違いは、BibLaTeXがstyleを作るのにTeXのマクロを使っていてわかりにくいのに対して、Bibulousでは直感的でコンパクトなstyle templateファイルを使うという点（参考：[1. What is the difference between using Bibulous and using BibLatex+Biber? - Bibulous](http://nzhagen.github.io/bibulous/faq.html#what-is-the-difference-between-using-bibulous-and-using-biblatex-biber)）。
 
 
 [Bibulous](http://nzhagen.github.io/bibulous/) はpythonで書かれている。まずpythonをインストールする。
@@ -56,7 +59,7 @@ pip show bibulous
 
 Bibulousは、簡単に言えばauxファイルを入力にbblファイルを出力するプログラムである。bblファイルの中身を形成するためには、引用の情報を含んだauxファイル、文献情報を含んだbibファイル、文献情報の出力形式の情報を含んだbstファイルが必要である。bibファイルとbstファイルのファイル名は、auxファイルの中に書かれているので、入力はauxファイルだけということである。
 
-しかしオリジナルのスクリプトだと、用いるbibファイルとbstファイルは、auxファイルと同じフォルダになければならない。普通、bibファイルやbstファイルは一つの自分用ファイルを使いまわすので、毎回auxファイルと同じフォルダにコピペするのは面倒だった。
+しかしオリジナルのスクリプトだと、用いるbibファイルとbstファイルは、auxファイルと同じフォルダになければならない。普通、bibファイルやbstファイルは一つの自分用ファイルを使いまわすので、毎回auxファイルと同じフォルダにコピペするのは面倒である。
 
 特定のフォルダにあるbib/bstファイルを参照するようにさせたい。次のことをすればとりあえず期待した振る舞いをした。
  - まずダウンロードしたbibulous.pyをコピーして、<span style="color: green; ">C:\Users\ユーザー名</span> にペーストし（これはどこでもいい）、mybibulous.py に名前を変えておく（これも好きな名前でいい）。ダウンロードしたbibulous.pyは <span style="color: green; ">C:\Users\ユーザー名\AppData\Local\Programs\Python\Python39\Lib\site-packages</span> の中で見つかった。
@@ -92,7 +95,7 @@ TeXworksにおいて、編集->設定->タイプセットと進み、「タイ�
   - 名前: Bibulous
   - プログラム: python.exeへの絶対パス（例えば`C:\Users\ユーザー名\AppData\Local\Programs\Python\Python39\python.exe`）
   - 引数: 上から
-    - bibulous.pyへの絶対パス（例えば`C:\Users\ユーザー名\mybibulous.py`）
+    - mybibulous.pyへの絶対パス（例えば`C:\Users\ユーザー名\mybibulous.py`）
     - $basename.aux
 
 と記入し、「実行後、PDFを表示する」のチェックを外して、OKボタンを押す。すると「タイプセットの方法」の一覧にBibulousが追加されていることが確認できる。
@@ -101,14 +104,14 @@ TeXworksにおいて、編集->設定->タイプセットと進み、「タイ�
 
 #### Bibulousを使ってみる
 
-適当なtexファイルを開く（test.texとする）。必要なのは、auxファイルとbibファイルとbstファイルであった。auxとbibは適当に用意したとする。
+適当なtexファイルを開く（test.texとする）。必要なのは、auxファイルとbibファイルとbstファイルであった。auxファイルは一度texファイルコンパイルすれば作られる。bibファイルは適当に用意したとする。
 
 ここではBibulous用のbstファイルを（文献）テンプレートファイルと呼ぶことにする。文献テンプレートファイルは、通常のbstファイルよりもかなり直感的に記述できる。ひとまずメモ帳を開いて
 ```
 TEMPLATES:
  article = <au>. \enquote{<title>}. \textit{<journal>}, <volume>[(<number>)]: [<startpage>--<endpage>|<startpage>], <year>.[ <note>]
 
- book = [[<au>|<ed>|]. \textit{<title>}[, <edition.ordinal()>][, <series>~<volume>]. <publisher>, <year>.[ <note>]
+ book = [<au>|<ed>|]. \textit{<title>}[, <edition.ordinal()>][, <series>~<volume>]. <publisher>, <year>.[ <note>]
 
  arxiv = <au>. \textit{<title>}. <year>. arXiv: \href{http://arxiv.org/abs/<eprint>}{<eprint>}.
 
@@ -131,17 +134,17 @@ citelabel = <citealpha>
 #### Bibulous用のbstファイルのサンプル
 
 以下は、私が用意したBibulous用のbstファイル（文献テンプレートファイル）のサンプル。日本語文献と英語文献で出力が変わるように工夫してある。これだけでもかなり直感的にカスタマイズができることがわかる。
- - [サンプル](https://github.com/paper3510mm/paper3510mm.github.io/blob/master/latex/mytemplate.bst)
+ - [サンプル](https://github.com/paper3510mm/paper3510mm.github.io/blob/master/latex/mytemplate.bst)（未完成）
 
 
 
 #### Bibulous用bstファイルの書き方
 
-詳しくは [Guidelines for writing bibliography style templates - Bibulous](http://nzhagen.github.io/bibulous/guidelines_for_writing_style_templates.html) を参照してください。ただし公式のHPですが情報が更新されていない可能性ある。
+詳しくは [Guidelines for writing bibliography style templates - Bibulous](http://nzhagen.github.io/bibulous/guidelines_for_writing_style_templates.html) を参照してください。ただし公式のHPですが情報が更新されていない可能性があります。
 
 
 - コメントアウト記号は `#`（Pythonと同じ）。
-- Bibulous用のbstファイル（テンプレートファイル）はは、TEMPLATES、SPECIAL-TEMPLATES、OPTIONS、VARIABLES、DEFINITIONS の五つのセクションから成り、`TEMPLATE:` と書いて使う。内容がなければ書く必要はない。
+- Bibulous用のbstファイル（テンプレートファイル）は、TEMPLATES、SPECIAL-TEMPLATES、OPTIONS、VARIABLES、DEFINITIONS の五つのセクションから成り、`TEMPLATE:` と書いて使う。内容がなければ書く必要はない。
   - そのうち、VARIABLES と DEFINITIONS はPythonコードを用いるセクション。
 - TEMPLATES、SPECIAL-TEMPLATES、OPTIONSにおける基本的な形は、`変数 = 定義`である。`=` とその前後のスペースは必要。
   - `TEMPLATES:` は、各エントリーに対してその表示の仕方を書く。
@@ -180,7 +183,7 @@ citelabel = <citealpha>
   - `[ ]` で囲われた変数は、optional variableであることを意味する。必須フィールドは定義されていないと ??? で表示されるが、optional variableはスキップされる。`[ ]` の中が `|` で区切られていると、これはelseifを意味する。たとえば `[<var1>|<var2> and <var3>]` の場合、まず `<var1>` を探す。`<var1>`が見つからなければ、次のブロックに進んで、`<var2>` と `<var3>` を探す。この両方が定義されていれば、 `[<var1>|<var2> and <var3>]` の部分を `<var2> and <var3>` に置き換えて表示する。`<var2>` か `<var3>` のいずれかが定義されていなければ、optionalとして処理し、スキップする。
   - `[<var1>|<var2>|]` のように `|` で区切るブロックの最後が空であるとき、これは `<var1>` か `<var2>` のどちらかが必須であることを意味する。`[<note>|]` は `<note>` と同じ意味。
   - `[ ]` をネストすることはできるが、解析の手間が組合せ論的に増大するので、使うのは控えるべき。
-  - もしbibファイルの中で、`[`, `]`, `#`, `<`, `>`, `|` を使っていれば、これかは対応するLaTeXコマンドの `{\makeopenbracket}`, `{\makeclosebracket}`, `{\makehashsign}`, `{\makelessthan}`, `{\makegreaterthan}`, `{\makeverticalbar}`, `{\makeellipsis}` に置き換えるように。このとき括弧は必要。
+  - もしbibファイルの中で、`[`, `]`, `#`, `<`, `>`, `|` を使っていれば、これらは対応するLaTeXコマンドの `{\makeopenbracket}`, `{\makeclosebracket}`, `{\makehashsign}`, `{\makelessthan}`, `{\makegreaterthan}`, `{\makeverticalbar}`, `{\makeellipsis}` に置き換えるように。このとき括弧は必要。
   - 文末の `...` は次の行に続くことを表す記号。`...` の後ろの空白と、その次の行の先頭の空白は省略される。
     - 文中の `...` は“implicit loop”を示す。
  

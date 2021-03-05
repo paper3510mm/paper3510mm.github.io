@@ -234,7 +234,7 @@ Markdownベース+LaTeX
     - etc.
   - [論文の読み方/渡辺宙志](https://speakerdeck.com/kaityo256/how-to-survey)
   - [修士論文や夏の学校の集録や学振申請書を書く皆さんへ (書き方、注意点、心得)/奥村曉](https://oxon.hatenablog.com/entry/20130615/1371228320)
-  - 「添削者を困らせることのない修士論文の書き方の研究」 from [修士論文 LaTeX テンプレート/奥村曉](https://github.com/akira-okumura/MasterThesisTemplate)
+  - 「添削者を困らせることのない修士論文の書き方の研究」 in [修士論文 LaTeX テンプレート/奥村曉](https://github.com/akira-okumura/MasterThesisTemplate)
   - [これから論文を書く若者のために/酒井聡樹](http://www7b.biglobe.ne.jp/~satoki/ronbun/kyo/korekara/korekara.html)
   - [論文作成に関する注意/落合理](http://www4.math.sci.osaka-u.ac.jp/~ochiai/ronbunsakusei.html)
   - [修論(D論)参考/歴本純一](http://d.hatena.ne.jp/rkmt/touch/20101217/1292573279)
@@ -254,21 +254,29 @@ Markdownベース+LaTeX
     - [1st edition](http://www.gutenberg.org/ebooks/37134?msg=welcome_stranger)はオープンソース化されている
     - [初版日本語訳](http://www.kt.rim.or.jp/~hisashim/elementsofstyle/)もある
   - 英語ライティングルールブック 第3版/デイビッド・セイン
-  - 英語ライティングワークブック 増強版/デイビッド・セイン (絶版)
+  - 英語ライティングワークブック 増強版/デイビッド・セイン
+  - 英語スタイルブック ライティングの表記ルール辞典/石井隆之
+  - 理科系のための英文作法/杉原厚吉
 
 がわかりやすい。実際に(数学の)論文を書く際は
+  - 数学のための英語案内/野水克己 (絶版)
   - [正しい英語で論文を書くために/木田雅成](https://www.rs.tus.ac.jp/kida/english.html)
   - [The Grammar According to West by Douglas B. West](https://faculty.math.illinois.edu/~west/grammar.html)
  - 志学数学/伊原康隆
  - [数学の常識・非常識—由緒正しいTEX入力法/小田忠雄(1999)](http://www.math.titech.ac.jp/~taguchi/nihongo/gakusei/typesetting.html)
+ - A Primer of Mathematical Writing 2nd edn/Steven G. Krantz
  - Writing Mathematical Papers in English/Jerzy Trzeciak
  - 数学のための英語教本/服部久美子
 
 も見よ。より広く科学英語は
   - [科学英語を考える](https://www.s.u-tokyo.ac.jp/ja/story/newsletter/english/)
+  - [The Art of Writing Scientific Papers―英語科学論文の書き方](https://www.myu-inc.jp/awsp/AWSP.html)
   - [Stanford大学流科学技術論文の書き方](http://hontolab.org/tips-for-research-activity/tips-for-writing-technical-papers/)
   
-など。フランス語で書かれた数学書を読むときは
+など。そのほかお役立ちサイト
+  - [Hyper Collocation - dictionary based on arXiv repository](https://hypcol.marutank.net/ja/) 
+
+フランス語で書かれた数学書を読むときは
   - [数学フランス語文法/松本雄也](http://yuyamatsumoto.com/mfr2.html)
   - [数学フランス語小辞典/松本雄也](http://yuyamatsumoto.com/mfr.html)
 
