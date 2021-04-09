@@ -6,7 +6,7 @@ LaTeX関連のリンクは <a href="/links#latex">Links/LaTeX関連</a> にま�
 
 ---
 ### BibTeXの導入メモ
-  
+
 **目次**
 
 - [雰囲気でBibTeX入門（その１）](/latex/bibtex1)

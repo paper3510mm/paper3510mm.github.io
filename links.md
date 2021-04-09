@@ -12,11 +12,14 @@
 
  1. [文章を書く/研究者を目指す](#for_master)
      - [文章を書く](#on_writing)
-     - [レポート・論文を書く](#on_academic_writing)
-     - [プレゼンする](#presentation)
+     - [レポートを書く](#on_academic_writing)
      - [研究者を志望すること](#toward_researcher)
+     - [英語で論文を書く](#writing_papers)
+     - [発表する](#presentation)
 
- 1. [個人サイト/ブログ](#personal_site)
+ 1. [その他](#others)
+
+ 1. [個人サイト/ブログ](#personal_websites)
 
 <hr />
 
@@ -120,7 +123,7 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
 #### Editor
 LaTeX エディタ
   - [VSCodeで最高のLaTeX環境を作る](https://qiita.com/Gandats/items/d7718f12d71e688f3573)
-  - [texstudio](https://www.texstudio.org/)
+  - [TeXstudio](https://www.texstudio.org/)
     - texを打つときにいろいろ助けてくれるエディタアプリ。texworksと一緒に使う。コンパイル設定は、y.さんのTeX講習会資料を参照のこと
   - [Cloud LaTeX](https://cloudlatex.io/ja)
     - オンライン・エディタ
@@ -134,8 +137,6 @@ LaTeX エディタ
     - [upLaTeXを使うのに最低限必要な知識/Y2b委員会](https://v2.overleaf.com/read/vshsvphkccqv)
   - [Mathcha](https://www.mathcha.io/)
     - オンライン・エディタ。pc向けアプリ版もある。人によっては使いやすそう
-  - [TeXam](https://tex.am/)
-    - クラウド上でLaTeXの組版ができる無料サービス。ノートは公開共有でき閲覧も可能。最近開始したサービスでまだまだ不具合も多い。
   - [TeX Writer - LaTeX On The Go](https://itunes.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222?mt=8)
     - iPad等向けのiOSアプリ
     - TeXのエンジンがpdflatexなので日本語を使えるようにするのは設定する必要がある: [pdfLaTeX + CJK パッケージで日本語する方法](https://qiita.com/zr_tex8r/items/cdaac1500718eb9fa330)
@@ -185,6 +186,7 @@ Markdownベース+LaTeX
   - [MathKey](https://mathkey-app.com/)
     - 手書きの数式をTeXにおこしてくれる
   - [TeXclip](https://texclip.marutank.net/)
+  - [Muboard](https://muboard.net/)
   - [数式入りの短い文章をブラウザ上でパパっと画像化](https://math-formula-image.oka-ryunoske.work/ja.html)
 
 もっとTeX/LaTeX
@@ -203,28 +205,36 @@ Markdownベース+LaTeX
 <a id="on_writing"></a>
 
 #### 文章を書く
+広く理科系の文章を書くにあたっては、はじめに次の三冊を読むことが各方面でおすすめされています。
+
   - 数学文章作法 基礎編/結城浩
   - 数学文章作法 推敲編/結城浩
   - 理科系の作文技術/木下是雄
 
-広く理科系の文章を書くにあたっては、この三冊を読むことが各方面でおすすめされています。
+次も参考になる。
 
   - [文章を書く心がけ/結城浩](http://www.hyuki.com/writing/writing.html)
   - [文章をわかりやすくする【18個】のルール](https://www.slideshare.net/juntoku_yoshizawa/ss-79083172)
 
 
+
 <a id="on_academic_writing"></a>
 
 #### レポートを書く
+レポートの書き方などについては次のようなページもある。
+
   - [名古屋大学生のためのアカデミック・ライティング・ガイド](http://www.cshe.nagoya-u.ac.jp/asg/index.html)
   - [立教大学大学教育開発・支援センター](https://www.rikkyo.ac.jp/about/activities/fd/cdshe.html)
   - [Duke Graduate School Scientific Writing Resource](https://sites.duke.edu/scientificwriting/)
+
+
 
 
 <a id="toward_researcher"></a>
 
 #### 研究者を志望すること
 
+  - 志学数学/伊原康隆
   - [博士進学が決まったあなたが今すぐに始めるべきこと（2015年版）](http://next49.hatenadiary.jp/entry/20150201/p4)
   - [お茶の水女子大学 教授 伊藤貴之](http://itolab.is.ocha.ac.jp/~itot/)先生のHPから
     - [研究分野をサーベイする](https://www.slideshare.net/iTooooooooooooT/itolab-how-to-survey-2017)
@@ -242,53 +252,59 @@ Markdownベース+LaTeX
   - [(修士/博士/普通の)論文執筆の際にお願いしたいこと、その二/立川裕二](https://member.ipmu.jp/yuji.tachikawa/misc/dron2.html)
   - [松尾ぐみの論文の書き方](http://ymatsuo.com/japanese/ronbun_jpn.html)
   - [松尾ぐみの論文の書き方：英語論文](http://ymatsuo.com/japanese/ronbun_eng.html)
+  - [数学論文の書き方/一松信(1987)](https://www.jstage.jst.go.jp/article/sugaku1947/39/3/39_3_276/_article/-char/ja/)
   - [On writing/Terence Tao](https://terrytao.wordpress.com/advice-on-writing-papers/)
     - 数学論文を書くための心構えについて。英語文献がまとめられてます
   - [How to write math papers clearly/Igor Pak](https://igorpak.wordpress.com/2017/07/12/how-to-write-math-papers-clearly/)
     - 引用の仕方について
 
-#### 英語について
 
-英語ライティングについては
-  - The Elements of Style, Fourth Edition/William Strunk, Jr.
-    - [1st edition](http://www.gutenberg.org/ebooks/37134?msg=welcome_stranger)はオープンソース化されている
-    - [初版日本語訳](http://www.kt.rim.or.jp/~hisashim/elementsofstyle/)もある
+<a id="writing_papers"></a>
+
+#### 英語で論文を書く
+
+一般の英作文については次がわかりやすい。
   - 英語ライティングルールブック 第3版/デイビッド・セイン
   - 英語ライティングワークブック 増強版/デイビッド・セイン
   - 英語スタイルブック ライティングの表記ルール辞典/石井隆之
-  - 理科系のための英文作法/杉原厚吉
+  - The Elements of Style, Fourth Edition/William Strunk, Jr.
+    - [1st edition](http://www.gutenberg.org/ebooks/37134?msg=welcome_stranger)はオープンソース化されている
+    - [初版日本語訳](http://www.kt.rim.or.jp/~hisashim/elementsofstyle/)もある
 
-がわかりやすい。実際に(数学の)論文を書く際は
-  - 数学のための英語案内/野水克己 (絶版)
-  - [正しい英語で論文を書くために/木田雅成](https://www.rs.tus.ac.jp/kida/english.html)
-  - [The Grammar According to West by Douglas B. West](https://faculty.math.illinois.edu/~west/grammar.html)
- - 志学数学/伊原康隆
- - [数学の常識・非常識—由緒正しいTEX入力法/小田忠雄(1999)](http://www.math.titech.ac.jp/~taguchi/nihongo/gakusei/typesetting.html)
- - A Primer of Mathematical Writing 2nd edn/Steven G. Krantz
- - Writing Mathematical Papers in English/Jerzy Trzeciak
- - 数学のための英語教本/服部久美子
-
-も見よ。より広く科学英語は
+科学英語については次で学べる。
   - [科学英語を考える](https://www.s.u-tokyo.ac.jp/ja/story/newsletter/english/)
   - [The Art of Writing Scientific Papers―英語科学論文の書き方](https://www.myu-inc.jp/awsp/AWSP.html)
   - [Stanford大学流科学技術論文の書き方](http://hontolab.org/tips-for-research-activity/tips-for-writing-technical-papers/)
+
+実際に(数学の)論文を英語で書くときには、
+  - 数学のための英語案内/野水克己 (絶版)
+
+が素晴らしく参考になる。次もかなり参考になる。
+  - 理科系のための英文作法/杉原厚吉
+  - A Primer of Mathematical Writing 2nd edn/Steven G. Krantz
+  - Writing Mathematical Papers in English/Jerzy Trzeciak
+  - 数学のための英語教本/服部久美子
+  - [正しい英語で論文を書くために/木田雅成](https://www.rs.tus.ac.jp/kida/english.html)
+  - [数学論文の書き方(英語編)/小林昭七(1987)](https://www.jstage.jst.go.jp/article/sugaku1947/39/4/39_4_348/_article/-char/ja/)
+  - [数学の常識・非常識—由緒正しいTEX入力法/小田忠雄(1999)](http://www.math.titech.ac.jp/~taguchi/nihongo/gakusei/typesetting.html)の三章
+  - [The Grammar According to West by Douglas B. West](https://faculty.math.illinois.edu/~west/grammar.html)
   
-など。そのほかお役立ちサイト
+そのほかお役立ちサイト
   - [Hyper Collocation - dictionary based on arXiv repository](https://hypcol.marutank.net/ja/) 
 
-フランス語で書かれた数学書を読むときは
+ちなみに、フランス語で書かれた数学書を読むときは次のようなウェブページもある。
   - [数学フランス語文法/松本雄也](http://yuyamatsumoto.com/mfr2.html)
   - [数学フランス語小辞典/松本雄也](http://yuyamatsumoto.com/mfr.html)
 
-が参考になる。
 
 <a id="presentation"></a>
 
-#### プレゼンする
+#### 発表する
+発表スライドを作成するときは、次が参考になる。
   - [発表スライドにこだわろう](http://pst-ic.hatenadiary.jp/entry/2017/12/12/000038)
   - [発表スライドについての基本的なルール/田崎晴明](https://www.gakushuin.ac.jp/~881791/presentation/slide.html)
 
-より一般のデザイン論は  
+一般にわかりやすく伝えるためのデザイン論は、次のようなページで解説されている。
   - [伝わるデザイン 研究発表のユニバーサルデザイン](http://tsutawarudesign.com/)
   - [伝わるデザイン 高校生のための研究発表の手引き](https://student.tsutawarudesign.com/powerpoint_slide/)
   - [これだけ守れば見やすくなるデザインの基礎](https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu)
@@ -296,17 +312,17 @@ Markdownベース+LaTeX
   - [見やすいプレゼン資料の作り方](https://www.slideshare.net/yutamorishige50/ss-41321443)
   - [プレゼン講座等のリンク](http://www2.yukawa.kyoto-u.ac.jp/~akio.tomiya/slides.html)
 
-がかなり参考になる。作る段階では
+スライド作成でのお役立ちサイト
   - [TeXでプレゼン―LaTeX Beamerを使う人のためのTips集](https://blog.tokor.org/2016/06/04/TeX%E3%81%A7%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3-LaTeX-Beamer%E3%82%92%E4%BD%BF%E3%81%86%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AETips%E9%9B%86/)
   - [EdrawMax](https://www.edrawsoft.com/jp/tour/edrawmax.html)
     - [【EdrawMax】簡単操作で印象的にアイデアを視覚化できるプレゼン作図ツール【プレゼンに最適】](https://www.youtube.com/watch?v=ZpCRSg7SAOg&feature=youtu.be)
 
-など。
-
-
 
 
 <hr />
+
+<a id="others"></a>
+
 その他
 
  - パソコンでの作業環境について
@@ -317,9 +333,11 @@ Markdownベース+LaTeX
    - [GitHubを使ってMarkdown文書を５ステップでホームページとして公開する方法](https://qiita.com/MahoTakara/items/3800e9dc83b530d0a050)
    - [ここまで出来る! GitHubのMarkdownで書くウェブページ　独自テーマの開発](https://qiita.com/MahoTakara/items/e3d88a0d5d128bb07b27)
 
+ - [横書き句読点の謎/渡部善隆](http://ri2t.kyushu-u.ac.jp/~watanabe/RESERCH/MANUSCRIPT/OTHERS/YOKO/ten.pdf) (pdf)
+ - [校閲記者の仕事を実演動画で - 毎日ことば](https://mainichi-kotoba.jp/blog-20210328)
 
 <hr />
-<a id="personal_site"></a>
+<a id="personal_websites"></a>
 
 ### 個人サイト/ブログ
 

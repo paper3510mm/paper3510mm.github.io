@@ -16,6 +16,7 @@
   <li>loc. cit. = loco citato 「示した場所にある」</li>
   <li>op. cit. = opere citato 「引用した文献より」</li>
   <li>n.b. = nota bene 「注意せよ」</li>
+  <li>viz. = videlicet 「すなわち」 </li>
   <li>a priori 「先天的に」</li>
   <li>a fortiori 「もっと強い理由から」</li>
   <li>ad hoc 「特定の問題のための」「その場しのぎに」</li>

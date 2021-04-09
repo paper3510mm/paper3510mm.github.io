@@ -9,7 +9,7 @@ title-heading: false
 オラッ双対性よ、はたらけっ！
 
 
-大学院で代数幾何を勉強しています。圏論と双対性に興味があります。
+大阪の大学院で代数幾何を勉強しています。圏論と双対性に興味があります。
 
 
 <strong>興味</strong>
@@ -41,7 +41,7 @@ LeTeXについて自分で書いたメモのページです。
 - 2020/01/20 : Linksページを作りました
 - 2020/08/27 : Postsページを作りました
 - 2021/03/06 : LeTeXについてのメモのページを作りました
-- 2021/03/06 : 最終更新日
+- 2021/04/10 : 最終更新日
 
 #### <span style="font-size:11pt;">連絡先</span>
 - HN: ペーパー/paper3510mm
@@ -51,7 +51,7 @@ LeTeXについて自分で書いたメモのページです。
 
 #### <span style="font-size:11pt;">参加記録</span>
 - [京都大学理系自主ゼミサークルS2S](http://s2s.undefin.net/wiki/?FrontPage)
-- 数物セミナー 14th～19th
-- 関西すうがく徒のつどい 11th, 12th
-- ぶつりがく徒のつどい 3rd～5th
-- 関西すうりぶつりすと！のつどい 3rd
+- [数物セミナー](http://physmathseminar.web.fc2.com/) 14th～19th
+- [関西すうがく徒のつどい](https://kansaimath.tenasaku.com/) 11th, 12th
+- [ぶつりがく徒のつどい](http://physicstsudoi.client.jp/) 3rd～5th
+- [すうがく徒のつどい@オンライン](https://tsudoionline.netlify.app/) 1st
