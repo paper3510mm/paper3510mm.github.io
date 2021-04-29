@@ -90,6 +90,7 @@ LaTeXの入門書。LaTeXを始めるには、まずはこれから！
  - [Short Math Guide for LATEX/Michael Downes(v2.0,2017)](http://ftp.jaist.ac.jp/pub/CTAN/info/short-math-guide/short-math-guide.pdf) (pdf)
  - [はやわかりLaTeX数式組版](https://usermanual.wiki/Document/shortmathguidejpn.2084876734.pdf) (pdf)
  - [learnlatex.org](https://www.learnlatex.org/)
+ - [LaTeX2e unofficial reference manual](https://latexref.xyz/)
 
 LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの心構えに、黒木先生のページと小田先生のpdfは必読。書き方・構成は、荒井さんのpdfを参照。
 
@@ -215,6 +216,7 @@ Markdownベース+LaTeX
 
   - [文章を書く心がけ/結城浩](http://www.hyuki.com/writing/writing.html)
   - [文章をわかりやすくする【18個】のルール](https://www.slideshare.net/juntoku_yoshizawa/ss-79083172)
+  - 播磨尚朝，[J-Physics News Letter 5, 2(2018)](https://www.jphysics.jp/newsletter/2018/03/22/J-Physics_NL_web_v05.pdf)―日本語からはじめる．
 
 
 
@@ -281,7 +283,7 @@ Markdownベース+LaTeX
 
 が素晴らしく参考になる。次もかなり参考になる。
   - 理科系のための英文作法/杉原厚吉
-  - A Primer of Mathematical Writing 2nd edn/Steven G. Krantz
+  - [A Primer of Mathematical Writing 2nd edn/Steven G. Krantz](https://arxiv.org/abs/1612.04888)
   - Writing Mathematical Papers in English/Jerzy Trzeciak
   - 数学のための英語教本/服部久美子
   - [正しい英語で論文を書くために/木田雅成](https://www.rs.tus.ac.jp/kida/english.html)
@@ -289,8 +291,13 @@ Markdownベース+LaTeX
   - [数学の常識・非常識—由緒正しいTEX入力法/小田忠雄(1999)](http://www.math.titech.ac.jp/~taguchi/nihongo/gakusei/typesetting.html)の三章
   - [The Grammar According to West by Douglas B. West](https://faculty.math.illinois.edu/~west/grammar.html)
   
-そのほかお役立ちサイト
+そのほかお役立ちサイト・サービス
   - [Hyper Collocation - dictionary based on arXiv repository](https://hypcol.marutank.net/ja/) 
+  - [DeepL Translate](https://www.deepl.com/ja/translator)
+  - [PDF翻訳職人](https://translate-preprocessing.web.app/)
+  - [Grammarly: Free Online Writing Assistant](https://www.grammarly.com/)
+  - [Ludwig, the first sentence search engine](https://ludwig.guru/)
+  - [Editage](https://www.editage.jp/)
 
 ちなみに、フランス語で書かれた数学書を読むときは次のようなウェブページもある。
   - [数学フランス語文法/松本雄也](http://yuyamatsumoto.com/mfr2.html)
@@ -313,6 +320,8 @@ Markdownベース+LaTeX
   - [プレゼン講座等のリンク](http://www2.yukawa.kyoto-u.ac.jp/~akio.tomiya/slides.html)
 
 スライド作成でのお役立ちサイト
+  - [Beamer theme gallery](https://deic-web.uab.cat/~iblanes/beamer_gallery/index.html)
+  - [Beamer読本─講演用スライド作成のために─](http://ayapin-film.sakura.ne.jp/LaTeX/Slides/Beamer-tutorial.pdf) (pdf)
   - [TeXでプレゼン―LaTeX Beamerを使う人のためのTips集](https://blog.tokor.org/2016/06/04/TeX%E3%81%A7%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3-LaTeX-Beamer%E3%82%92%E4%BD%BF%E3%81%86%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AETips%E9%9B%86/)
   - [EdrawMax](https://www.edrawsoft.com/jp/tour/edrawmax.html)
     - [【EdrawMax】簡単操作で印象的にアイデアを視覚化できるプレゼン作図ツール【プレゼンに最適】](https://www.youtube.com/watch?v=ZpCRSg7SAOg&feature=youtu.be)
@@ -323,7 +332,7 @@ Markdownベース+LaTeX
 
 <a id="others"></a>
 
-その他
+#### その他
 
  - パソコンでの作業環境について
    - [情報機器作業における労働衛生管理のためのガイドラインについて（基発0712第3号）](https://www.mhlw.go.jp/content/000539604.pdf) (pdf)
@@ -335,6 +344,8 @@ Markdownベース+LaTeX
 
  - [横書き句読点の謎/渡部善隆](http://ri2t.kyushu-u.ac.jp/~watanabe/RESERCH/MANUSCRIPT/OTHERS/YOKO/ten.pdf) (pdf)
  - [校閲記者の仕事を実演動画で - 毎日ことば](https://mainichi-kotoba.jp/blog-20210328)
+
+ - [Exercism: Code practice and mentorship for everyone](https://exercism.io/) 
 
 <hr />
 <a id="personal_websites"></a>

@@ -38,7 +38,8 @@
      - <a href="https://www.okomeda.net/wp/506/">[BiBTeX] bst ファイルのカスタマイズ - 今西衞研究室</a>
      - <a href="http://tug.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf">Tame the BeaST</a>
   1. BibLaTeXを用いる。
-     - [Bibliography management with biblatex -Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex)
+     - [BibLaTeX+Biberの始め方 - tm23forest](https://tm23forest.com/contents/biblatex-biber-begin)
+     - [Bibliography management with biblatex - Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex)
      - [[LaTeX] biblatex ～初歩の初歩～―もう一つの［参考文献］生成ツール](https://konoyonohana.blog.fc2.com/blog-entry-96.html)
      - [biblatexとBibTeX - 武田史郎のウェブログ](https://shirotakeda.org/blog-ja/?p=2660)
   1. Bibulousを用いる。
