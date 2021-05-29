@@ -106,6 +106,8 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
      - [TeXのことは嫌いになっても、LaTeXのことは嫌いにならないでください/藤原惟(2019)](https://github.com/sky-y/slide-2019-02-17-typesetting-darkness)
      - [[LaTeX][l2tabu] LaTeX2e タブー集](https://konoyonohana.blog.fc2.com/blog-entry-69.html?sp)
      - [日本語 LaTeX の新常識 2021](https://qiita.com/wtsnjp/items/76557b1598445a1fc9da)
+     - [TeXの部屋](http://yunavi.la.coocan.jp/tex.html)
+
   - [SATySFi](https://github.com/gfngfn/SATySFi/blob/master/README-ja.md)
     - TeXに代わる新しい組版システム
     - [SATySFi wiki](https://github.com/gfngfn/SATySFi/wiki/SATySFi-Wiki)
@@ -189,6 +191,7 @@ Markdownベース+LaTeX
   - [TeXclip](https://texclip.marutank.net/)
   - [Muboard](https://muboard.net/)
   - [数式入りの短い文章をブラウザ上でパパっと画像化](https://math-formula-image.oka-ryunoske.work/ja.html)
+  - [LaTeX Color](http://latexcolor.com/)
 
 もっとTeX/LaTeX
   - [TeXとLaTeXの違い｜ラング・ラグー](https://blog.wtsnjp.com/2016/12/19/tex-and-latex/#SFNlmTM.twitter_responsive)
@@ -259,6 +262,7 @@ Markdownベース+LaTeX
     - 数学論文を書くための心構えについて。英語文献がまとめられてます
   - [How to write math papers clearly/Igor Pak](https://igorpak.wordpress.com/2017/07/12/how-to-write-math-papers-clearly/)
     - 引用の仕方について
+  - [先行研究レビューについて（九州大学言語学講座　下地理則）](https://youtu.be/bKqtfZl7Z3c) (YouTubeより)
 
 
 <a id="writing_papers"></a>
@@ -292,11 +296,25 @@ Markdownベース+LaTeX
   - [The Grammar According to West by Douglas B. West](https://faculty.math.illinois.edu/~west/grammar.html)
   
 そのほかお役立ちサイト・サービス
-  - [Hyper Collocation - dictionary based on arXiv repository](https://hypcol.marutank.net/ja/) 
+  - [Hyper Collocation - dictionary based on arXiv repository](https://hypcol.marutank.net/ja/)
+    - arXivで使われてる英語表現の頻度を総検索できる
   - [DeepL Translate](https://www.deepl.com/ja/translator)
-  - [PDF翻訳職人](https://translate-preprocessing.web.app/)
+    - 翻訳サービス。無料版は入力文がサーバーに保存されるので注意が必要
+    - DeepL 改行の問題に対応して、次のような亜種もある
+      - [PDF翻訳職人](https://translate-preprocessing.web.app/)
+      - [Shaper](https://dream-exp.net/shaper/)
+  - [Google翻訳](https://translate.google.co.jp/?hl=ja)
+    - 翻訳サービス
   - [Grammarly: Free Online Writing Assistant](https://www.grammarly.com/)
+    - 英文章チェックアプリ。受動態絶対なくすマン
+  - [Writefull](https://www.writefull.com/writefull-for-word)
+    - 英文章チェックアプリ
+  - [Power Thesaurus](https://ja.powerthesaurus.org/)
+    - 英語の同義語辞書
   - [Ludwig, the first sentence search engine](https://ludwig.guru/)
+    - 英語表現検索
+  - [Linguee](https://www.linguee.com/)
+    - 翻訳用例検索
   - [Editage](https://www.editage.jp/)
 
 ちなみに、フランス語で書かれた数学書を読むときは次のようなウェブページもある。

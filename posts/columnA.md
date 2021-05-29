@@ -18,6 +18,7 @@
   <li>n.b. = nota bene 「注意せよ」</li>
   <li>viz. = videlicet 「すなわち」 </li>
   <li>a priori 「先天的に」</li>
+  <li>a posteriori 「後天的に」</li>
   <li>a fortiori 「もっと強い理由から」</li>
   <li>ad hoc 「特定の問題のための」「その場しのぎに」</li>
   <li>mutatis mutandis 「必要な変更を加えて」</li>

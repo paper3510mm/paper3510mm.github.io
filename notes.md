@@ -2,6 +2,36 @@
 
 書いた記事やノートをまとめて公開しています。
 
+---
+### 圏の理論シリーズ
+
+圏論のノート群です。これらのノートは定期的に更新していきます。
+
+<ul>
+<li><p><strong><a href="/pdf/modelcat.pdf">モデル圏の理論</a></strong></p>
+  
+  <p>モデル圏の理論を解説します。</p>
+
+  <ul>
+    <li>2021/05/29: v1公開 (40 pages)</li>
+  </ul>
+</li>
+
+
+
+</ul>
+
+以降、いろいろ計画中...
+
+
+
+
+---
+### 記事一覧
+
+単発の記事です。
+
+
 <ol reversed>
 
 <li><p><strong><a href="/pdf/Gabriel_Popescu.pdf">Gabriel-Popescuの定理</a></strong></p>
