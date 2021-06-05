@@ -1,9 +1,10 @@
 ---
-title-heading: false
+layout: default
+title: はたらく双対性
 ---
 
 # はたらく双対性
-<!-- [sample pdf](pdf/sample_diagram.pdf) -->
+<!-- [sample pdf](pdf/sample_diagram.pdf) title-heading: false -->
 
 
 オラッ双対性よ、はたらけっ！

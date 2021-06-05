@@ -294,6 +294,7 @@ Markdownベース+LaTeX
   - [数学論文の書き方(英語編)/小林昭七(1987)](https://www.jstage.jst.go.jp/article/sugaku1947/39/4/39_4_348/_article/-char/ja/)
   - [数学の常識・非常識—由緒正しいTEX入力法/小田忠雄(1999)](http://www.math.titech.ac.jp/~taguchi/nihongo/gakusei/typesetting.html)の三章
   - [The Grammar According to West by Douglas B. West](https://faculty.math.illinois.edu/~west/grammar.html)
+  - [Writing and Publishing Scientific Papers: A Primer for the Non-English Speaker/Gábor Lövei (2021)](https://www.openbookpublishers.com/product/1272)
   
 そのほかお役立ちサイト・サービス
   - [Hyper Collocation - dictionary based on arXiv repository](https://hypcol.marutank.net/ja/)
@@ -316,7 +317,8 @@ Markdownベース+LaTeX
   - [Linguee](https://www.linguee.com/)
     - 翻訳用例検索
   - [Editage](https://www.editage.jp/)
-
+  - [Carrier Owl](https://github.com/fkubota/Carrier-Owl)
+  
 ちなみに、フランス語で書かれた数学書を読むときは次のようなウェブページもある。
   - [数学フランス語文法/松本雄也](http://yuyamatsumoto.com/mfr2.html)
   - [数学フランス語小辞典/松本雄也](http://yuyamatsumoto.com/mfr.html)
@@ -371,7 +373,9 @@ Markdownベース+LaTeX
 ### 個人サイト/ブログ
 
   - [炬燵論法](https://litharge3141.github.io/)<br />
-    数値計算をしている友人のサイトです。HPを更新しろとうるさいので、リンクを付けてやりました。
+    数値計算をしている友人のサイトです。
+  - [不動点](https://ksanki.github.io/)
+  
 
 More to be added...
 
