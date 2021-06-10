@@ -192,6 +192,7 @@ Markdownベース+LaTeX
   - [Muboard](https://muboard.net/)
   - [数式入りの短い文章をブラウザ上でパパっと画像化](https://math-formula-image.oka-ryunoske.work/ja.html)
   - [LaTeX Color](http://latexcolor.com/)
+  - [BibTex Cleaner](https://bibtexcleaner.herokuapp.com/)
 
 もっとTeX/LaTeX
   - [TeXとLaTeXの違い｜ラング・ラグー](https://blog.wtsnjp.com/2016/12/19/tex-and-latex/#SFNlmTM.twitter_responsive)
@@ -375,7 +376,12 @@ Markdownベース+LaTeX
   - [炬燵論法](https://litharge3141.github.io/)<br />
     数値計算をしている友人のサイトです。
   - [不動点](https://ksanki.github.io/)
-  
+  - [壱大整域](http://alg-d.com/)
+  - [iso.2022.jp](http://iso.2022.jp/)
+  - [でぃぐのページ](https://fujidig.github.io/)
+  - [環付サクラ空間](http://ringed-sakura.space/)
+  - [箱のページ | o-ccah.github.io](https://o-ccah.github.io/)
+  - [ワヘイヘイ概型](http://waheyhey.com/)
 
 More to be added...
 

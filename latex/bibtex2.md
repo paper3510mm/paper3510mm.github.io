@@ -259,7 +259,7 @@ BibTeXでは、mrnumberフィールドが用いられる。
 
 [zbMATH](https://zbmath.org/)（旧称Zentralblatt MATH）は数学の文献・論文などに関する抄録、評論サービス。ヨーロッパ数学会 (EMS) などにより編集、運営されている。数学の論文に関するデータベースとしてはMathSciNetと双璧をなす。Zbl番号とは、zbMathに記録されている文献の固有番号のこと。
 
-BibTeXでは、zblnumberフィールドが用いられる。
+BibTeXでは、zblフィールドが用いられる。
 
 
 #### Mathematics Subject Classification (MSC)

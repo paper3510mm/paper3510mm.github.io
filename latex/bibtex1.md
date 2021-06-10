@@ -37,6 +37,8 @@ BibTeXを導入したので、自分のような雰囲気でLaTeXを使ってい
 <li><a href="https://www.okomeda.net/wp/500/">[BiBTeX]BibTeX 概要 - 今西衞研究室</a></li>
 <li><a href="https://www.bibtex.com/">The quick BibTeX guide</a></li>
 <li><a href="https://qiita.com/SUZUKI_Masaya/items/14f9727845e020f8e7e9">BiBTeXとは - Qiita</a></li>
+<li><a href="https://qiita.com/shiro_takeda/items/92adf0b20c501548355e">経済学におけるBibTeXの利用 - Qiita</a></li>
+
 </ul>
 その他、個別にリンクを付けてあります。
 
