@@ -24,20 +24,14 @@
 
 以降、いろいろ計画中...
 
-<p>
-<a href=”/pdf/modelcat.pdf” onclick=”gtag(‘event’, ‘pdf_view’, {‘event_category’: ‘download’, ‘event_label’: ‘modelcat’, 'value': '1'});“>モデル圏の理論</a>
-
-<a href=”/pdf/modelcat.pdf” onclick=”gtag(‘event’, ‘pdf_view’, {‘event_category’: ‘download’, ‘event_label’: ‘modelcat’, 'value': '0'});“>モデル圏の理論</a>
-
-<a href=”/pdf/modelcat.pdf”>モデル圏の理論</a>
-
-</p>
+<p><a href=”/pdf/modelcat.pdf”>モデル圏の理論</a></p>
 
 
 ---
 ### 記事一覧
 
 単発の記事です。
+<a href="/pdf/Gabriel_Popescu.pdf">Gabriel-Popescuの定理</a>
 
 
 <ol reversed>
