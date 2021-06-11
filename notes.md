@@ -9,7 +9,7 @@
 
 
 <ul>
-<li><p><strong><a href=”/pdf/modelcat.pdf” onClick=”gtag(‘event’, ‘pdf_view’, {‘event_category’: ‘download’, ‘event_label’: ‘modelcat’});“>モデル圏の理論</a></strong></p>
+<li><p><strong><a href=”/pdf/modelcat.pdf” onclick=”gtag(‘event’, ‘pdf_view’, {‘event_category’: ‘download’, ‘event_label’: ‘modelcat’, 'value': '1'});“>モデル圏の理論</a></strong></p>
   
   <p>モデル圏の理論を解説します。</p>
 
