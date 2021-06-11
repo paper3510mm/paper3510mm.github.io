@@ -6,7 +6,7 @@ title-heading: false
 <!-- 
 layout: default
 title: はたらく双対性 
-<a href=”/pdf/sample.pdf” onClick=”gtag(‘event’, ‘pdf_view’, {‘event_category’: ‘download’, ‘event_label’: ‘sample’});“> sample pdf </a>
+<a href=”/pdf/sample.pdf” onClick=”gtag(‘event’, ‘pdf_view’, {‘event_category’: ‘download’, ‘event_label’: ‘sample’});“> sample pdf </a>？
 -->
 
 

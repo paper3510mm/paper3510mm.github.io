@@ -29,7 +29,6 @@
 ### 記事一覧
 
 単発の記事です。
-<a href="/pdf/Gabriel_Popescu.pdf">Gabriel-Popescuの定理</a>
 
 
 <ol reversed>
