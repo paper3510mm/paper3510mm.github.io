@@ -200,6 +200,11 @@ Markdownベース+LaTeX
     - DTPとは、DeskTop Publishing (卓上出版)の略のこと
   - [Stylish LaTeX Cover Page](https://latexdraw.com/stylish-latex-cover-page/)
     - LaTeXで表紙デザインをするためのstep-by-stepチュートリアル
+  - Web上でTeXライクな出力をする
+      - [MathJax](https://www.mathjax.org/)
+      - [KaTeX](https://katex.org/)
+      - [TikZJax](https://tikzjax.com/)
+      - [QuickLaTeX](https://quicklatex.com/)
 
 
 <hr />

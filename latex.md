@@ -1,3 +1,7 @@
+<!-- TikZJax -->
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
 ## **LaTeXについてのメモ**
 
 LeTeXについて自分で書いたメモのページです。
@@ -43,6 +47,12 @@ TikZ で作った図式のコード例を載せる。（予定）
 
 最近は [quiver](https://q.uiver.app/) というサービスも現れて、便利になりつつある。
 
+
+<script type="text/tikz">
+  \begin{tikzpicture}
+    \draw (0,0) circle (1in);
+  \end{tikzpicture}
+</script>
 
 ---
 
