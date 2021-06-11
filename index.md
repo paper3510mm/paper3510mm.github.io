@@ -3,9 +3,10 @@ title-heading: false
 ---
 
 # はたらく双対性
-<!-- [sample pdf](pdf/sample_diagram.pdf)
+<!-- 
 layout: default
 title: はたらく双対性 
+<a href=”/pdf/sample.pdf” onClick=”gtag(‘event’, ‘pdf_view’, {‘event_category’: ‘download’, ‘event_label’: ‘sample’});“> sample pdf </a>
 -->
 
 
