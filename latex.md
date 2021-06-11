@@ -52,7 +52,6 @@ TikZ で作った図式のコード例を載せる。（予定）
   \begin{tikzpicture}[auto]
 		\node (D) at (0,1.6) {$\mathcal{D}$};
 		\node (C) at (0,0) {$\mathcal{C}$}; \node (M) at (2,0) {$\mathcal{M}$};
-		
 		\draw[->] (C) to node {$\scriptstyle K$} (D);
 		\draw[->] (C) to node[swap] {$\scriptstyle F$} (M);
 		\draw[->] (D) to node {$\scriptstyle \operatorname{Lan}_K F$} (M);
