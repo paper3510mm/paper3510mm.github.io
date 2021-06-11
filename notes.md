@@ -9,7 +9,9 @@
 
 
 <ul>
-<li><p><strong><a href=”/pdf/modelcat.pdf” onclick=”gtag(‘event’, ‘pdf_view’, {‘event_category’: ‘download’, ‘event_label’: ‘modelcat’, 'value': '1'});“>モデル圏の理論</a></strong></p>
+<li><p><a href=”https://paper3510mm.github.io/pdf/modelcat.pdf”>モデル圏の理論</a></p></li>
+
+<li><p><strong><a href=”https://paper3510mm.github.io/pdf/modelcat.pdf” onclick=”gtag(‘event’, ‘pdf_view’, {‘event_category’: ‘download’, ‘event_label’: ‘modelcat’, 'value': '1'});“>モデル圏の理論</a></strong></p>
   
   <p>モデル圏の理論を解説します。</p>
 
@@ -23,8 +25,6 @@
 </ul>
 
 以降、いろいろ計画中...
-
-<p><a href=”/pdf/modelcat.pdf”>モデル圏の理論</a></p>
 
 
 ---
