@@ -1,7 +1,3 @@
-<!-- TikZJax -->
-<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
-<script src="https://tikzjax.com/v1/tikzjax.js"></script>
-
 ## **LaTeXについてのメモ**
 
 LeTeXについて自分で書いたメモのページです。
@@ -46,18 +42,6 @@ LaTeX関連のリンクは <a href="/links#latex">Links/LaTeX関連</a> にま�
 TikZ で作った図式のコード例を載せる。（予定）
 
 最近は [quiver](https://q.uiver.app/) というサービスも現れて、便利になりつつある。
-
-(1) Kan拡張
-<script type="text/tikz">
-  \begin{tikzpicture}[auto]
-		\node (D) at (0,1.6) {$\mathcal{D}$};
-		\node (C) at (0,0) {$\mathcal{C}$}; \node (M) at (2,0) {$\mathcal{M}$};
-		\draw[->] (C) to node {$\scriptstyle K$} (D);
-		\draw[->] (C) to node[swap] {$\scriptstyle F$} (M);
-		\draw[->] (D) to node {$\scriptstyle \operatorname{Lan}_K F$} (M);
-		\draw[-implies,double equal sign distance] (0.5,0.3) to node[swap] {$\scriptstyle \eta$} (0.5,0.8);
-	\end{tikzpicture}
-</script>
 
 ---
 
