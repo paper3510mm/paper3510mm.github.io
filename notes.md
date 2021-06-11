@@ -11,7 +11,7 @@
 <ul>
 <li><p><a href=”https://paper3510mm.github.io/pdf/modelcat.pdf”>モデル圏の理論</a></p></li>
 
-<li><p><strong><a href=”https://paper3510mm.github.io/pdf/modelcat.pdf” onclick=”gtag(‘event’, ‘pdf_view’, {‘event_category’: ‘download’, ‘event_label’: ‘modelcat’, 'value': '1'});“>モデル圏の理論</a></strong></p>
+<li><p><strong><a href="/pdf/Gabriel_Popescu.pdf">Gabriel-Popescuの定理</a></strong></p>
   
   <p>モデル圏の理論を解説します。</p>
 
