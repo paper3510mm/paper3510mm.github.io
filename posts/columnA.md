@@ -26,6 +26,7 @@
   <li>inter alia 「とりわけ」</li>
   <li>vice versa 「逆もまた真なり」</li>
   <li>ab initio 「最初から」</li>
+  <li>ex nihilo 「無からの、ゼロからの」</li>
   <li>q.e.d. = quod erat demonstrandum 「以上が証明されるべきであった」</li>
 </ul>
 

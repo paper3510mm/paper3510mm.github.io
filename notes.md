@@ -9,6 +9,15 @@
 
 
 <ul>
+<li><p><strong><a href="/pdf/Kan_extension.pdf">Kan拡張のノート</a></strong></p>
+
+  <p>Kan拡張に関する個人的なノート。未完成なので、適当に更新します。</p>
+
+  <ul>
+    <li>2021/07/25: v1公開 (10 pages)</li>
+  </ul>
+</li>
+
 <li><p><strong><a href="/pdf/modelcat.pdf">モデル圏の理論</a></strong></p>
   
   <p>モデル圏の理論を解説します。</p>

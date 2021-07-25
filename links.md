@@ -188,9 +188,14 @@ Markdownベース+LaTeX
     - 可換図式を簡単に書くためのサービス。図式を書くと、それをTikZ(tikzcd環境のコード)に直してくれる
   - [MathKey](https://mathkey-app.com/)
     - 手書きの数式をTeXにおこしてくれる
+  - [Inkspace](https://inkscape.org/)
+    - 複雑な図でもInkspaceを使えば、簡単に。
+    - [How I draw figures for my mathematical lecture notes using Inkscape](https://castel.dev/post/lecture-notes-2/)
+  - [GraTeX](https://teth-main.github.io/GraTeX-web/static/) = Graph + LaTeX
   - [TeXclip](https://texclip.marutank.net/)
   - [Muboard](https://muboard.net/)
   - [数式入りの短い文章をブラウザ上でパパっと画像化](https://math-formula-image.oka-ryunoske.work/ja.html)
+  - [unicodeit](https://www.unicodeit.net/)
   - [LaTeX Color](http://latexcolor.com/)
   - [BibTex Cleaner](https://bibtexcleaner.herokuapp.com/)
 
@@ -223,6 +228,7 @@ Markdownベース+LaTeX
 
 次も参考になる。
 
+  - [伝わる文章作成の基本を学ぶための記事・学習コンテンツのまとめ](https://qiita.com/flyaway/items/b6682dbf116454a6814a)
   - [文章を書く心がけ/結城浩](http://www.hyuki.com/writing/writing.html)
   - [文章をわかりやすくする【18個】のルール](https://www.slideshare.net/juntoku_yoshizawa/ss-79083172)
   - 播磨尚朝，[J-Physics News Letter 5, 2(2018)](https://www.jphysics.jp/newsletter/2018/03/22/J-Physics_NL_web_v05.pdf)―日本語からはじめる．
@@ -344,6 +350,7 @@ Markdownベース+LaTeX
   - [キレイな提案書を作るためのデザインの基礎知識](https://the.alleslide.com/557)
   - [見やすいプレゼン資料の作り方](https://www.slideshare.net/yutamorishige50/ss-41321443)
   - [プレゼン講座等のリンク](http://www2.yukawa.kyoto-u.ac.jp/~akio.tomiya/slides.html)
+  - [東京都カラーユニバーサルデザインガイドライン](https://www.fukushihoken.metro.tokyo.lg.jp/kiban/machizukuri/kanren/color.html)
 
 スライド作成でのお役立ちサイト
   - [Beamer theme gallery](https://deic-web.uab.cat/~iblanes/beamer_gallery/index.html)
@@ -351,7 +358,7 @@ Markdownベース+LaTeX
   - [TeXでプレゼン―LaTeX Beamerを使う人のためのTips集](https://blog.tokor.org/2016/06/04/TeX%E3%81%A7%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3-LaTeX-Beamer%E3%82%92%E4%BD%BF%E3%81%86%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AETips%E9%9B%86/)
   - [EdrawMax](https://www.edrawsoft.com/jp/tour/edrawmax.html)
     - [【EdrawMax】簡単操作で印象的にアイデアを視覚化できるプレゼン作図ツール【プレゼンに最適】](https://www.youtube.com/watch?v=ZpCRSg7SAOg&feature=youtu.be)
-
+  - [“ダサい”を卒業する図形素材集「モノクロスライドテンプレート」](https://aragakisai.com/entry/monochrome-slide-template)
 
 
 <hr />
@@ -371,6 +378,7 @@ Markdownベース+LaTeX
  - [横書き句読点の謎/渡部善隆](http://ri2t.kyushu-u.ac.jp/~watanabe/RESERCH/MANUSCRIPT/OTHERS/YOKO/ten.pdf) (pdf)
  - [校閲記者の仕事を実演動画で - 毎日ことば](https://mainichi-kotoba.jp/blog-20210328)
 
+
  - [Exercism: Code practice and mentorship for everyone](https://exercism.io/) 
 
 <hr />
@@ -385,8 +393,11 @@ Markdownベース+LaTeX
   - [iso.2022.jp](http://iso.2022.jp/)
   - [でぃぐのページ](https://fujidig.github.io/)
   - [環付サクラ空間](http://ringed-sakura.space/)
-  - [箱のページ | o-ccah.github.io](https://o-ccah.github.io/)
+  - [箱のページ](https://o-ccah.github.io/)
   - [ワヘイヘイ概型](http://waheyhey.com/)
+  - [セシルの定理](https://sesiru.com/)
+  - [たくさんの猫と豊かな世界](https://cosmos8128.github.io/)
+  - [Mathpedia](https://math.jp/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)
 
 More to be added...
 
