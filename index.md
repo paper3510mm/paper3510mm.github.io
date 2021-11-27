@@ -46,7 +46,7 @@ LeTeXについて自分で書いたメモのページです。
 - 2020/08/27 : Postsページを作りました
 - 2021/03/06 : LeTeXについてのメモのページを作りました
 - 2021/06/11 : MathJax3とGoogle Analytics(GA4+UA)を導入しました
-- 2021/07/25 : 最終更新日
+- 2021/11/27 : 最終更新日
 
 #### <span style="font-size:11pt;">連絡先</span>
 - HN: ペーパー/paper3510mm
@@ -59,4 +59,4 @@ LeTeXについて自分で書いたメモのページです。
 - [数物セミナー](http://physmathseminar.web.fc2.com/) 14th～19th
 - [関西すうがく徒のつどい](https://kansaimath.tenasaku.com/) 11th, 12th
 - [ぶつりがく徒のつどい](http://physicstsudoi.client.jp/) 3rd～5th
-- [すうがく徒のつどい@オンライン](https://tsudoionline.netlify.app/) 1st
+- [すうがく徒のつどい@オンライン](https://tsudoionline.netlify.app/) 1st, 2nd

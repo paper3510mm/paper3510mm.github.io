@@ -17,9 +17,9 @@
      - [英語で論文を書く](#writing_papers)
      - [発表する](#presentation)
 
- 1. [その他](#others)
-
  1. [個人サイト/ブログ](#personal_websites)
+ 
+ 1. [その他](#others)
 
 <hr />
 
@@ -55,6 +55,14 @@
   - [数学は「人類の幸せ」のために何ができるのか－数学者フランシス・スーが語る「数の魔法」のストーリー](https://wired.jp/2017/07/21/francis-su/)
   - [なぜ研究者は学術書を翻訳すべきなのか？](https://note.com/suz_dg/n/nd855ba5b66b2)
   - [第1回 科学の役割と物理学的世界観/須藤靖 (UTokyo OCW)](https://ocw.u-tokyo.ac.jp/lecture_1598/)
+  - [微分積分学第一・演習 補足資料](http://www.ocw.titech.ac.jp/index.php?module=General&action=T0300&GakubuCD=7&KamokuCD=110800&KougiCD=202100065&Nendo=2021&lang=JA&vid=05&sort=date&sort=date&sort=date&q=%E6%80%A5%E3%81%8C%E3%81%B0%E5%9B%9E%E3%82%8C%E3%80%80%E3%82%B8%E3%83%AC%E3%83%B3%E3%83%9E%E3%80%80%E8%A8%BC%E6%98%8E&sort=date)
+    - 急がば回れ.pdf 「数学の勉強とインターネット」
+    - 文章.pdf 「わかりやすく書くには」
+    - 証明.pdf 「なぜ証明を重んずるのか」
+    - ジレンマ.pdf「To upload or not to upload」
+  - [数学における「自明」の意味/さのたけと](https://note.com/taketo1024/n/n32238ea13a41)
+
+
 
 
 
@@ -109,7 +117,7 @@ LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの�
      - [TeXの部屋](http://yunavi.la.coocan.jp/tex.html)
 
   - [SATySFi](https://github.com/gfngfn/SATySFi/blob/master/README-ja.md)
-    - TeXに代わる新しい組版システム
+    - 新しい組版システム
     - [SATySFi wiki](https://github.com/gfngfn/SATySFi/wiki/SATySFi-Wiki)
     - [The SATySFibook](https://github.com/gfngfn/SATySFi/wiki/The-SATySFi%E2%80%8Bbook-Web%E5%85%AC%E9%96%8B%E7%89%88-%E7%AC%AC1%E7%89%88)
     - [SATySFi Playground](http://satysfi-playground.tech/)
@@ -198,13 +206,14 @@ Markdownベース+LaTeX
   - [unicodeit](https://www.unicodeit.net/)
   - [LaTeX Color](http://latexcolor.com/)
   - [BibTex Cleaner](https://bibtexcleaner.herokuapp.com/)
+  - [TikZ Blog](https://latexdraw.com/)
 
 もっとTeX/LaTeX
   - [TeXとLaTeXの違い｜ラング・ラグー](https://blog.wtsnjp.com/2016/12/19/tex-and-latex/#SFNlmTM.twitter_responsive)
   - [TeXでDTP](http://www.dab.hi-ho.ne.jp/t-wata/tex/)
     - DTPとは、DeskTop Publishing (卓上出版)の略のこと
-  - [Stylish LaTeX Cover Page](https://latexdraw.com/stylish-latex-cover-page/)
-    - LaTeXで表紙デザインをするためのstep-by-stepチュートリアル
+  - [Cover Pages Gallery](https://latexdraw.com/tikz-cover-pages-gallery/)
+    - TikZによる表紙デザイン例
   - Web上でTeXライクな出力をする
       - [MathJax](https://www.mathjax.org/)
       - [KaTeX](https://katex.org/)
@@ -228,6 +237,7 @@ Markdownベース+LaTeX
 
 次も参考になる。
 
+  - [大学生のためのライティング基礎/千葉大学大学院人文社会科学研究科 教育・学修支援研究会](https://www.gshpa.chiba-u.jp/content/files/textbook/textbook_writing2017.pdf)
   - [伝わる文章作成の基本を学ぶための記事・学習コンテンツのまとめ](https://qiita.com/flyaway/items/b6682dbf116454a6814a)
   - [文章を書く心がけ/結城浩](http://www.hyuki.com/writing/writing.html)
   - [文章をわかりやすくする【18個】のルール](https://www.slideshare.net/juntoku_yoshizawa/ss-79083172)
@@ -274,7 +284,7 @@ Markdownベース+LaTeX
     - 数学論文を書くための心構えについて。英語文献がまとめられてます
   - [How to write math papers clearly/Igor Pak](https://igorpak.wordpress.com/2017/07/12/how-to-write-math-papers-clearly/)
     - 引用の仕方について
-  - [先行研究レビューについて（九州大学言語学講座　下地理則）](https://youtu.be/bKqtfZl7Z3c) (YouTubeより)
+  - [先行研究レビューについて（九州大学言語学講座 下地理則）](https://youtu.be/bKqtfZl7Z3c) (YouTube)
 
 
 <a id="writing_papers"></a>
@@ -300,6 +310,7 @@ Markdownベース+LaTeX
 が素晴らしく参考になる。次もかなり参考になる。
   - 理科系のための英文作法/杉原厚吉
   - [A Primer of Mathematical Writing 2nd edn/Steven G. Krantz](https://arxiv.org/abs/1612.04888)
+    - 初版邦訳：数学者の書きもの心得―英語表現から出版まで/後藤ミドリ訳(1999)
   - Writing Mathematical Papers in English/Jerzy Trzeciak
   - 数学のための英語教本/服部久美子
   - [正しい英語で論文を書くために/木田雅成](https://www.rs.tus.ac.jp/kida/english.html)
@@ -318,6 +329,8 @@ Markdownベース+LaTeX
       - [Shaper](https://dream-exp.net/shaper/)
   - [Google翻訳](https://translate.google.co.jp/?hl=ja)
     - 翻訳サービス
+  - [みらい翻訳](https://chrome.google.com/webstore/detail/%E3%81%BF%E3%82%89%E3%81%84%E7%BF%BB%E8%A8%B3/ehmajmfoaieibgpanghhnnnlfjjffhni) 
+    - WEB/PDFの翻訳のためのChrome拡張
   - [Grammarly: Free Online Writing Assistant](https://www.grammarly.com/)
     - 英文章チェックアプリ。受動態絶対なくすマン
   - [Writefull](https://www.writefull.com/writefull-for-word)
@@ -339,11 +352,14 @@ Markdownベース+LaTeX
 <a id="presentation"></a>
 
 #### 発表する
-発表スライドを作成するときは、次が参考になる。
+プレゼンテーションについて
+  - [大学生のためのプレゼンテーション基礎/千葉大学大学院人文社会科学研究科 教育・学修支援研究会](https://www.gshpa.chiba-u.jp/content/files/textbook/textbook_presentation2017.pdf) (pdf)
+
+発表スライドを作成するときは次が参考になる。
   - [発表スライドにこだわろう](http://pst-ic.hatenadiary.jp/entry/2017/12/12/000038)
   - [発表スライドについての基本的なルール/田崎晴明](https://www.gakushuin.ac.jp/~881791/presentation/slide.html)
 
-一般にわかりやすく伝えるためのデザイン論は、次のようなページで解説されている。
+一般にわかりやすく伝えるためのデザイン論は次のようなページで解説されている。
   - [伝わるデザイン 研究発表のユニバーサルデザイン](http://tsutawarudesign.com/)
   - [伝わるデザイン 高校生のための研究発表の手引き](https://student.tsutawarudesign.com/powerpoint_slide/)
   - [これだけ守れば見やすくなるデザインの基礎](https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu)
@@ -356,9 +372,46 @@ Markdownベース+LaTeX
   - [Beamer theme gallery](https://deic-web.uab.cat/~iblanes/beamer_gallery/index.html)
   - [Beamer読本─講演用スライド作成のために─](http://ayapin-film.sakura.ne.jp/LaTeX/Slides/Beamer-tutorial.pdf) (pdf)
   - [TeXでプレゼン―LaTeX Beamerを使う人のためのTips集](https://blog.tokor.org/2016/06/04/TeX%E3%81%A7%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3-LaTeX-Beamer%E3%82%92%E4%BD%BF%E3%81%86%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AETips%E9%9B%86/)
+  - [draw.io](https://www.draw.io): 作図ツール
   - [EdrawMax](https://www.edrawsoft.com/jp/tour/edrawmax.html)
     - [【EdrawMax】簡単操作で印象的にアイデアを視覚化できるプレゼン作図ツール【プレゼンに最適】](https://www.youtube.com/watch?v=ZpCRSg7SAOg&feature=youtu.be)
   - [“ダサい”を卒業する図形素材集「モノクロスライドテンプレート」](https://aragakisai.com/entry/monochrome-slide-template)
+
+
+<hr />
+<a id="personal_websites"></a>
+
+### 個人サイト/ブログ
+
+  - [炬燵論法](https://litharge3141.github.io/)<br />
+    数値計算をしている友人のサイトです。
+  - [不動点](https://ksanki.github.io/)
+  - [壱大整域](http://alg-d.com/)
+  - [iso.2022.jp](http://iso.2022.jp/)
+  - [でぃぐのページ](https://fujidig.github.io/)
+  - [環付サクラ空間](http://ringed-sakura.space/)
+  - [箱のページ](https://o-ccah.github.io/)
+  - [ワヘイヘイ概型](http://waheyhey.com/)
+  - [セシルの定理](https://sesiru.com/)
+  - [たくさんの猫と豊かな世界](https://cosmos8128.github.io/)
+
+More to be added...
+
+  - [前田洋太のホームページ](https://www.math.kyoto-u.ac.jp/~y.maeda/)<br />
+    友人の研究者です。
+
+
+#### 数学リンク
+  - [Mathpedia](https://math.jp/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)<br />
+    現代数学を整理し、万人に数学学習への筋道を示すことで数学の市民化を目指す。
+  - [Algebraic Topology: A guide to literature](http://pantodon.jp/index.rb?body=index)<br />
+    代トポ関連の話題についてかなり詳しい。
+  - [数学の犬](https://sites.google.com/site/mathdogs1121/home)<br />
+    代トポ関連。
+  - [『増訂解析概論』(高木貞治 著)の現代仮名遣い版](https://linesegment.web.fc2.com/books/mathematics/zouteikaisekigairon/index.html)<br />
+    解析概論の現代仮名遣い版。
+  - [満ちてくる海 (The Rising Sea) 日本語訳](http://searial.web.fc2.com/sea/index.html)<br />
+    Vakilの代数幾何学の本の日本語化。
 
 
 <hr />
@@ -380,30 +433,6 @@ Markdownベース+LaTeX
 
 
  - [Exercism: Code practice and mentorship for everyone](https://exercism.io/) 
-
-<hr />
-<a id="personal_websites"></a>
-
-### 個人サイト/ブログ
-
-  - [炬燵論法](https://litharge3141.github.io/)<br />
-    数値計算をしている友人のサイトです。
-  - [不動点](https://ksanki.github.io/)
-  - [壱大整域](http://alg-d.com/)
-  - [iso.2022.jp](http://iso.2022.jp/)
-  - [でぃぐのページ](https://fujidig.github.io/)
-  - [環付サクラ空間](http://ringed-sakura.space/)
-  - [箱のページ](https://o-ccah.github.io/)
-  - [ワヘイヘイ概型](http://waheyhey.com/)
-  - [セシルの定理](https://sesiru.com/)
-  - [たくさんの猫と豊かな世界](https://cosmos8128.github.io/)
-  - [Mathpedia](https://math.jp/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)
-
-More to be added...
-
-  - [前田洋太のホームページ](https://www.math.kyoto-u.ac.jp/~y.maeda/)<br />
-    友人の研究者です。
-
 
 
 ---
