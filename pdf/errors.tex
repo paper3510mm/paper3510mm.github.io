@@ -1,0 +1,187 @@
+%%% errors
+
+
+\documentclass[a4j,11pt,dvipdfmx]{jsarticle}
+
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usepackage{tikz-cd}
+\usepackage{comment}
+
+
+
+
+% amsthmによる定理環境の設定
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}
+\newtheorem*{theorem*}{定理}
+\newtheorem{definition}[theorem]{定義}
+\newtheorem*{definition*}{定義}
+\renewcommand\proofname{\bf 証明}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+
+% ハイパーリンクに色を付ける
+\usepackage{xcolor}
+\hypersetup{
+	colorlinks=true,
+	citecolor=blue,
+	linkcolor=blue,
+	urlcolor=blue,
+}
+
+
+
+% section番号の表示を変更する
+\renewcommand{\thesection}{第\arabic{section}章}
+
+
+
+%% 誤植表の色付け
+\usepackage{colortbl}
+\usepackage{ulem} %\sout で取り消し線を引く
+%\textcolor{red}{   }
+\newcommand{\red}[1]{\textcolor{red}{#1}} 
+%%% 文字を red にする。使い方：\ref{hoge}
+\newcommand{\orangefull}[1]{\multicolumn{1}{|>{\columncolor[cmyk]{0,0.3,1,0}}c|}{#1}}
+%%% ページ番号のマスをオレンジにする。使い方：\ref{299}
+
+
+
+
+\title{}
+\author{@%
+	\thanks{Twitter: \url{} }}
+\date{}
+
+
+
+\begin{document}
+%	\maketitle
+%\begin{abstract}
+%\end{abstract}
+%\tableofcontents
+
+\begin{center}
+  \Large{「ファイバー束とホモトピー」 非公式誤植表} 
+  \footnote{玉木大，『ファイバー束とホモトピー』（森北出版），2020/4/30発行 第1版第1刷 準拠}
+
+ \large{compiled on \today}
+ \vspace{5mm}
+\end{center}
+
+
+
+表でページ番号のマスが\fcolorbox{black}[cmyk]{0,0.3,1,0}{オレンジ}になっているところは，気をつけるべき誤植と感じたところです．
+
+
+
+
+\section{ファイバーを束ねる}
+
+
+\section{雛形としての被覆空間}
+
+
+
+{\centering
+\begin{tabular}{|c|l|c|c|} \hline
+ \rowcolor[gray]{0.8} 
+ p & 位置 & 誤 & 正 \\ \hline
+ 113 & 14行目 & 射$f/s = [f,W,s] \in \mathscr{C}_S(X,Y)$に対し & 射$\red{(}f/s\red{)} = [f,W,s] \in \mathscr{C}_S(X,Y)$に対し \\ \hline
+\end{tabular}}
+
+
+
+
+
+\section{ファイバー束の基本}
+
+{\centering
+\begin{tabular}{|c|l|c|c|} \hline
+	\rowcolor[gray]{0.8} 
+	p & 位置 & 誤 & 正 \\ \hline
+	
+	 & 行目 &  &  \\ \hline
+\end{tabular}}
+
+
+
+
+\section{ファイバー束の分類}
+
+{\centering
+\begin{tabular}{|c|l|c|c|} \hline
+	\rowcolor[gray]{0.8} 
+	p & 位置 & 誤 & 正 \\ \hline
+	298 & 11行目 & 任意の$k \in \mathbb{N}$に対して & \red{(1)} 任意の$k \in \mathbb{N}$に対して \\ \hline
+	\orangefull{299} & 5-6行目 & \begin{tabular}{c}
+		$\ell$をこれら有限個の$j$すべてより\\大きくなるようにとれば
+	\end{tabular} & \begin{tabular}{c}
+	$\ell \mathrel{\red{\geq k}}$をこれら有限個の$j$すべてより\\大きくなるようにとれば
+	\end{tabular}　\\ \hline
+\end{tabular}
+}
+
+
+
+\section{ファイブレーション}
+
+{\centering
+\begin{tabular}{|c|l|c|c|} \hline
+	\rowcolor[gray]{0.8} 
+	p & 位置 & 誤 & 正 \\ \hline
+	 & 行目 &  &  \\ \hline
+\end{tabular}
+}
+
+
+
+
+\section{あとがきに代えて}
+
+{\centering
+\begin{tabular}{|c|l|c|c|} \hline
+	\rowcolor[gray]{0.8} 
+	p & 位置 & 誤 & 正 \\ \hline
+	394 & 20行目 & また，(6.41)の右側の四角形 & (注1) \\ \hline
+	 & 行目 &  &  \\ \hline
+\end{tabular}
+}
+\vspace{\baselineskip}
+
+(注1): 図式(6.41)ではない．正しくは，～
+
+
+
+
+\setcounter{section}{0}
+\renewcommand{\thesection}{付録}%
+\renewcommand{\thesubsection}{\Alph{section}.\arabic{subsection}}
+
+\section{その他諸々の話題}
+
+{
+\centering
+\begin{tabular}{|c|l|c|c|} \hline
+	\rowcolor[gray]{0.8} 
+	p & 位置 & 誤 & 正 \\ \hline
+	
+	　& 行目 &  &  \\ \hline
+\end{tabular}
+}
+
+
+
+
+
+
+
+
+\end{document}
