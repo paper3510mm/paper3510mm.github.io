@@ -28,6 +28,15 @@
   </ul>
 </li>
 
+<li><p><strong><a href="/pdf/fiberedcat_and_stack.pdf">ファイバー圏とスタックの理論</a></strong></p>
+  
+  <p>ファイバー圏とスタックの理論を解説します。</p>
+
+  <ul>
+    <li>2022/01/03: v1公開 (61 pages)</li>
+  </ul>
+</li>
+
 
 
 </ul>

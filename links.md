@@ -204,9 +204,12 @@ Markdownベース+LaTeX
   - [Muboard](https://muboard.net/)
   - [数式入りの短い文章をブラウザ上でパパっと画像化](https://math-formula-image.oka-ryunoske.work/ja.html)
   - [unicodeit](https://www.unicodeit.net/)
+  - [LaTeX Cookbook](https://latex-cookbook.net/) : Collection of LaTeX recipes
   - [LaTeX Color](http://latexcolor.com/)
   - [BibTex Cleaner](https://bibtexcleaner.herokuapp.com/)
   - [TikZ Blog](https://latexdraw.com/)
+  - [Lib arXiv](https://naru.jpn.com/lib_arxiv/ja/)
+    - arxiv.orgに投稿される論文を閲覧・保存・共有するためのiOSアプリ
 
 もっとTeX/LaTeX
   - [TeXとLaTeXの違い｜ラング・ラグー](https://blog.wtsnjp.com/2016/12/19/tex-and-latex/#SFNlmTM.twitter_responsive)
@@ -242,6 +245,7 @@ Markdownベース+LaTeX
   - [文章を書く心がけ/結城浩](http://www.hyuki.com/writing/writing.html)
   - [文章をわかりやすくする【18個】のルール](https://www.slideshare.net/juntoku_yoshizawa/ss-79083172)
   - 播磨尚朝，[J-Physics News Letter 5, 2(2018)](https://www.jphysics.jp/newsletter/2018/03/22/J-Physics_NL_web_v05.pdf)―日本語からはじめる．
+  - ロジカル・シンキング―論理的な思考と構成のスキル/照屋華子、岡田恵子
 
 
 
@@ -298,6 +302,7 @@ Markdownベース+LaTeX
   - The Elements of Style, Fourth Edition/William Strunk, Jr.
     - [1st edition](http://www.gutenberg.org/ebooks/37134?msg=welcome_stranger)はオープンソース化されている
     - [初版日本語訳](http://www.kt.rim.or.jp/~hisashim/elementsofstyle/)もある
+  - [The Sense of Style: The Thinking Person’s Guide to Writing in the 21st Century/Steven Pinker](https://stevenpinker.com/publications/sense-style-thinking-persons-guide-writing-21st-century)
 
 科学英語については次で学べる。
   - [科学英語を考える](https://www.s.u-tokyo.ac.jp/ja/story/newsletter/english/)
@@ -378,6 +383,12 @@ Markdownベース+LaTeX
   - [“ダサい”を卒業する図形素材集「モノクロスライドテンプレート」](https://aragakisai.com/entry/monochrome-slide-template)
 
 
+#### 文献管理
+  - [LaTeX文書置き場としてのGit/GitHub最速チュートリアル](https://qiita.com/Nmatician/items/765edfbd726725d1ae8c)
+  - [GitHub演習](https://kaityo256.github.io/github/)
+  - [GitHub の基礎 - 管理の基本と製品の機能。](https://docs.microsoft.com/ja-jp/learn/paths/github-administration-products/)
+
+
 <hr />
 <a id="personal_websites"></a>
 
@@ -403,15 +414,35 @@ More to be added...
 
 #### 数学リンク
   - [Mathpedia](https://math.jp/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)<br />
-    現代数学を整理し、万人に数学学習への筋道を示すことで数学の市民化を目指す。
-  - [Algebraic Topology: A guide to literature](http://pantodon.jp/index.rb?body=index)<br />
+    現代数学を整理し、数学学習への筋道を示すことで数学の市民化を目指す。
+  - [Algebraic Topology: A guide to literature](http://pantodon.jp/index.rb?body=index) (pantodon)<br />
     代トポ関連の話題についてかなり詳しい。
   - [数学の犬](https://sites.google.com/site/mathdogs1121/home)<br />
     代トポ関連。
+  - [nLab](https://ncatlab.org/nlab/show/HomePage)<br />
+    圏論周辺のwiki。
+  - [Kerodon](https://kerodon.net/)<br />
+    高次圏のオンラインテキスト。
+  - [The Stacks project](https://stacks.math.columbia.edu/browse)<br />
+    代数幾何学のオンラインテキスト。
+  - [The Moduli Space](https://book.themoduli.space/browse)<br />
+    モジュライ理論のオンラインテキスト。
+  - [The Rising Sea](http://therisingsea.org/?page_id=3)<br />
+    Murfetのノート群。
   - [『増訂解析概論』(高木貞治 著)の現代仮名遣い版](https://linesegment.web.fc2.com/books/mathematics/zouteikaisekigairon/index.html)<br />
     解析概論の現代仮名遣い版。
+  - [小島順「線型代数」(1976)](http://math.oshirase.com/%e7%b7%9a%e5%9e%8b%e4%bb%a3%e6%95%b0/)
   - [満ちてくる海 (The Rising Sea) 日本語訳](http://searial.web.fc2.com/sea/index.html)<br />
     Vakilの代数幾何学の本の日本語化。
+  - [The Mathematics Genealogy Project](https://www.genealogy.math.ndsu.nodak.edu/)<br />
+    数学者の系譜を記録する計画。
+  - [MathSciNet](https://mathscinet.ams.org/mathscinet)<br />
+    アメリカ数学会が運営する数学論文データベース。
+  - [zbMATH Open](https://www.zbmath.org/)<br />
+    ヨーロッパ数学会が運営する数学論文データベース。
+
+#### 物理学リンク
+  - [物理学に関する推薦書リスト](http://maya.phys.kyushu-u.ac.jp/~knomura/research/guide-phys/bookguide-phys-j.html)
 
 
 <hr />
