@@ -138,7 +138,7 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
  - eprint
  - doi
  - mrnumber
- - zblnumber
+ - zbl
  - issn
  - isbn
 
@@ -196,16 +196,17 @@ pBibTeX標準のbstファイル：
  - jname：「[Kin80] 木下：理科系の作文技術…」の形式で出力される
  - jipsj, jorsj, tieice, tipsj：その他各学会用
 
-数学系の人にとっては、後述のMathSciNetとの連携から amsplain / amsalpha も使われる。
+数学系の人にとっては、後述のMathSciNetとの連携から amsplain.bst / amsalpha.bst も使われる。どのように出力されるかは、[Full bibliography styles compilation](https://www.bibtex.com/bibliography-styles/)でサンプルを見ることができる。
 
-どのように出力されるかは、[Full bibliography styles compilation](https://www.bibtex.com/bibliography-styles/)でサンプルを見ることができる。
-
-
-
+日本語文献を含む場合に用いるbstファイルとして、武田史郎先生による jecon.bst がある。大きな特徴として他のbstファイルよりカスタマイズが容易にできるように設計されており、(経済学用とあるが)自分で改変して好みの出力にしやすい。
+ - [jecon.bst (経済学用のBibTeX style file)](https://github.com/ShiroTakeda/jecon-bst)
 
 
 
-好みの表示を得るためにbstファイルを編集したいという人は
+
+
+
+そのほか、好みの表示を得るためにbstファイルを直接編集したいという人には
 - <a href="https://qiita.com/HexagramNM/items/7c59f307e55010caf693">Bibtexのスタイルファイル：bstファイルの文法</a>
 - <a href="https://qiita.com/HexagramNM/items/3ad757a9f5ee5d15e363">日本語と英語を混ぜられるようにbibtexスタイルファイルを改造しよう</a>
 - <a href="https://www.okomeda.net/wp/506/">[BiBTeX] bst ファイルのカスタマイズ - 今西衞研究室</a>
@@ -272,7 +273,7 @@ Mathematics Subject Classification (MSC)は、MRとzbMathが共同で開発し�
 ISSN (International Standard Serial Number: 国際標準逐次刊行物番号) は、雑誌を識別するための国際的なコード番号。BibTeXでは、issnフィールドが用いられる。
 
 
-ISBN（International Standard Book Number: 国際標準図書番号） は、書籍および資料を識別するための国際的なコード番号。BibTeXでは、isbnフィールドが用いられる。
+ISBN (International Standard Book Number: 国際標準図書番号) は、書籍および資料を識別するための国際的なコード番号。BibTeXでは、isbnフィールドが用いられる。
 
 
 <a id="problems"></a>
@@ -287,7 +288,8 @@ ISBN（International Standard Book Number: 国際標準図書番号） は、書
 
 
 ---
-戻る：[雰囲気でBibTeX入門（その１）](/latex/bibtex1)</br>
+戻る：[雰囲気でBibTeX入門（その１）](/latex/bibtex1)
+
 続く：[雰囲気でBibTeX入門（その３）](/latex/bibtex3)
 
 **[「LaTeXについてのメモ」に戻る](/latex)**

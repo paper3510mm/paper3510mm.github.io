@@ -44,6 +44,7 @@
   - [学生時代をどう過ごすか/篠本滋](http://www.ton.scphys.kyoto-u.ac.jp/~shino/students.html)
   - [東京大学理学部数学科 学位記授与式祝辞/古田幹雄 (2020年3月)](https://www.ms.u-tokyo.ac.jp/kyoumu/11856a071aa06cce122ee117b45c2a3a3c7732be.pdf) (pdf)
   - [東京大学大学院数理科学研究科 学位記授与式祝辞/古田幹雄 (2020年3月)](https://www.ms.u-tokyo.ac.jp/kyoumu/5d8c24abb32df1e600c62790fc31b7f3906cc21a.pdf) (pdf)
+  - [平成26年度 東京大学教養学部学位記伝達式 式辞/石井洋二郎](https://www.c.u-tokyo.ac.jp/info/about/history/dean/2013-2015/h27.3.25ishii.html)
   - [日々の雑感的なもの/田崎晴明 2/2/2003](http://www.gakushuin.ac.jp/~881791/d/0302.html#02)
   - [夢のない理系](https://anond.hatelabo.jp/touch/20170922053438?mode=amp)
   - [なぜ博士号をとったのに大学教員にならないのか](https://www.ki1tos.com/entry/2020/05/21/181426)
@@ -103,8 +104,9 @@ LaTeXの入門書。LaTeXを始めるには、まずはこれから！
 LaTeXへの入門は、y.さんのTeX講習会資料。文書を書くときの心構えに、黒木先生のページと小田先生のpdfは必読。書き方・構成は、荒井さんのpdfを参照。
 
 
-  - TeXの作法・小ネタ
+  - LaTeXの作法・小ネタ
     - [LaTeX文書作成方法](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/make_doc.html)
+    - [LaTeX でいろんなパッケージをusepackageする](https://qiita.com/Yarakashi_Kikohshi/items/97f9f920fb23974e0011)
     - [使ってはいけない LaTeX のコマンド・パッケージ・作法(2013)](https://ichiro-maruta.blogspot.com/2013/03/latex.html?m=1)
     - [TeX・LaTeXについての覚え書き](http://tony.in.coocan.jp/latex/index.html)
     - [LaTeXのちょっと便利な小技集/長島順清](http://osksn2.hep.sci.osaka-u.ac.jp/~naga/miscellaneous/tex/tex-tips0.html)
@@ -305,9 +307,9 @@ Markdownベース+LaTeX
   - [The Sense of Style: The Thinking Person’s Guide to Writing in the 21st Century/Steven Pinker](https://stevenpinker.com/publications/sense-style-thinking-persons-guide-writing-21st-century)
 
 科学英語については次で学べる。
-  - [科学英語を考える](https://www.s.u-tokyo.ac.jp/ja/story/newsletter/english/)
   - [The Art of Writing Scientific Papers―英語科学論文の書き方](https://www.myu-inc.jp/awsp/AWSP.html)
   - [Stanford大学流科学技術論文の書き方](http://hontolab.org/tips-for-research-activity/tips-for-writing-technical-papers/)
+  - [科学英語を考える/トム・ガリー(東京大学理学系研究科)](https://www.s.u-tokyo.ac.jp/ja/story/newsletter/english/)
 
 実際に(数学の)論文を英語で書くときには、
   - 数学のための英語案内/野水克己 (絶版)
@@ -323,6 +325,8 @@ Markdownベース+LaTeX
   - [数学の常識・非常識—由緒正しいTEX入力法/小田忠雄(1999)](http://www.math.titech.ac.jp/~taguchi/nihongo/gakusei/typesetting.html)の三章
   - [The Grammar According to West by Douglas B. West](https://faculty.math.illinois.edu/~west/grammar.html)
   - [Writing and Publishing Scientific Papers: A Primer for the Non-English Speaker/Gábor Lövei (2021)](https://www.openbookpublishers.com/product/1272)
+  - [科学論文に役立つ英語](http://neutron.appl-beam.ibaraki.ac.jp/ohoyamak/index.html#index)
+  - [科学英語文法 覚え書き(冠詞について)/山下理恵](https://www.jstage.jst.go.jp/article/jsssj/34/1/34_46/_article/-char/ja/)
   
 そのほかお役立ちサイト・サービス
   - [Hyper Collocation - dictionary based on arXiv repository](https://hypcol.marutank.net/ja/)
@@ -332,8 +336,11 @@ Markdownベース+LaTeX
     - DeepL 改行の問題に対応して、次のような亜種もある
       - [PDF翻訳職人](https://translate-preprocessing.web.app/)
       - [Shaper](https://dream-exp.net/shaper/)
+      - [英字論文フォーマッタ](http://to-normal-code.herokuapp.com/to-normal-code)
   - [Google翻訳](https://translate.google.co.jp/?hl=ja)
     - 翻訳サービス
+  - [meta翻訳](https://meta-school.web.app/translation)
+    - 日本人個人で開発された英日・日英翻訳サービス
   - [みらい翻訳](https://chrome.google.com/webstore/detail/%E3%81%BF%E3%82%89%E3%81%84%E7%BF%BB%E8%A8%B3/ehmajmfoaieibgpanghhnnnlfjjffhni) 
     - WEB/PDFの翻訳のためのChrome拡張
   - [Grammarly: Free Online Writing Assistant](https://www.grammarly.com/)
@@ -377,10 +384,14 @@ Markdownベース+LaTeX
   - [Beamer theme gallery](https://deic-web.uab.cat/~iblanes/beamer_gallery/index.html)
   - [Beamer読本─講演用スライド作成のために─](http://ayapin-film.sakura.ne.jp/LaTeX/Slides/Beamer-tutorial.pdf) (pdf)
   - [TeXでプレゼン―LaTeX Beamerを使う人のためのTips集](https://blog.tokor.org/2016/06/04/TeX%E3%81%A7%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3-LaTeX-Beamer%E3%82%92%E4%BD%BF%E3%81%86%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AETips%E9%9B%86/)
+  - [Markdownでスライドを書こう!](https://toshitnk.github.io/hp/misc/doc/advent21_1.pdf) (pdf)
   - [draw.io](https://www.draw.io): 作図ツール
   - [EdrawMax](https://www.edrawsoft.com/jp/tour/edrawmax.html)
     - [【EdrawMax】簡単操作で印象的にアイデアを視覚化できるプレゼン作図ツール【プレゼンに最適】](https://www.youtube.com/watch?v=ZpCRSg7SAOg&feature=youtu.be)
   - [“ダサい”を卒業する図形素材集「モノクロスライドテンプレート」](https://aragakisai.com/entry/monochrome-slide-template)
+
+プレゼンテーションツール
+ - [PymPress Presenter](https://github.com/Cimbali/pympress)
 
 
 #### 文献管理
@@ -405,6 +416,7 @@ Markdownベース+LaTeX
   - [ワヘイヘイ概型](http://waheyhey.com/)
   - [セシルの定理](https://sesiru.com/)
   - [たくさんの猫と豊かな世界](https://cosmos8128.github.io/)
+  - [ゆう景](https://yuu7269.github.io/)
 
 More to be added...
 
@@ -458,10 +470,12 @@ More to be added...
  - GitHub PagesによるHPの作成について
    - [GitHubを使ってMarkdown文書を５ステップでホームページとして公開する方法](https://qiita.com/MahoTakara/items/3800e9dc83b530d0a050)
    - [ここまで出来る! GitHubのMarkdownで書くウェブページ　独自テーマの開発](https://qiita.com/MahoTakara/items/e3d88a0d5d128bb07b27)
+   - [GitHub でお手軽文書公開/フィッシュ](https://kyodaisuu.github.io/github/index.html)
 
  - [横書き句読点の謎/渡部善隆](http://ri2t.kyushu-u.ac.jp/~watanabe/RESERCH/MANUSCRIPT/OTHERS/YOKO/ten.pdf) (pdf)
  - [校閲記者の仕事を実演動画で - 毎日ことば](https://mainichi-kotoba.jp/blog-20210328)
 
+ - [青空文庫](https://www.aozora.gr.jp/)
 
  - [Exercism: Code practice and mentorship for everyone](https://exercism.io/) 
 

@@ -52,6 +52,7 @@
 フランス語表現
 <ul>
   <li>à la 「～流の」</li>
+  <li>tout court 「ただ…だけ」</li>
 </ul>
 
 
