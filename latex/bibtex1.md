@@ -268,8 +268,8 @@ TeXstudioで`pbibtex`を実行する操作は、ツール->文献（ショート
 
 TeXstudioでもlatexmkの設定ができる。上の.latexmkrcのファイルは作ってあるとするとき、TeXstudioを開いて
   - オプション->TeXstudioの設定 と進む
-  - コマンドのLatexmkの欄を、`latexmk.exe -pdfdvi %.tex`に変更する
-  - ビルドの"ビルド&表示"の欄のスパナ(レンチ?)アイコンをクリックして、コマンドのリストを上から順に、Latexmk、DviPdf、PDF Viewerになるように追加・並べ替える
+  - コマンドのLatexmkの欄を、`latexmk.exe -pdfdvi %.tex` に変更する
+  - ビルドの「ビルド&表示」の欄のスパナ(レンチ?)アイコンをクリックして、コマンドのリストを上から順に、Latexmk、DviPdf、PDF Viewerになるように追加・並べ替える
 
 とすると、ビルド&表示(ショートカットはデフォルトでF5)すればlatexmkが動いてくれるようになる。
 

@@ -83,53 +83,57 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
 ```
 である。フィールドの中身を囲う`{ }`は`" "`でも良い。
 
-エントリー（文献の種類）には、主に
- - Article：雑誌記事や論文誌の論文
- - Book：出版社のある書籍
- - Booklet：出版社のない書籍
- - Inbook：本の一部を参照するときに使う
- - Incollection：本の一部でそれ自身に表題があるもの
- - Proceedings：学術会議のプロシーディング（講演要旨集）
- - Inproceedings：学術会議のプロシーディング（講演要旨集）の一部
- - Conference：学術会議の会議録
- - Masterthesis：修士論文
- - Phdthesis：博士論文
- - Techreport：研究機関の発行するテクニカルレポート
- - Manual：マニュアル
- - Unpublished：公式な出版物ではないもの
- - Misc：そのほか
- - Comment：コメント用。ここに書いたものは無視される
- 
- の15種類ある。フィールドの種類はいくつもあるが、各エントリーに対して必須フィールド・任意フィールド・無視されるフィールドであるかどうかが決まっている。
+エントリー（文献の種類）には、主に次の15種類ある。
+| エントリー | 概要 |
+| ---- | ---- |
+| Article |  雑誌記事や論文誌の論文  |
+| Book | 出版社のある書籍 |
+| Booklet | 出版社のない書籍 |
+| Inbook | 本の一部を参照するときに使う |
+| Incollection | 本の一部でそれ自身に表題があるもの |
+| Proceedings | 学術会議のプロシーディング（講演要旨集） |
+| Inproceedings | 学術会議のプロシーディング（講演要旨集）の一部 |
+| Conference | 学術会議の会議録 |
+| Masterthesis | 修士論文 |
+| Phdthesis | 博士論文 |
+| Techreport | 研究機関の発行するテクニカルレポート |
+| Manual | マニュアル |
+| Unpublished | 公式な出版物ではないもの |
+| Misc | そのほか |
+| Comment | コメント用。ここに書いたものは無視される |
+
+ フィールドの種類はいくつもあるが、各エントリーに対して必須フィールド・任意フィールド・無視されるフィールドであるかどうかが決まっている。
 
  - 必須フィールド：必要なフィールド。記述がなければエラーが出る。
  - 任意フィールド：記述があれば文献情報として出力されるが、無くてもいい。
  - 無視されるフィールド：上記以外のフィールドはすべて無視される。主に概要やURLの情報などのメモとして使われる。
 
 ただし、どのフィールドが有効なフィールド（無視されないフィールド）なのかは使用しているbstファイルに依存する。例えば、最も標準的な [plain.bst](https://ftp.kddilabs.jp/CTAN/biblio/bibtex/base/plain.bst)（日本語版は [jplain.bst](https://github.com/texjporg/pbibtex-base/blob/master/jplain.bst)）では以下のフィールドが有効である。
- - author：著者
- - editor：編集者
- - title：本・論文・記事のタイトル
- - journal：雑誌
- - volume：雑誌や本の巻
- - series：本のシリーズ
- - number：雑誌の号やシリーズ本の号
- - edition：本の版
- - chapter：章番号、節番号
- - pages：ページ
- - publisher：出版社
- - address：出版社や学術会議の開催場所
- - month：出版月
- - year：出版年
- - booktitle：文献がほんの一部であるときの本の名前
- - institution：テクニカルレポートの発行機関
- - type：テクニカルレポートの種類
- - organization：学術会議の主催やマニュアルの発行元
- - howpublished：特殊な出版形態をとる場合の説明
- - school：学位論文の大学
- - note：その他何でも出力したいこと
- - key：著者名がないときの並び替えに使う
- - yomi：日本人著者の読み。jplain.bstで有効
+| フィールド | 概要 |
+| ---- | ---- |
+| author | 著者 |
+| editor | 編集者 |
+| title | 本・論文・記事のタイトル |
+| journal | 雑誌 |
+| volume | 雑誌や本の巻 |
+| series | 本のシリーズ |
+| number | 雑誌の号やシリーズ本の号 |
+| edition | 本の版 |
+| chapter | 章番号、節番号 |
+| pages | ページ |
+| publisher | 出版社 |
+| address | 出版社や学術会議の開催場所 |
+| month | 出版月 |
+| year | 出版年 |
+| booktitle | 文献がほんの一部であるときの本の名前 |
+| institution | テクニカルレポートの発行機関 |
+| type | テクニカルレポートの種類 |
+| organization | 学術会議の主催やマニュアルの発行元 |
+| howpublished | 特殊な出版形態をとる場合の説明 |
+| school | 学位論文の大学 |
+| note | その他何でも出力したいこと |
+| key | 著者名がないときの並び替えに使う |
+| yomi | 日本人著者の読み。jplain.bstで有効 |
 
 これら以外は(j)plain.bstでは無視される。例えば、`memo = {メモ欄}`と書いていても出力には反映されないので、しばしばメモ用に用いられたりする。もちろん、使用するbstファイルによって有効なフィールドは異なり、
  - crossref
