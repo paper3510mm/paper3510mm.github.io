@@ -16,8 +16,11 @@
      - [研究者を志望すること](#toward_researcher)
      - [英語で論文を書く](#writing_papers)
      - [発表する](#presentation)
+     - [文献管理](#bib_management)
 
  1. [個人サイト/ブログ](#personal_websites)
+     - [数学リンク](#math_links)
+     - [物理学リンク](#phys_links)
  
  1. [その他](#others)
 
@@ -341,6 +344,8 @@ Markdownベース+LaTeX
     - 翻訳サービス
   - [meta翻訳](https://meta-school.web.app/translation)
     - 日本人個人で開発された英日・日英翻訳サービス
+  - [みんなの自動翻訳＠TexTra](https://mt-auto-minhon-mlt.ucri.jgn-x.jp/)
+    - NICTが開発した翻訳サイト。翻訳のデータ収集も兼ねており、ログインが必要
   - [みらい翻訳](https://chrome.google.com/webstore/detail/%E3%81%BF%E3%82%89%E3%81%84%E7%BF%BB%E8%A8%B3/ehmajmfoaieibgpanghhnnnlfjjffhni) 
     - WEB/PDFの翻訳のためのChrome拡張
   - [Grammarly: Free Online Writing Assistant](https://www.grammarly.com/)
@@ -393,6 +398,7 @@ Markdownベース+LaTeX
 プレゼンテーションツール
  - [PymPress Presenter](https://github.com/Cimbali/pympress)
 
+<a id="bib_management"></a>
 
 #### 文献管理
   - [LaTeX文書置き場としてのGit/GitHub最速チュートリアル](https://qiita.com/Nmatician/items/765edfbd726725d1ae8c)
@@ -405,7 +411,7 @@ Markdownベース+LaTeX
 
 ### 個人サイト/ブログ
 
-  - [炬燵論法](https://litharge3141.github.io/)<br />
+  - [炬燵論法](https://litharge3141.github.io/)<br>
     数値計算をしている友人のサイトです。
   - [不動点](https://ksanki.github.io/)
   - [壱大整域](http://alg-d.com/)
@@ -420,38 +426,47 @@ Markdownベース+LaTeX
 
 More to be added...
 
-  - [前田洋太のホームページ](https://www.math.kyoto-u.ac.jp/~y.maeda/)<br />
+  - [前田洋太のホームページ](https://www.math.kyoto-u.ac.jp/~y.maeda/)<br>
     友人の研究者です。
 
+<a id="math_links"></a>
 
 #### 数学リンク
-  - [Mathpedia](https://math.jp/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)<br />
+  - [Mathpedia](https://math.jp/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)<br>
     現代数学を整理し、数学学習への筋道を示すことで数学の市民化を目指す。
-  - [Algebraic Topology: A guide to literature](http://pantodon.jp/index.rb?body=index) (pantodon)<br />
-    代トポ関連の話題についてかなり詳しい。
-  - [数学の犬](https://sites.google.com/site/mathdogs1121/home)<br />
+  - [Algebraic Topology: A guide to literature](http://pantodon.jp/index.rb?body=index)<br>
+    通称pantodon。代トポ関連の話題についてかなり詳しい。
+  - [数学の犬](https://sites.google.com/site/mathdogs1121/home)<br>
     代トポ関連。
-  - [nLab](https://ncatlab.org/nlab/show/HomePage)<br />
+  - [nLab](https://ncatlab.org/nlab/show/HomePage)<br>
     圏論周辺のwiki。
-  - [Kerodon](https://kerodon.net/)<br />
+  - [Kerodon](https://kerodon.net/)<br>
     高次圏のオンラインテキスト。
-  - [The Stacks project](https://stacks.math.columbia.edu/browse)<br />
+  - [The Stacks project](https://stacks.math.columbia.edu/browse)<br>
     代数幾何学のオンラインテキスト。
-  - [The Moduli Space](https://book.themoduli.space/browse)<br />
+  - [The Moduli Space](https://book.themoduli.space/browse)<br>
     モジュライ理論のオンラインテキスト。
-  - [The Rising Sea](http://therisingsea.org/?page_id=3)<br />
+  - [The Rising Sea](http://therisingsea.org/?page_id=3)<br>
     Murfetのノート群。
-  - [『増訂解析概論』(高木貞治 著)の現代仮名遣い版](https://linesegment.web.fc2.com/books/mathematics/zouteikaisekigairon/index.html)<br />
+  - [TeXromancers](https://aareyanmanzoor.github.io/Texromancers.html)<br>
+    古い本をTeXに打ち直してる集団。
+      - J. F. Adams. Stable Homotopy and Generalised Homology.
+      - Noel J. Hicks. Notes on Differential Geometry.
+      - Hideyuki Matsumura. Commutative Algebra second edition.
+      - J. W. Milnor and J. D. Stasheff. Characteristic Classes.
+  - [『増訂解析概論』(高木貞治 著)の現代仮名遣い版](https://linesegment.web.fc2.com/books/mathematics/zouteikaisekigairon/index.html)<br>
     解析概論の現代仮名遣い版。
   - [小島順「線型代数」(1976)](http://math.oshirase.com/%e7%b7%9a%e5%9e%8b%e4%bb%a3%e6%95%b0/)
-  - [満ちてくる海 (The Rising Sea) 日本語訳](http://searial.web.fc2.com/sea/index.html)<br />
+  - [満ちてくる海 (The Rising Sea) 日本語訳](http://searial.web.fc2.com/sea/index.html)<br>
     Vakilの代数幾何学の本の日本語化。
-  - [The Mathematics Genealogy Project](https://www.genealogy.math.ndsu.nodak.edu/)<br />
+  - [The Mathematics Genealogy Project](https://www.genealogy.math.ndsu.nodak.edu/)<br>
     数学者の系譜を記録する計画。
-  - [MathSciNet](https://mathscinet.ams.org/mathscinet)<br />
+  - [MathSciNet](https://mathscinet.ams.org/mathscinet)<br>
     アメリカ数学会が運営する数学論文データベース。
-  - [zbMATH Open](https://www.zbmath.org/)<br />
+  - [zbMATH Open](https://www.zbmath.org/)<br>
     ヨーロッパ数学会が運営する数学論文データベース。
+
+<a id="phys_links"></a>
 
 #### 物理学リンク
   - [物理学に関する推薦書リスト](http://maya.phys.kyushu-u.ac.jp/~knomura/research/guide-phys/bookguide-phys-j.html)
@@ -476,6 +491,10 @@ More to be added...
  - [校閲記者の仕事を実演動画で - 毎日ことば](https://mainichi-kotoba.jp/blog-20210328)
 
  - [青空文庫](https://www.aozora.gr.jp/)
+
+ - [毎日算数](https://daily-math-practice.com/)
+
+ - [群論概念の知的必要性を生じさせる指導デザイン](https://www.edu.sugiyama-u.ac.jp/math/file-kaken/hamanaka3.pdf) (pdf)
 
  - [Exercism: Code practice and mentorship for everyone](https://exercism.io/) 
 
