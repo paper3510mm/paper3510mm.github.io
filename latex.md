@@ -33,6 +33,12 @@ LaTeX関連のリンクは <a href="/links#latex">Links/LaTeX関連</a> にま�
   <ol start="12">
   <li><a href="/latex/bibulous#bibulous">Bibulous</a></li>
   </ol>
+- [BibLaTeXの導入メモ](/latex/biblatex)
+  <ol start="13">
+  <li><a href="/latex/biblatex#biblatex">BibLaTeXの概要</a></li>
+  <li><a href="/latex/biblatex#intro_biblatex">とりあえずBibLaTeXを実行してみる</a></li>
+  <li><a href="/latex/biblatex#biblatex_memo">注意とカスタマイズ（メモ）</a></li>
+  </ol>
 
 
 
