@@ -11,7 +11,7 @@ BibLaTeXの導入に関する雰囲気メモを残しておきます。
 <ol start="13">
   <li><a href="#biblatex">BibLaTeXの概要</a></li>
   <li><a href="#intro_biblatex">とりあえずBibLaTeXを実行してみる</a></li>
-  <li><a href="#biblatex_memo">注意とカスタマイズ（メモ）</a></li>
+  <li><a href="#biblatex_memo">注意とカスタマイズ（備忘録）</a></li>
 </ol>
 
 <hr />
@@ -144,9 +144,9 @@ latexmkの場合は、[latexmk で楽々 TeX タイプセットの薦め（＆ b
 ---
 <a id="biblatex_memo"></a>
 
-### 注意とカスタマイズ（メモ）
+### 注意とカスタマイズ（備忘録）
 
-使うだけならすぐにできました。詳細設定については解説しきれないので、[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf) を読んでほしいです。注意点とカスタマイズのメモだけ残して置きます。
+使うだけならすぐにできました。詳細設定については解説しきれないので、[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf) を読んでほしいです。自分が設定したときの注意点とカスタマイズの備忘録だけ残して置きます。
 
 
 ### 注意点
@@ -191,7 +191,7 @@ BibLaTeX を用いれば、BibTeX ではできなかった実に多種多様な�
 
 #### 引用
 
-引用はbibtexと同じように `\cite{citation_key}` でできます。今は `style=alphabetic` としているので、[Har77]などと表示されます。
+引用はbibtexと同じように `\cite{citation_key}` でできます。今は `style=alphabetic` としているので、[Har77]などのように「ラベルを四角カッコで閉じたもの」が表示されます。
 
 引用の表示は自由に変更することができます。bibtexで用いるパッケージ [`natbib`](https://www.ctan.org/pkg/natbib) でできることはだいたいできると思います。
 
@@ -263,6 +263,23 @@ biblatexではそのほかの情報も取り出すことができます。例え
 とすればよいです。
 
 
+#### ラベル
+
+今のオプションの設定は `style=alphabetic` としているので、引用するときのラベルは[Har77]のように「著者+出版年の下二桁」が出力されます。
+
+ラベル"Har"の部分は著者のリストから自動的に設定されますが、文献に`label`フィールドが設定されていればその中身が採用されます。例えば、`label=Hartshorne` と書いてあれば `\cite{Hartshorne:1977}` は [Hartshorne77] と出力します。数字の部分も含めて指定したいときは`shorthand`フィールドを使います。例えば `shorthand=Hartshorne` と書いてあれば `\cite{Hartshorne:1977}` は [Hartshorne] と出力します。
+
+文献の著者が二人（例えばKashiwara and Schapira）や三人（例えばBeilinson and Bernstein and Deligne）なら、ラベルは「著者のイニシャル+出版年の下一桁」（それぞれ[KS05]や[BBD80]）になります。
+
+しかし著者が四人以上（例えばDwyer and Hirschhorn and Kan and Smith）いるとき、デフォルトでは[Dwy+04]のようにイニシャル表記ではなくなってしまいます。イニシャルを並べたラベルを生成してほしい場合、オプションに `minalphanames=3` を付け加えれば、ラベルが[DHK+04]のようになります。四人まではイニシャルを並べて、五人以上は先頭三人のイニシャル(に`+`を付けたもの)にしたければ
+```
+maxalphanames=4,%ここのデフォルトが3
+minalphanames=3,%ここのデフォルトが1
+```
+とすればよいです。
+
+
+
 #### ソート
 
 文献のソートについて
@@ -273,6 +290,23 @@ biblatexではそのほかの情報も取り出すことができます。例え
 
 
 <!--
+
+### おまけ：パッケージ化
+
+以上のことに注意して、biblatexに関する自分の設定は以下に落ち着きました。
+```
+\usepackage[backend=biber,style=alphabetic]{biblatex}
+\ExecuteBibliographyOptions{%
+
+}
+```
+
+これを毎回プリアンブルにコピペするのも面倒なので、styファイルにしてパッケージ化してみましょう。
+
+まず、TeXworksを開いて、、、
+
+
+
 メモ用。pushするときはここを消す--
 
 ### 日本語文献を含む場合
