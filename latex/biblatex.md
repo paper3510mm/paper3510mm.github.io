@@ -306,6 +306,8 @@ minalphanames=3,%ここのデフォルトが1
 をプリアンブルに記述しておけばいいです。
 
 doi,eprint,urlの出力は、[standard.bbx](https://github.com/plk/biblatex/blob/6bd085fd7123d100bdbd761454fdea00f396803c/tex/latex/biblatex/bbx/standard.bbx) の `doi+eprint+url` マクロが制御しています。このマクロは次のように定義されています。
+<!-- {% raw %} -->
+<!-- '{%' がLiquid syntax errorを起こすので回避 -->
 ```
 \newbibmacro*{doi+eprint+url}{%
   \iftoggle{bbx:doi}
@@ -320,12 +322,14 @@ doi,eprint,urlの出力は、[standard.bbx](https://github.com/plk/biblatex/blob
     {\usebibmacro{url+urldate}}
     {}}
 ```
-
+<!-- {% endraw %} -->
 
 doi,eprint,urlの手前で改行（かつbackrefの位置をいいかんじに調整）したければ、`doi`, `eprint`, `url+urldate`のマクロを再定義すればよいです。詳しくは [biblatex and new line for DOI, URL and Eprint - TeX StackExchange](https://tex.stackexchange.com/questions/29802/biblatex-and-new-line-for-doi-url-and-eprint)。
 
 eprintが存在するときdoiとurlを出力しないようにするには、
 `\iffieldundef{field name}{undefined case}{defined case}`マクロを用いて
+<!-- {% raw %} -->
+<!-- '{%' がLiquid syntax errorを起こすので回避 -->
 ```
 \AtEveryBibitem{%
   \iffieldundef{eprint}{}{%
@@ -334,6 +338,7 @@ eprintが存在するときdoiとurlを出力しないようにするには、
     \clearfield{urldate}}%
 }
 ```
+<!-- {% endraw %} -->
 と書いておけばいいです。`\clearfield` は指定したフィールドを未定義として扱うコマンドです。
 
 
@@ -351,6 +356,8 @@ eprintが存在するときdoiとurlを出力しないようにするには、
 のように引用したページの情報が文献リストで表示されます。
 
 しかしよく見るとピリオドの位置が微妙で、1977の後ろにピリオドが来て文献情報の区切りを示してほしい気がします。こういうときは
+<!-- {% raw %} -->
+<!-- '{%' がLiquid syntax errorを起こすので回避 -->
 ```
 \DeclareFieldFormat{parenswithperiod}{\mkbibparens{#1\addperiod}}
 
@@ -367,6 +374,7 @@ eprintが存在するときdoiとurlを出力しないようにするには、
        \printlist[pageref][-\value{listtotal}]{pageref}}%
      \renewcommand*{\finentrypunct}{}}}
 ```
+<!-- {% endraw %} -->
 と書けば、
 
 > [Har77] Robin Hartshorne. *Algebraic Geomtry*. Vol. 52. Graduate Texts in Mathematics. Springer-Verlag, 1977. (Cit. on p. 1.)
@@ -399,21 +407,14 @@ eprintが存在するときdoiとurlを出力しないようにするには、
 
 ### おまけ：パッケージ化
 
-以上のことに注意して、biblatexに関する自分の設定は以下に落ち着きました。
-```
-\usepackage[backend=biber,style=alphabetic]{biblatex}
-\ExecuteBibliographyOptions{%
+以上のことに注意して、biblatexに関する自分の設定
 
-}
-```
 
 これを毎回プリアンブルにコピペするのも面倒なので、styファイルにしてパッケージ化してみましょう。
 
 まず、TeXworksを開いて、、、
 
 
-
-メモ用。pushするときはここを消す--
 
 ### 日本語文献を含む場合
 
