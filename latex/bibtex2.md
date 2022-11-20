@@ -1,3 +1,18 @@
+<style>
+      .design10 {
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      .design10 th {
+        border-bottom: solid 2px;
+      }
+      .design10 td {
+        border-bottom: solid 1px;
+      }
+</style>
+
 ## **雰囲気でBibTeX入門（その２）**
 (2021/03/06)
 
