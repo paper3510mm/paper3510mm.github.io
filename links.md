@@ -209,9 +209,12 @@ Markdownベース+LaTeX
   - [Muboard](https://muboard.net/)
   - [数式入りの短い文章をブラウザ上でパパっと画像化](https://math-formula-image.oka-ryunoske.work/ja.html)
   - [unicodeit](https://www.unicodeit.net/)
+  - [Tables Generator](https://www.tablesgenerator.com/)
+    - 表を出力するコードに変換してくれる
   - [LaTeX Cookbook](https://latex-cookbook.net/) : Collection of LaTeX recipes
   - [LaTeX Color](http://latexcolor.com/)
   - [BibTex Cleaner](https://bibtexcleaner.herokuapp.com/)
+    - bib情報のいらない部分を削ってくれる
   - [TikZ Blog](https://latexdraw.com/)
   - [Lib arXiv](https://naru.jpn.com/lib_arxiv/ja/)
     - arxiv.orgに投稿される論文を閲覧・保存・共有するためのiOSアプリ
