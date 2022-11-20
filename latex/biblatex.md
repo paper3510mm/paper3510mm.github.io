@@ -35,6 +35,7 @@ biblatex自体は、BibTeXと違ってただのLaTeX用のパッケージなの�
 その他の参考文献は
 - [[LaTeX] biblatex ～初歩の初歩～―もう一つの［参考文献］生成ツール](https://konoyonohana.blog.fc2.com/blog-entry-96.html)
 - [latexmk で楽々 TeX タイプセットの薦め（＆ biblatex+biberで先進的な参考文献処理）](https://konn-san.com/prog/why-not-latexmk.html)
+- [BibLaTeXの使い方まとめ](https://tasusu.hatenablog.com/entry/2014/01/30/214338)
 - [biblatexとBibTeX - 武田史郎のウェブログ](https://shiro-takeda.hateblo.jp/entry/2660)
 - [Biblatexで日本語文献処理（努力編）- ファイルケース](http://shogo1979.blog46.fc2.com/blog-entry-1093.html)
 - [biblatex のオプションの解説](https://qiita.com/shiro_takeda/items/fac1351495f32c224a28)
@@ -157,7 +158,7 @@ latexmkの場合は、[latexmk で楽々 TeX タイプセットの薦め（＆ b
 - 参考文献を出力したい場所で `\printbibliography` を記述します．ただし単に `\printbibliography` だけだと References もしくは Bibliography と表示されるので、「参考文献」と出したければ `\printbibliography[title=参考文献] ` と指定すればよいです．
 - 
 - 出版社ではbiblatexをサポートしていないことが多いので、投稿するときは注意が必要です。
-  - arXivに投稿する場合、arXiv内ではbibtexもbiberも動かさないので、LaTeXだけで動くように生成したbblファイルを一緒にアップロードします。ただしbblファイルの形式はbiblatexのバージョンに依存するようで、arXivのbiblatexのバージョン（今のarXivはTeXLive2020で動いているはず）と互換性がないといけません。参考：[arXiv does not compile my bibliography - TeX StackExchange](https://tex.stackexchange.com/a/634884)。
+  - arXivに投稿する場合、arXiv内ではbibtexもbiberも動かさないので、LaTeXだけで動くように生成したbblファイルを一緒にアップロードします。ただしbblファイルの形式はbiblatexのバージョンに依存するようで、arXivのbiblatexのバージョン（今のarXivはTeXLive2020で動いているはず）と互換性がないといけません（参考：[arXiv does not compile my bibliography - TeX StackExchange](https://tex.stackexchange.com/a/634884)）。
   - bibitemの形式に変換してから投稿するという手もあります。TeXLive2021以降なら[biblatex2bibitem](https://ctan.org/pkg/biblatex2bibitem)パッケージが使えます（参考：[Biblatex: submitting to a journal - TeX StackExchange](https://tex.stackexchange.com/a/530638)）。
   - 出版社に投稿する場合は、出版社独自のbstファイルを用いるため編集可能な状態で提出しなければならないこともあり、その場合bibitemの形式ではダメです。そのためBibTeXでコンパイルできるように互換性を残したコードを書いておく必要があります。（？）
 
@@ -169,8 +170,13 @@ BibLaTeX を用いれば、BibTeX ではできなかった実に多種多様な�
 - [BibLaTeX+Biberの始め方 - tm23forest](https://tm23forest.com/contents/biblatex-biber-begin)
 - [biblatex のオプションの解説](https://qiita.com/shiro_takeda/items/fac1351495f32c224a28)
 - [biblatex の標準スタイルの解説](https://qiita.com/shiro_takeda/items/81f2c50c28eccbec08be)
+- [BibLaTeXの使い方まとめ](https://tasusu.hatenablog.com/entry/2014/01/30/214338)
 
-に簡単な解説があります。
+に簡単な解説があります。詳細は公式パッケージ
+
+- [The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf)
+
+を見てください。
 
 #### パッケージオプション
 
@@ -178,32 +184,84 @@ BibLaTeX を用いれば、BibTeX ではできなかった実に多種多様な�
 ```
 \usepackage[backend=biber,style=alphabetic]{biblatex}
 \ExecuteBibliographyOptions{
-  sorting=nyt,
-  sortcites=false,
-  date=year,
-  maxnames=8,minnames=3,
-  backref=true,backrefstyle=none,
-  isbn=false}
+  sorting=nyt,%参考文献でのソートをname,year,title の順で行う
+  sortcites=false,%\cite{}の中に書いた順番通りの出力する(falseなら並び替えない)
+  date=year,%dateの表示はyearのみにする
+  maxnames=8,%著者がmaxnamesを超えるときminnamesの数まで省略する
+  minnames=3,
+  maxbibnames=99,%参考文献では99人まで著者を載せる
+  backref=true,%引用したページを文献リストに表示する
+  backrefstyle=none,%ページが連続するときの省略(デフォルトでthree)。省略させたくないときはnoneにする
+  isbn=false,%isbnを出力しない
+  url=true,%デフォルト値
+  doi=true,%デフォルト値
+  eprint=true%デフォルト値
+}
 ```
 としました。styleオプションの選択については参考文献を見てください。
 
 以降はこの設定のもとで考えます。
 
-#### 引用
+#### 文献情報
 
-引用はbibtexと同じように `\cite{citation_key}` でできます。今は `style=alphabetic` としているので、[Har77]などのように「ラベルを四角カッコで閉じたもの」が表示されます。
+基本的には、BibTeX形式の文献情報をそのまま用いることができます。デフォルトでサポートしているエントリーやフィールドは[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf)の2.1節に書いてあります。
 
-引用の表示は自由に変更することができます。bibtexで用いるパッケージ [`natbib`](https://www.ctan.org/pkg/natbib) でできることはだいたいできると思います。
+ただし、biblatexでは情報の分類をより明確にするために推奨されるフィールド名が変更されているものがあります。例えば、[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf)の2.1.1節においてArticleエントリーの必須フィールドとして挙げられているフィールドは "author, title, journaltitle, year/date" です。BibTeXで掲載雑誌の情報をいれるフィールドは journalフィールドでしたが、biblatexでは journaltitleフィールドに変更されています。
 
-biblatexではそのほかの情報も取り出すことができます。例えば、[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf)の3.9.5節によれば次のようなコマンドが用意されています。
+それではbiblatexを使うためにjournalフィールドをjournaltitleフィールドに変更しなければならないかというと、その必要はありません。[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf)の2.2.5節によれば、BibTeXとの互換性のためjournalフィールドはjournaltitleフィールドのalias（=別名）として用意されていますから、journalフィールドをそのまま用いることができます。他にも次のようなフィールドが互換性のためにalias設定されています。
 
-| コマンド | 概要 |
-| ---- | ---- |
-| `\citeauthor` | 文献の著者のlast nameを取り出す |
-| `\Citeauthor` | 文頭用のciteauthor（一文字目が大文字に変換される） |
-| `\citetitle` | 文献のタイトルを取り出す |
-| `\citeyear` | 文献の出版年を取り出す |
-| `\citeurl` | 文献のurlフィールドの中身を取り出す |
+<table>
+<thead>
+<tr><th>フィールド</th><th></th></tr>
+</thead>
+<tbody>
+<tr><td>journal</td><td>journaltitleの別名</td></tr>
+<tr><td>address</td><td>locationの別名</td></tr>
+<tr><td>school</td><td>institutionの別名</td></tr>
+<tr><td>key</td><td>sortkeyの別名</td></tr>
+<tr><td>archiveprefix</td><td>eprinttypeの別名</td></tr>
+<tr><td>primaryclass</td><td>eprintclassの別名</td></tr>
+<tr><td></td><td></td></tr>
+</tbody>
+</table>
+
+aliasとなっているフィールド同士は一つの文献内で同時には使用できません。
+
+eprintフィールドは、[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf)の3.14.7節にあるように、arXiv, jstor, PubMed などの識別番号を記述するフィールドです。
+- eprint：文献の識別番号をいれます
+- eprinttype：文献のリソースの種類をいれます
+- eprintclass：任意フィールドで、文献の補助情報をいれます
+
+例えばarXivの文献の場合、
+```
+  eprint        = {1007.2925},
+  archiveprefix = {arXiv},
+  primaryclass  = {math.AT},
+```
+という情報があると、文献リストにおいて `arXiv: 1007.2925 [math.AT]` が表示されます。ここで archiveprefix は eprinttype の別名で、primaryclass は eprintclass の別名です。hyperref が有効であれば `1007.2925 [math.AT]` の部分にハイパーリンクがつきます。
+
+
+#### 文献の引用
+
+引用はBibTeXと同じように `\cite{citation_key}` でできます。今は `style=alphabetic` としているので、[Har77]などのように「ラベルを四角カッコで閉じたもの」が表示されます。
+
+引用の表示は自由に変更することができます。BibTeXで用いるパッケージ [`natbib`](https://www.ctan.org/pkg/natbib) でできることはだいたいできると思います。
+
+biblatexではそのほかの情報も取り出すことができます。例えば、[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf)の3.9.5節によれば次のようなコマンド（一部）が用意されています。
+
+<table>
+<thead>
+<tr><th>コマンド</th><th>概要</th></tr>
+</thead>
+<tbody>
+<tr><td><code>\citeauthor</code></td><td>文献の著者のlast nameを取り出す</td></tr>
+<tr><td><code>\Citeauthor</code></td><td>文頭用のciteauthor（一文字目が大文字に変換される）</td></tr>
+<tr><td><code>\citetitle</code></td><td>文献のタイトルを取り出す</td></tr>
+<tr><td><code>\citeyear</code></td><td>文献の出版年を取り出す</td></tr>
+<tr><td><code>\citeurl</code></td><td>文献のurlフィールドの中身を取り出す</td></tr>
+<tr><td></td><td></td></tr>
+</tbody>
+</table>
 
 新しくコマンドを定義することも可能で、文献の著者のフルネームを取り出すコマンドを定義したい場合、
 ```
@@ -217,13 +275,74 @@ biblatexではそのほかの情報も取り出すことができます。例え
 ```
 \newcommand{\citelit}[2][]{\cite[#1]{#2} \citeauthorfullnames{#2}. \citetitle{#2}, \citeyear{#2}.}
 ```
-と書いておけば、`\citelit[Chap. 2]{Hartshorne:1977}` と記述するだけで
+と定義しておけば、`\citelit[Chap. 2]{Hartshorne:1977}` と記述するだけで
 
 > [Har77, Chap. 2] Robin Hartshorne. *Algebraic Geomtry*, 1977.
 
 が出力できるわけです。便利ですね。
 
-#### backref
+#### 引用ラベル
+
+今のオプションの設定は `style=alphabetic` としているので、引用するときのラベルは[Har77]のように「著者+出版年の下二桁」が出力されます。
+
+ラベル"Har"の部分は著者のリストから自動的に設定されますが、文献にlabelフィールドが設定されていればその中身が採用されます。例えば、`label=Hartshorne` と書いてあれば `\cite{Hartshorne:1977}` は [Hartshorne77] と出力します。数字の部分も含めて指定したいときはshorthandフィールドを使います。例えば `shorthand=Hartshorne` と書いてあれば `\cite{Hartshorne:1977}` は [Hartshorne] と出力します。
+
+文献の著者が二人（例えば Kashiwara and Schapira）や三人（例えば Beilinson and Bernstein and Deligne）なら、ラベルは「著者のイニシャル+出版年の下一桁」（それぞれ[KS05]や[BBD80]）になります。
+
+しかし著者が四人以上（例えばDwyer and Hirschhorn and Kan and Smith）いるとき、デフォルトでは[Dwy+04]のようにイニシャル表記ではなくなってしまいます。イニシャルを並べたラベルを生成してほしい場合、オプションに `minalphanames=3` を付け加えれば、ラベルが[DHK+04]のようになります。四人まではイニシャルを並べて、五人以上は先頭三人のイニシャル(に`+`を付けたもの)にしたければ、biblatexのオプションに
+```
+maxalphanames=4,%ここのデフォルトが3
+minalphanames=3,%ここのデフォルトが1
+```
+を加えればよいです。
+
+#### 文献リストのスタイルの変更
+
+文献リストのスタイルの変更も簡単にできます。例えば、Bookエントリーで登録している文献に対してpagesフィールドの情報を出力したくなかったり、文献の掲載雑誌の前に付いている "In:" を取り除きたければ、
+```
+\DeclareFieldFormat[book]{pages}{} % Bookエントリーのpagesフィールドの情報を無効(空)にする
+\renewbibmacro{in:}{} % in: Some journal の "in:" を取る
+```
+をプリアンブルに記述しておけばいいです。
+
+doi,eprint,urlの出力は、[standard.bbx](https://github.com/plk/biblatex/blob/6bd085fd7123d100bdbd761454fdea00f396803c/tex/latex/biblatex/bbx/standard.bbx) の `doi+eprint+url` マクロが制御しています。このマクロは次のように定義されています。
+```
+\newbibmacro*{doi+eprint+url}{%
+  \iftoggle{bbx:doi}
+    {\printfield{doi}}
+    {}%
+  \newunit\newblock
+  \iftoggle{bbx:eprint}
+    {\usebibmacro{eprint}}
+    {}%
+  \newunit\newblock
+  \iftoggle{bbx:url}
+    {\usebibmacro{url+urldate}}
+    {}}
+```
+
+
+doi,eprint,urlの手前で改行（かつbackrefの位置をいいかんじに調整）したければ、`doi`, `eprint`, `url+urldate`のマクロを再定義すればよいです。詳しくは [biblatex and new line for DOI, URL and Eprint - TeX StackExchange](https://tex.stackexchange.com/questions/29802/biblatex-and-new-line-for-doi-url-and-eprint)。
+
+eprintが存在するときdoiとurlを出力しないようにするには、
+`\iffieldundef{field name}{undefined case}{defined case}`マクロを用いて
+```
+\AtEveryBibitem{%
+  \iffieldundef{eprint}{}{%
+    \clearfield{doi}%
+    \clearfield{url}%
+    \clearfield{urldate}}%
+}
+```
+と書いておけばいいです。`\clearfield` は指定したフィールドを未定義として扱うコマンドです。
+
+
+
+
+
+
+
+#### backrefの文献リストでの表示
 
 今のオプションの設定では `backref=true` にしているので、
 
@@ -263,20 +382,7 @@ biblatexではそのほかの情報も取り出すことができます。例え
 とすればよいです。
 
 
-#### ラベル
 
-今のオプションの設定は `style=alphabetic` としているので、引用するときのラベルは[Har77]のように「著者+出版年の下二桁」が出力されます。
-
-ラベル"Har"の部分は著者のリストから自動的に設定されますが、文献に`label`フィールドが設定されていればその中身が採用されます。例えば、`label=Hartshorne` と書いてあれば `\cite{Hartshorne:1977}` は [Hartshorne77] と出力します。数字の部分も含めて指定したいときは`shorthand`フィールドを使います。例えば `shorthand=Hartshorne` と書いてあれば `\cite{Hartshorne:1977}` は [Hartshorne] と出力します。
-
-文献の著者が二人（例えばKashiwara and Schapira）や三人（例えばBeilinson and Bernstein and Deligne）なら、ラベルは「著者のイニシャル+出版年の下一桁」（それぞれ[KS05]や[BBD80]）になります。
-
-しかし著者が四人以上（例えばDwyer and Hirschhorn and Kan and Smith）いるとき、デフォルトでは[Dwy+04]のようにイニシャル表記ではなくなってしまいます。イニシャルを並べたラベルを生成してほしい場合、オプションに `minalphanames=3` を付け加えれば、ラベルが[DHK+04]のようになります。四人まではイニシャルを並べて、五人以上は先頭三人のイニシャル(に`+`を付けたもの)にしたければ
-```
-maxalphanames=4,%ここのデフォルトが3
-minalphanames=3,%ここのデフォルトが1
-```
-とすればよいです。
 
 
 
