@@ -210,7 +210,7 @@ BibLaTeX を用いれば、BibTeX ではできなかった実に多種多様な�
 
 それではbiblatexを使うためにjournalフィールドをjournaltitleフィールドに変更しなければならないかというと、その必要はありません。[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf)の2.2.5節によれば、BibTeXとの互換性のためjournalフィールドはjournaltitleフィールドのalias（=別名）として用意されていますから、journalフィールドをそのまま用いることができます。他にも次のようなフィールドが互換性のためにalias設定されています。
 
-<table>
+<table class="design10">
 <thead>
 <tr><th>フィールド</th><th></th></tr>
 </thead>
@@ -221,7 +221,6 @@ BibLaTeX を用いれば、BibTeX ではできなかった実に多種多様な�
 <tr><td>key</td><td>sortkeyの別名</td></tr>
 <tr><td>archiveprefix</td><td>eprinttypeの別名</td></tr>
 <tr><td>primaryclass</td><td>eprintclassの別名</td></tr>
-<tr><td></td><td></td></tr>
 </tbody>
 </table>
 
@@ -249,7 +248,7 @@ eprintフィールドは、[The biblatex Package](https://ftp.kddilabs.jp/CTAN/m
 
 biblatexではそのほかの情報も取り出すことができます。例えば、[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf)の3.9.5節によれば次のようなコマンド（一部）が用意されています。
 
-<table>
+<table class="design10">
 <thead>
 <tr><th>コマンド</th><th>概要</th></tr>
 </thead>
@@ -259,7 +258,6 @@ biblatexではそのほかの情報も取り出すことができます。例え
 <tr><td><code>\citetitle</code></td><td>文献のタイトルを取り出す</td></tr>
 <tr><td><code>\citeyear</code></td><td>文献の出版年を取り出す</td></tr>
 <tr><td><code>\citeurl</code></td><td>文献のurlフィールドの中身を取り出す</td></tr>
-<tr><td></td><td></td></tr>
 </tbody>
 </table>
 

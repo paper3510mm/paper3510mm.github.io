@@ -86,7 +86,7 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
 
 エントリー（文献の種類）には、主に次の15種類ある。
 
-<table>
+<table class="design10">
 <thead>
 <tr><th>エントリー</th><th>概要</th></tr>
 </thead>
@@ -106,7 +106,6 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
 <tr><td>Unpublished</td><td>公式な出版物ではないもの</td></tr>
 <tr><td>Misc</td><td>そのほか</td></tr>
 <tr><td>Comment</td><td>コメント用。ここに書いたものは無視される</td></tr>
-<tr><td></td><td></td></tr>
 </tbody>
 </table>
 
@@ -118,7 +117,7 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
 
 ただし、どのフィールドが有効なフィールド（無視されないフィールド）なのかは使用しているbstファイルに依存する。例えば、最も標準的な [plain.bst](https://ftp.kddilabs.jp/CTAN/biblio/bibtex/base/plain.bst)（日本語版は [jplain.bst](https://github.com/texjporg/pbibtex-base/blob/master/jplain.bst)）では以下のフィールドが有効である。
 
-<table>
+<table class="design10">
 <thead>
 <tr><th>フィールド</th><th>概要</th></tr>
 </thead>
@@ -146,7 +145,6 @@ BibTeX形式の文献情報は、自分で入力しても良いが、
 <tr><td>note</td><td>その他何でも出力したいこと</td></tr>
 <tr><td>key</td><td>著者名がないときの並び替えに使う</td></tr>
 <tr><td>yomi</td><td>日本人著者の読み。jplain.bstで有効</td></tr>
-<tr><td></td><td></td></tr>
 </tbody>
 </table>
 
