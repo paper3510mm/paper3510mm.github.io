@@ -37,7 +37,7 @@ LaTeX関連のリンクは <a href="/links#latex">Links/LaTeX関連</a> にま�
   <ol start="13">
   <li><a href="/latex/biblatex#biblatex">BibLaTeXの概要</a></li>
   <li><a href="/latex/biblatex#intro_biblatex">とりあえずBibLaTeXを実行してみる</a></li>
-  <li><a href="/latex/biblatex#biblatex_memo">注意とカスタマイズ（備忘録）</a></li>
+  <li><a href="/latex/biblatex#biblatex_memo">注意とカスタマイズの備忘録</a></li>
   </ol>
 
 

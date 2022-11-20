@@ -11,7 +11,7 @@ BibLaTeXの導入に関する雰囲気メモを残しておきます。
 <ol start="13">
   <li><a href="#biblatex">BibLaTeXの概要</a></li>
   <li><a href="#intro_biblatex">とりあえずBibLaTeXを実行してみる</a></li>
-  <li><a href="#biblatex_memo">注意とカスタマイズ（備忘録）</a></li>
+  <li><a href="#biblatex_memo">注意とカスタマイズの備忘録</a></li>
 </ol>
 
 <hr />
@@ -145,7 +145,7 @@ latexmkの場合は、[latexmk で楽々 TeX タイプセットの薦め（＆ b
 ---
 <a id="biblatex_memo"></a>
 
-### 注意とカスタマイズ（備忘録）
+### 注意とカスタマイズの備忘録
 
 使うだけならすぐにできました。詳細設定については解説しきれないので、[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf) を読んでほしいです。自分が設定したときの注意点とカスタマイズの備忘録だけ残して置きます。
 
