@@ -9,15 +9,20 @@ header {
 
 .design10 {
   text-align: left;
+  border: none;
   border-collapse: collapse;
   border-spacing: 0;
 }
 .design10 th {
+  color: black;
   background-color: transparent;
   border: none;
   border-bottom: solid 2px;
+  border-spacing: 0;
 }
 .design10 td {
   border: none;
   border-bottom: solid 1px;
+  border-bottom-color: gray;
+  border-spacing: 0;
 }
