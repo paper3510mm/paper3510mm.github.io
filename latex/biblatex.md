@@ -312,10 +312,13 @@ Article/Inbook/Incollection/Inproceedingsエントリーの文献において、
 ```
 をプリアンブルに記述しておけばいい。
 Articleエントリーに対してだけ"in:"を取り除きたければ、
+<!-- {% raw %} -->
+<!-- '{%' がLiquid syntax errorを起こすので回避 -->
 ```
 \renewbibmacro{in:}{%
   \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
 ```
+<!-- {% endraw %} -->
 をするか、[`biblatex-ext`](https://ctan.org/pkg/biblatex-ext) エクステンションの `articlein=false` オプションを用いるとできる（参考：[Suppress "In:" biblatex TeX StackExchange](https://tex.stackexchange.com/questions/10682/suppress-in-biblatex)）。
 
 #### ページの前の"pp."を取り除く
@@ -325,11 +328,14 @@ pagesフィールドを含む文献のとき、ページの前に"pp."が付く�
 \DeclareFieldFormat{pages}{#1}
 ```
 と記述する。Bookエントリーで登録している文献に対してページの情報を出力したくなければ、`\ifentrytype{entry type}{true case}{false case}` コマンドを用いて
+<!-- {% raw %} -->
+<!-- '{%' がLiquid syntax errorを起こすので回避 -->
 ```
 \AtEveryBibitem{%
 	\ifentrytype{book}{\clearfield{pages}}{}%
 } % Bookエントリーのpagesフィールドの情報を未定義にする
 ```
+<!-- {% endraw %} -->
 とすればよい。
 
 #### 雑誌名の出力について
