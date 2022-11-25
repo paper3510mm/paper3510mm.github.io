@@ -1,5 +1,5 @@
 ## **BibLaTeXの導入メモ**
-(2022/10/20)
+(2022/11/25)
 
 ---
 
@@ -41,6 +41,7 @@ biblatex自体は、BibTeXと違ってただのLaTeX用のパッケージなの�
 - [biblatex のオプションの解説](https://qiita.com/shiro_takeda/items/fac1351495f32c224a28)
 - [biblatex の標準スタイルの解説](https://qiita.com/shiro_takeda/items/81f2c50c28eccbec08be)
 - [(u)pBibTeX から biblatex に移行できるか (備忘録) (未完成)](https://ill-identified.hatenablog.com/entry/2020/09/20/231335)
+- [BibLaTeX で参考文献の表示をカスタマイズする](https://orumin.blogspot.com/2017/09/biblatex.html)
 - [Bibliography management with biblatex - Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex)
 - [biblatex in a nutshell (for beginners) - TeX StackExchange](https://tex.stackexchange.com/questions/13509/biblatex-in-a-nutshell-for-beginners)
 - [Biblatex Cheat Sheet](http://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf) (pdf)
@@ -72,6 +73,7 @@ biblatex自体は、BibTeXと違ってただのLaTeX用のパッケージなの�
   title = {Stability conditions on triangulated categories},
   journal = {Annals of Mathematics},
   volume = {166},
+  number = {2},
   pages = {317--345},
   year = {2007},
 }
@@ -106,8 +108,7 @@ myref.bibをtest2.texと同じフォルダ（ディレクトリ）に移動さ�
   - 引数: 上から
     - $basename
 
-と記入し、「実行後、PDFを表示する」のチェックを外してから、OKボタンを押す。すると「タイプセットの方法」の一覧にBibLaTeX (biber)が追加されていることが確認できる。（あとでいくつか書き足しますが、今はとりあえずこれで十分。）
-
+と記入し、「実行後、PDFを表示する」のチェックを外してから、OKボタンを押す。すると「タイプセットの方法」の一覧にBibLaTeX (biber)が追加されていることが確認できる。
 
 
 ④コンパイルもbibtexのときと同様に複数回行う必要がある。
@@ -125,7 +126,7 @@ myref.bibをtest2.texと同じフォルダ（ディレクトリ）に移動さ�
 > 
 > **References**
 >
-> [1] Tom Bridgeland. ``Stability conditions on triangulated categories''. In: *Annals of Mathematics* 166 (2007), pp.317--345.
+> [1] Tom Bridgeland. ``Stability conditions on triangulated categories''. In: *Annals of Mathematics* 166.2 (2007), pp. 317--345.
 > 
 > [2] Robin Hartshorne. *Algebraic Geomtry*. Vol. 52. Graduate Texts in Mathematics. Springer-Verlag, 1977.
 
@@ -163,7 +164,7 @@ latexmkの場合は、[latexmk で楽々 TeX タイプセットの薦め（＆ b
   - 出版社に投稿する場合は、出版社独自のbstファイルを用いるため編集可能な状態で提出しなければならないこともあり、その場合bibitemの形式ではダメです。そのためBibTeXでコンパイルできるように互換性を残したコードを書いておく必要があります。（？）
 
 
-### カスタマイズ
+### 基本カスタマイズ
 
 BibLaTeX を用いれば、BibTeX ではできなかった実に多種多様なカスタマイズが可能です。
 
@@ -229,7 +230,7 @@ aliasとなっているフィールド同士は一つの文献内で同時には
 eprintフィールドは、[The biblatex Package](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf)の3.14.7節にあるように、arXiv, jstor, PubMed などの識別番号を記述するフィールドです。
 - eprint：文献の識別番号をいれます
 - eprinttype：文献のリソースの種類をいれます
-- eprintclass：任意フィールドで、文献の補助情報をいれます
+- eprintclass：文献の補助情報をいれます（任意フィールド）
 
 例えばarXivの文献の場合、
 ```
@@ -294,53 +295,117 @@ minalphanames=3,%ここのデフォルトが1
 ```
 を加えればよいです。
 
-#### 文献リストのスタイルの変更
+#### 文献のソート
 
-文献リストのスタイルの変更も簡単にできます。例えば、Bookエントリーで登録している文献に対してpagesフィールドの情報を出力したくなかったり、文献の掲載雑誌の前に付いている "In:" を取り除きたければ、
+文献のソートについて、、、はまだよくわかってません。
+
+
+### 文献リストのカスタマイズ
+
+文献リストのスタイルの変更も簡単にできます。
+
+#### 文献の掲載雑誌の前の"In:"を取り除く
+
+Article/Inbook/Incollection/Inproceedingsエントリーの文献において、文献の掲載媒体の前に "In:" がデフォルトで付いている。これを取り除きたければ、
 ```
-\DeclareFieldFormat[book]{pages}{} % Bookエントリーのpagesフィールドの情報を無効(空)にする
 \renewbibmacro{in:}{} % in: Some journal の "in:" を取る
 ```
-をプリアンブルに記述しておけばいいです。
-
-doi,eprint,urlの出力は、[standard.bbx](https://github.com/plk/biblatex/blob/6bd085fd7123d100bdbd761454fdea00f396803c/tex/latex/biblatex/bbx/standard.bbx) の `doi+eprint+url` マクロが制御しています。このマクロは次のように定義されています。
-<!-- {% raw %} -->
-<!-- '{%' がLiquid syntax errorを起こすので回避 -->
+をプリアンブルに記述しておけばいい。
+Articleエントリーに対してだけ"in:"を取り除きたければ、
 ```
-\newbibmacro*{doi+eprint+url}{%
-  \iftoggle{bbx:doi}
-    {\printfield{doi}}
-    {}%
-  \newunit\newblock
-  \iftoggle{bbx:eprint}
-    {\usebibmacro{eprint}}
-    {}%
-  \newunit\newblock
-  \iftoggle{bbx:url}
-    {\usebibmacro{url+urldate}}
-    {}}
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
 ```
-<!-- {% endraw %} -->
+をするか、[`biblatex-ext`](https://ctan.org/pkg/biblatex-ext) エクステンションの `articlein=false` オプションを用いるとできる（参考：[Suppress "In:" biblatex TeX StackExchange](https://tex.stackexchange.com/questions/10682/suppress-in-biblatex)）。
 
-doi,eprint,urlの手前で改行（かつbackrefの位置をいいかんじに調整）したければ、`doi`, `eprint`, `url+urldate`のマクロを再定義すればよいです。詳しくは [biblatex and new line for DOI, URL and Eprint - TeX StackExchange](https://tex.stackexchange.com/questions/29802/biblatex-and-new-line-for-doi-url-and-eprint)。
+#### ページの前の"pp."を取り除く
 
-eprintが存在するときdoiとurlを出力しないようにするには、
-`\iffieldundef{field name}{undefined case}{defined case}`マクロを用いて
-<!-- {% raw %} -->
-<!-- '{%' がLiquid syntax errorを起こすので回避 -->
+pagesフィールドを含む文献のとき、ページの前に"pp."が付く。これを全部取り除きたければ、
+```
+\DeclareFieldFormat{pages}{#1}
+```
+と記述する。Bookエントリーで登録している文献に対してページの情報を出力したくなければ、`\ifentrytype{entry type}{true case}{false case}` コマンドを用いて
 ```
 \AtEveryBibitem{%
-  \iffieldundef{eprint}{}{%
-    \clearfield{doi}%
-    \clearfield{url}%
-    \clearfield{urldate}}%
+	\ifentrytype{book}{\clearfield{pages}}{}%
+} % Bookエントリーのpagesフィールドの情報を未定義にする
+```
+とすればよい。
+
+#### 雑誌名の出力について
+
+MathSciNetで文献情報を手に入れると、journalフィールドには雑誌名の省略形が入っており、fjournalに雑誌の正式名称が入っている。出力する雑誌名を省略せず、fjournalの中身を出力したければ、
+```
+\DeclareSourcemap{
+	\maps[datatype=bibtex]{
+		\map[overwrite=true]{
+			\step[fieldsource=fjournal]
+			\step[fieldset=journal, origfieldval]
+		}
+	}
 }
 ```
+と書けばよい。これはfjournalフィールドの中身をjournalに上書きしている（参考：[Field "fjournal" instead of "journal", if present - TeX StackExchange](https://tex.stackexchange.com/questions/272164/field-fjournal-instead-of-journal-if-present)）。
+
+一方で、biblatexでは雑誌の省略名のためにshortjournalフィールドが用意されている。ゆえに文献情報を手に入れる段階で、journal（もしくはjournaltitle）には正式名称が、shortjournalには省略形が入るように調整するべきかもしれない。seriesフィールドについても同様。
+
+#### numberの表示の仕方を変更する
+
+出力例
+
+> [Bri07] Tom Bridgeland. ``Stability conditions on triangulated categories''. In: *Annals of Mathematics* 166.2 (2007), pp. 317--345.
+
+を見ればわかるように、デフォルトだとnumberフィールドの出力が微妙です（今の場合だと 166.2 の 2 がnumberフィールドの情報）。
+
+この部分の出力は `journal+issuetitle` マクロが制御しているので、望みの出力になるように再定義する必要がある。例えば `VOLUME (YEAR), no. NUMBER` の形式で出力したい場合、
+<!-- {% raw %} -->
+<!-- '{%' がLiquid syntax errorを起こすので回避 -->
+```
+\DeclareFieldFormat[article]{number}{\bibstring{number}~#1}
+\renewbibmacro*{journal+issuetitle}{%
+	\usebibmacro{journal}%
+	\setunit*{\addspace}%
+	\iffieldundef{series}
+	{}
+	{\newunit
+		\printfield{series}%
+		\setunit{\addspace}}%
+	\printfield{volume}%
+	\setunit{\addspace}%
+	\usebibmacro{issue+date}%
+	\setunit{\addcolon\space}%
+	\usebibmacro{issue}%
+	\setunit{\addcomma\space}%
+	\printfield{number}%
+	\setunit{\addcomma\space}%
+	\printfield{eid}%
+	\newunit}
+```
 <!-- {% endraw %} -->
-と書いておけばいいです。`\clearfield` は指定したフィールドを未定義として扱うコマンドです。
+と書けばよい。
 
+- [Change ordering number and year biblatex - TeX StackExchange](https://tex.stackexchange.com/questions/305539/change-ordering-number-and-year-biblatex)
+- [Changing biblatex reference printing style to make it similar to amsrefs - TeX StackExchange](https://tex.stackexchange.com/questions/500438/changing-biblatex-reference-printing-style-to-make-it-similar-to-amsrefs)
 
+を参考にした。
 
+#### noteの表示位置を調整する
+
+デフォルトではnoteフィールド出力位置はpagesフィールドの直前に設定してある（[standard.bbx](https://github.com/plk/biblatex/blob/6bd085fd7123d100bdbd761454fdea00f396803c/tex/latex/biblatex/bbx/standard.bbx) の `note+pages` マクロ）。noteに入っている情報は一番後ろに出力させたいことが多いので、表示される位置を調整したい気がします。
+
+解決策のひとつは、最後に表示されるフィールドであるaddendumフィールドを利用する方法です。つまりnoteの中身をaddendumの中に移動させて表示させればよく、
+```
+\DeclareSourcemap{
+	\maps[datatype=bibtex]{
+		\map[overwrite=false]{
+			\step[fieldsource=note]
+			\step[fieldset=addendum, origfieldval, final]
+			\step[fieldset=note, null]
+		}
+	}
+}
+```
+と書けばいい。これでurl等の後ろ、bakrefの前に挿入されます。他の方法は、詳しくは[Reorder "Note" field at the end of the reference - TeX StackExchange](https://tex.stackexchange.com/questions/434931/reorder-note-field-at-the-end-of-the-reference)を見てください。
 
 
 
@@ -377,7 +442,7 @@ eprintが存在するときdoiとurlを出力しないようにするには、
 
 > [Har77] Robin Hartshorne. *Algebraic Geomtry*. Vol. 52. Graduate Texts in Mathematics. Springer-Verlag, 1977. (Cit. on p. 1.)
 
-と表示されるようになります（参考：[How add biblatex backref after period at end of each item in bibliography - TeX StackExchange](https://tex.stackexchange.com/a/609093)）。`parenswithperiod` の部分をいじれば丸カッコを四角カッコに変更できます。
+と表示されるようになる（参考：[How add biblatex backref after period at end of each item in bibliography - TeX StackExchange](https://tex.stackexchange.com/a/609093)）。`\mkbibparens` を `\mkbibbrackets` に変えれば、丸カッコを四角カッコに変更できる。
 "cit. on p. "の部分を変更して"cited on page "などにしたければ
 ```
 \DefineBibliographyStrings{english}{
@@ -385,17 +450,85 @@ eprintが存在するときdoiとurlを出力しないようにするには、
   backrefpages = {cited on pages},
 }
 ```
-とすればよいです。
+とすればよい。
+
+#### doi,eprint,urlの出力について
+
+doi,eprint,urlの出力は、[standard.bbx](https://github.com/plk/biblatex/blob/6bd085fd7123d100bdbd761454fdea00f396803c/tex/latex/biblatex/bbx/standard.bbx) の `doi+eprint+url` マクロが制御している。このマクロは次のように定義されている。
+<!-- {% raw %} -->
+<!-- '{%' がLiquid syntax errorを起こすので回避 -->
+```
+\newbibmacro*{doi+eprint+url}{%
+  \iftoggle{bbx:doi}
+    {\printfield{doi}}
+    {}%
+  \newunit\newblock
+  \iftoggle{bbx:eprint}
+    {\usebibmacro{eprint}}
+    {}%
+  \newunit\newblock
+  \iftoggle{bbx:url}
+    {\usebibmacro{url+urldate}}
+    {}}
+```
+<!-- {% endraw %} -->
+
+doi,eprint,urlの手前で改行（かつbackrefの位置をいいかんじに調整）したければ、`doi`, `eprint`, `url+urldate`のマクロを再定義すればよい。詳しくは [biblatex and new line for DOI, URL and Eprint - TeX StackExchange](https://tex.stackexchange.com/questions/29802/biblatex-and-new-line-for-doi-url-and-eprint)。
 
 
+#### urlが"https://doi.org/"で始まるとき、urlを表示しない
+
+MathSciNetなどで文献情報を手に入れると、しばしばdoiフィールドとurlフィールドの両方が定義され、本質的に同じ情報が含まれている場合があります。このときdoiとurlの両方を出力するのは無駄なので、urlフィールドの中身が "https://doi.org/" で始まっているときはurlを表示させないようにしたい。こういうときは
+```
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[ % copies url to doi field if it starts with https://doi.org/ or http://dx.doi.org/. This does not overwrite doi.
+        fieldsource=url,
+        match=\regexp{https?://(dx.)?doi.org/(.+)},
+        fieldtarget=doi,
+      ]
+      \step[ % removes https://doi.org/ or http://dx.doi.org/ string from doi field
+      fieldsource=doi,
+      match=\regexp{https?://(dx.)?doi.org/(.+)},
+      replace=\regexp{$2}
+      ]
+    }
+    \map{ % removes url + urldate field from all entries that have a doi field with https://doi.org/ or http://dx.doi.org/ string. If url is undefined or does not match \regexp{https?://(dx.)?doi.org/(.+)}, then  processing of this \map immediately terminates.
+     \step[fieldsource=url, match=\regexp{https?://(dx.)?doi.org/(.+)}, final]
+     \step[fieldset=url, null]
+     \step[fieldset=urldate, null]
+    }
+  }
+}
+```
+と書いておけばよい。一つ目の`\map`では、urlフィールドの中身をdoiフィールドの中身にコピーし（urlだけ定義されていてdoiが定義されていない可能性を見越して。デフォルトで`overwrite=false`なのでdoiが既に定義されているときは何も変化はない）、doiフィールドの中身が "https://doi.org/" で始まっていれば、その部分を取り除く操作をしています。二つ目の`\map`では、urlフィールドの中身が "https://doi.org/" で始まっていれば、urlフィールドとurldateフィールドを未定義として扱う操作をしています。上ではdoiの旧アドレスである "http://dx.doi.org/" で始まっている可能性も考慮してある。
+- [Biblatex: Convert doi-url into doi field - TeX StackExchange](https://tex.stackexchange.com/questions/119136/biblatex-convert-doi-url-into-doi-field)
+- [Ignore specific URL fields in biber? - TeX StackExchange](https://tex.stackexchange.com/questions/133809/ignore-specific-url-fields-in-biber)
+- [How to cut out a prefix in the doi field if present - TeX StackExchange](https://tex.stackexchange.com/questions/342876/how-to-cut-out-a-prefix-in-the-doi-field-if-present)
+
+を参考にしました。
 
 
+#### eprintが存在するときdoiとurlを出力しない
 
+arXivの文献は、eprintフィールドにarXiv IDが入れられている。最近ではarXivの文献に対してもdoiが付与されるようになり、arXivのページから文献情報を手に入れると、doiおよびurlフィールドにもarXiv IDから得られる情報が入った状態で手に入る。ここでもやはりeprintとdoiとurlの情報全てを出力するのは無駄なので、eprintが存在するときdoiとurlを出力しないようにしたい。こういうときは`\iffieldundef{field name}{undefined case}{defined case}`マクロを用いて
+<!-- {% raw %} -->
+<!-- '{%' がLiquid syntax errorを起こすので回避 -->
+```
+\AtEveryBibitem{%
+  \iffieldundef{eprint}{}{%
+    \clearfield{doi}%
+    \clearfield{url}%
+    \clearfield{urldate}}%
+}
+```
+<!-- {% endraw %} -->
+と書いておけばよい。`\clearfield` は指定したフィールドを未定義として扱うコマンドです。
 
-#### ソート
+#### その他の識別番号の出力について
 
-文献のソートについて
-
+通常ではMR番号やZbl番号をサポートしていないので、mrnumberフィールドやzblフィールドに情報があっても文献リストには出力されません。MR番号やZbl番号も出力したければ、arxiv等と同じようにfield formatを定義し、`eprint` bibmacroを再定義すればいいです。詳しくは[BibTeX fields for DOI, MR, Zbl and arxiv? - TeX StackExchange](https://tex.stackexchange.com/questions/151628/bibtex-fields-for-doi-mr-zbl-and-arxiv)を見てください。
 
 
 
