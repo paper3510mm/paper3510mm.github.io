@@ -248,7 +248,7 @@ Markdownベース+LaTeX
 
 次も参考になる。
 
-  - [大学生のためのライティング基礎/千葉大学大学院人文社会科学研究科 教育・学修支援研究会](https://www.gshpa.chiba-u.jp/content/files/textbook/textbook_writing2017.pdf)
+  - [大学生のためのライティング基礎/千葉大学大学院人文社会科学研究科 教育・学修支援研究会](https://www.gshpa.chiba-u.jp/content/files/textbook/textbook_writing2017.pdf) (pdf)
   - [伝わる文章作成の基本を学ぶための記事・学習コンテンツのまとめ](https://qiita.com/flyaway/items/b6682dbf116454a6814a)
   - [文章を書く心がけ/結城浩](http://www.hyuki.com/writing/writing.html)
   - [文章をわかりやすくする【18個】のルール](https://www.slideshare.net/juntoku_yoshizawa/ss-79083172)
@@ -263,7 +263,9 @@ Markdownベース+LaTeX
 レポートの書き方などについては次のようなページもある。
 
   - [名古屋大学生のためのアカデミック・ライティング・ガイド](http://www.cshe.nagoya-u.ac.jp/asg/index.html)
-  - [立教大学大学教育開発・支援センター](https://www.rikkyo.ac.jp/about/activities/fd/cdshe.html)
+  - [阪大生のためのアカデミック・ライティング入門 第4版](https://www.celas.osaka-u.ac.jp/education/support/academic-writing/)
+  - [大学生のためのアカデミックライティング](http://www.tufs.ac.jp/ts/personal/mkeiko/%E5%A4%A7%E5%AD%A6%E7%94%9F%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%83%83%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0pdf/) (東京外国語大学)
+  - [レポートの作成・プレゼンテーションの準備/立教大学大学教育開発・支援センター](https://www.rikkyo.ac.jp/about/activities/fd/cdshe/master.html)
   - [Duke Graduate School Scientific Writing Resource](https://sites.duke.edu/scientificwriting/)
 
 
@@ -397,6 +399,7 @@ Markdownベース+LaTeX
   - [EdrawMax](https://www.edrawsoft.com/jp/tour/edrawmax.html)
     - [【EdrawMax】簡単操作で印象的にアイデアを視覚化できるプレゼン作図ツール【プレゼンに最適】](https://www.youtube.com/watch?v=ZpCRSg7SAOg&feature=youtu.be)
   - [“ダサい”を卒業する図形素材集「モノクロスライドテンプレート」](https://aragakisai.com/entry/monochrome-slide-template)
+  - [研究発表スライドがサクサク作れるPowerPointテンプレート（2022版）](https://note.com/hisashi_is/n/n05e0e64e06bf)
 
 プレゼンテーションツール
  - [PymPress Presenter](https://github.com/Cimbali/pympress)

@@ -243,7 +243,7 @@ pBibTeX標準のbstファイル：
 
 #### デジタルオブジェクト識別（Digital Object Identifier; DOI）
 
-デジタルオブジェクト識別子（Digital Object Identifier; DOI）は、インターネット上のドキュメントに恒久的に与えられる識別子のこと。
+デジタルオブジェクト識別子（Digital Object Identifier; DOI）は、インターネット上のドキュメントに恒久的に与えられる識別子のこと。識別子の前に "https://doi.org/" をつければ、そのドキュメントのURLになる（以前は "http://dx.doi.org/" だったが、現在これは推奨されていない）。
 
  - [デジタルオブジェクト識別子 - wikipedia](https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E8%AD%98%E5%88%A5%E5%AD%90)
  - [国立国会図書館によるDOI付与 - 国立国会図書館](https://www.ndl.go.jp/jp/dlib/cooperation/doi.html)
