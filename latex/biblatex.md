@@ -42,6 +42,7 @@ biblatex自体は、BibTeXと違ってただのLaTeX用のパッケージなの�
 - [biblatex の標準スタイルの解説](https://qiita.com/shiro_takeda/items/81f2c50c28eccbec08be)
 - [(u)pBibTeX から biblatex に移行できるか (備忘録) (未完成)](https://ill-identified.hatenablog.com/entry/2020/09/20/231335)
 - [BibLaTeX で参考文献の表示をカスタマイズする](https://orumin.blogspot.com/2017/09/biblatex.html)
+- [BibLaTeXで日本語文献と英語文献の混在を扱う](https://qiita.com/sbtseiji/items/8ea24a39cd7810740e24?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
 - [Bibliography management with biblatex - Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex)
 - [biblatex in a nutshell (for beginners) - TeX StackExchange](https://tex.stackexchange.com/questions/13509/biblatex-in-a-nutshell-for-beginners)
 - [Biblatex Cheat Sheet](http://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf) (pdf)
@@ -311,7 +312,7 @@ Article/Inbook/Incollection/Inproceedingsエントリーの文献において、
 \renewbibmacro{in:}{} % in: Some journal の "in:" を取る
 ```
 をプリアンブルに記述しておけばいい。
-Articleエントリーに対してだけ"in:"を取り除きたければ、
+Articleエントリーに対してだけ "in:" を取り除きたければ、
 <!-- {% raw %} -->
 <!-- '{%' がLiquid syntax errorを起こすので回避 -->
 ```
@@ -323,7 +324,7 @@ Articleエントリーに対してだけ"in:"を取り除きたければ、
 
 #### ページの前の"pp."を取り除く
 
-pagesフィールドを含む文献のとき、ページの前に"pp."が付く。これを全部取り除きたければ、
+pagesフィールドを含む文献のとき、ページの前に "pp." が付く。これを全部取り除きたければ、
 ```
 \DeclareFieldFormat{pages}{#1}
 ```
@@ -397,9 +398,9 @@ MathSciNetで文献情報を手に入れると、journalフィールドには雑
 
 #### noteの表示位置を調整する
 
-デフォルトではnoteフィールド出力位置はpagesフィールドの直前に設定してある（[standard.bbx](https://github.com/plk/biblatex/blob/6bd085fd7123d100bdbd761454fdea00f396803c/tex/latex/biblatex/bbx/standard.bbx) の `note+pages` マクロ）。noteに入っている情報は一番後ろに出力させたいことが多いので、表示される位置を調整したい気がします。
+デフォルトではnoteフィールド出力位置はpagesフィールドの直前に設定してある（[standard.bbx](https://github.com/plk/biblatex/blob/6bd085fd7123d100bdbd761454fdea00f396803c/tex/latex/biblatex/bbx/standard.bbx) の `note+pages` マクロ）。noteに入っている情報は一番後ろに出力させたいことが多いので、表示される位置を調整したい気がする。
 
-解決策のひとつは、最後に表示されるフィールドであるaddendumフィールドを利用する方法です。つまりnoteの中身をaddendumの中に移動させて表示させればよく、
+解決策のひとつは、最後に表示されるフィールドであるaddendumフィールドを利用する方法。つまりnoteの中身をaddendumの中に移動させて表示させればよく、
 ```
 \DeclareSourcemap{
 	\maps[datatype=bibtex]{
@@ -411,7 +412,7 @@ MathSciNetで文献情報を手に入れると、journalフィールドには雑
 	}
 }
 ```
-と書けばいい。これでurl等の後ろ、bakrefの前に挿入されます。他の方法は、詳しくは[Reorder "Note" field at the end of the reference - TeX StackExchange](https://tex.stackexchange.com/questions/434931/reorder-note-field-at-the-end-of-the-reference)を見てください。
+と書けばいい。これでurl等の後ろ、bakrefの前に挿入される。他の方法は、詳しくは[Reorder "Note" field at the end of the reference - TeX StackExchange](https://tex.stackexchange.com/questions/434931/reorder-note-field-at-the-end-of-the-reference)を見てください。
 
 
 
@@ -449,7 +450,7 @@ MathSciNetで文献情報を手に入れると、journalフィールドには雑
 > [Har77] Robin Hartshorne. *Algebraic Geomtry*. Vol. 52. Graduate Texts in Mathematics. Springer-Verlag, 1977. (Cit. on p. 1.)
 
 と表示されるようになる（参考：[How add biblatex backref after period at end of each item in bibliography - TeX StackExchange](https://tex.stackexchange.com/a/609093)）。`\mkbibparens` を `\mkbibbrackets` に変えれば、丸カッコを四角カッコに変更できる。
-"cit. on p. "の部分を変更して"cited on page "などにしたければ
+"cit. on p." の部分を変更して "cited on page" などにしたければ
 ```
 \DefineBibliographyStrings{english}{
   backrefpage  = {cited on page},

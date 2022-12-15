@@ -353,6 +353,8 @@ Markdownベース+LaTeX
     - NICTが開発した翻訳サイト。翻訳のデータ収集も兼ねており、ログインが必要
   - [みらい翻訳](https://chrome.google.com/webstore/detail/%E3%81%BF%E3%82%89%E3%81%84%E7%BF%BB%E8%A8%B3/ehmajmfoaieibgpanghhnnnlfjjffhni) 
     - WEB/PDFの翻訳のためのChrome拡張
+  - [Readable](https://readable.jp/)
+    - 英語のPDFファイルをレイアウトを保ったまま日本語に翻訳
   - [Grammarly: Free Online Writing Assistant](https://www.grammarly.com/)
     - 英文章チェックアプリ。受動態絶対なくすマン
   - [Writefull](https://www.writefull.com/writefull-for-word)
