@@ -43,6 +43,7 @@ biblatex自体は、BibTeXと違ってただのLaTeX用のパッケージなの�
 - [(u)pBibTeX から biblatex に移行できるか (備忘録) (未完成)](https://ill-identified.hatenablog.com/entry/2020/09/20/231335)
 - [BibLaTeX で参考文献の表示をカスタマイズする](https://orumin.blogspot.com/2017/09/biblatex.html)
 - [BibLaTeXで日本語文献と英語文献の混在を扱う](https://qiita.com/sbtseiji/items/8ea24a39cd7810740e24?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
+- [BibLaTeXで日本語文献と英語文献の混在を扱う(2021年)](https://gitpress.io/@statrstart/biblatex01)
 - [Bibliography management with biblatex - Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex)
 - [biblatex in a nutshell (for beginners) - TeX StackExchange](https://tex.stackexchange.com/questions/13509/biblatex-in-a-nutshell-for-beginners)
 - [Biblatex Cheat Sheet](http://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf) (pdf)
@@ -107,9 +108,21 @@ myref.bibをtest2.texと同じフォルダ（ディレクトリ）に移動さ�
   - 名前: BibLaTeX (biber)
   - プログラム: biber.exe
   - 引数: 上から
+    - -u
+    - -U
+    - --output-safechars
     - $basename
 
 と記入し、「実行後、PDFを表示する」のチェックを外してから、OKボタンを押す。すると「タイプセットの方法」の一覧にBibLaTeX (biber)が追加されていることが確認できる。
+
+[2022/12/28:追記]
+ biberのオプションとして `-u` と `-U` と `--output-safechars` の三つ追記しました。
+ - `-u` は `--input-encoding=UTF-8` のショートカットで、入力のエンコードをUTF-8にするオプション。
+ - `-U` は `--output-encoding=UTF-8` のショートカットで、出力(bblファイル)のエンコードをUTF-8にするオプション。
+ - `--output-safechars` はUTF-8文字をLeTeXのマクロに変換するオプション。
+ 
+ biberは、仕様でLaTeXマクロを可能な限りUTF-b文字に変換してしまう（[biberのマニュアル](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/biblio/biber/base/documentation/biber.pdf)の3.6.1節を見よ）。例えばbibファイルに `\"{O}` と書いてあると、bblファイルを生成するときに自動的に `Ö` へと変換される。(u)pLaTeXにおいてこれは不都合であり、`--output-safechars` オプションはこの変換を抑える効果がある。なお、`bblencoding` は `output_encoding` の古い別名である（biberの[Revision history](https://github.com/plk/biber/blob/a6c207ccb58463d6177e1d01b2b7f8f664e75c2a/Changes#L180) 参照）。
+  [追記終]
 
 
 ④コンパイルもbibtexのときと同様に複数回行う必要がある。
@@ -135,7 +148,7 @@ myref.bibをtest2.texと同じフォルダ（ディレクトリ）に移動さ�
 
 TeXstudioを使っている場合は、
   - オプション->TeXstudioの設定 と進む
-  - コマンドのbiberの欄を、`biber.exe %` にする（既にそうなっているかも）
+  - コマンドのbiberの欄を、`biber.exe -u -U --output-safechars %` にする（既にそうなっているかも）
   - ビルドの「既定の文献作成ツール」の欄のプルダウンから「txs:///biber」を選ぶ
 
 とするだけ。使い方はbibtexと同じ。
@@ -610,19 +623,7 @@ BibLaTeXの引用スタイルや文献リストの並び順などはパッケー
 のように直せばよい。
 
 
-#### biberの実行オプション
 
-TeXworksでのBibLaTeX (biber)の設定を上で行いましたが、`uplatex` でコンパイルする場合は次のように変更しておくと安心です。
-  - 名前: BibLaTeX (biber)
-  - プログラム: biber.exe
-  - 引数: 上から
-    - -E=utf8
-    - -u
-    - -U
-    - --output_safechars
-    - $basename
-
-「bblファイルのエンコードは UTF-8、入出力も共に UTF-8 を使って、アクセント記号とかちょっとヤバめの記号は TeX にエンコードする」みたいなものです
 
 
   
