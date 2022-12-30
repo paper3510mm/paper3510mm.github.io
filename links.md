@@ -457,7 +457,7 @@ More to be added...
   - [The Rising Sea](http://therisingsea.org/?page_id=3)<br>
     Murfetのノート群。
   - [TeXromancers](https://aareyanmanzoor.github.io/Texromancers.html)<br>
-    古い本をTeXに打ち直してる集団。
+    古い本をTeXに打ち直してる集団。公開されてる本：
       - J. F. Adams. Stable Homotopy and Generalised Homology.
       - Noel J. Hicks. Notes on Differential Geometry.
       - Hideyuki Matsumura. Commutative Algebra second edition.
@@ -473,6 +473,18 @@ More to be added...
     アメリカ数学会が運営する数学論文データベース。
   - [zbMATH Open](https://www.zbmath.org/)<br>
     ヨーロッパ数学会が運営する数学論文データベース。
+  - アドベントカレンダー
+    - [Math Advent Calendar 2015](https://adventar.org/calendars/852)
+    - [Math Advent Calendar 2017](https://adventar.org/calendars/2380)
+    - [Math Advent Calendar 2018](https://adventar.org/calendars/3185)
+    - [Math Advent Calendar 2019](https://adventar.org/calendars/4297)
+    - [Math Advent Calendar 2020](https://adventar.org/calendars/5029)
+    - [Math Advent Calendar 2021](https://adventar.org/calendars/6146)
+    - [Math Advent Calendar 2022](https://adventar.org/calendars/7662)
+    - [Category Theory Advent Calendar 2017](https://adventar.org/calendars/2393)
+    - [Category Theory Advent Calendar 2018](https://adventar.org/calendars/3168)
+    - [圏論 Advent Calender 2022](https://adventar.org/calendars/7888)
+    - [Mathematical Logic Advent Calendar 2022](https://adventar.org/calendars/7465)
 
 <a id="phys_links"></a>
 

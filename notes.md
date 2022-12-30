@@ -52,6 +52,18 @@
 
 <ol reversed>
 
+
+
+<li><p><strong><a href="/pdf/additive_sheaf.pdf">加法的層の圏と射影スキーム</a></strong></p>
+
+  <p>Grothendieck圏は、Gabriel-Popescuの定理の成立によってGrothendieckトポスの加法版(Ab-豊穣版)と見なすことができます。本稿では、Ab-豊穣圏上でのGrothendieck位相を定義し、その例としてZ-algebra上のtail topologyを紹介します。特に射影スキームProj(S)上の準連接層のなす圏Qcoh(Proj(S))が、SをZ-algebraと見なしたときのtail topologyに関する加法的層の圏として得られることを確認します。</p>
+
+  <ul>
+    <li><a href="https://adventar.org/calendars/7888">圏論 Advent Calendar 2022</a>, 15日目の記事</li>
+    <li>2022/12/30:公開 (15 pages)</li>
+  </ul>
+</li>
+
 <li><p><strong><a href="/pdf/chain_cpx.pdf">加群の複体の圏上のモデル圏構造</a></strong></p>
 
   <p>加群の複体の圏に入るモデル圏構造について解説します。</p>
