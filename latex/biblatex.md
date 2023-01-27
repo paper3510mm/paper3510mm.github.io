@@ -121,7 +121,7 @@ myref.bibをtest2.texと同じフォルダ（ディレクトリ）に移動さ�
  - `-U` は `--output-encoding=UTF-8` のショートカットで、出力(bblファイル)のエンコードをUTF-8にするオプション。
  - `--output-safechars` はUTF-8文字をLeTeXのマクロに変換するオプション。
  
- biberは、仕様でLaTeXマクロを可能な限りUTF-b文字に変換してしまう（[biberのマニュアル](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/biblio/biber/base/documentation/biber.pdf)の3.6.1節を見よ）。例えばbibファイルに `\"{O}` と書いてあると、bblファイルを生成するときに自動的に `Ö` へと変換される。(u)pLaTeXにおいてこれは不都合であり、`--output-safechars` オプションはこの変換を抑える効果がある。なお、`bblencoding` は `output_encoding` の古い別名である（biberの[Revision history](https://github.com/plk/biber/blob/a6c207ccb58463d6177e1d01b2b7f8f664e75c2a/Changes#L180) 参照）。
+ biberは、仕様でLaTeXマクロを可能な限りUTF-8文字に変換してしまう（[biberのマニュアル](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/biblio/biber/base/documentation/biber.pdf)の3.6.1節を見よ）。例えばbibファイルに `\"{O}` と書いてあると、bblファイルを生成するときに自動的に `Ö` へと変換される。(u)pLaTeXにおいてこれは不都合であり、`--output-safechars` オプションはこの変換を抑える効果がある（upLaTeXならpxcjkcatパッケージを使っても不都合は解決できる：[upLaTeX でアクセント付きのラテン文字などがうまく出力されないときの対処法](https://id.fnshr.info/2017/05/27/pxcjkcat/)）。なお、`bblencoding` は `output-encoding` の古い別名である（biberの[Revision history](https://github.com/plk/biber/blob/a6c207ccb58463d6177e1d01b2b7f8f664e75c2a/Changes#L180) 参照）。
   [追記終]
 
 
