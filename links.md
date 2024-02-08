@@ -51,6 +51,7 @@
   - [日々の雑感的なもの/田崎晴明 2/2/2003](http://www.gakushuin.ac.jp/~881791/d/0302.html#02)
   - [夢のない理系](https://anond.hatelabo.jp/touch/20170922053438?mode=amp)
   - [なぜ博士号をとったのに大学教員にならないのか](https://www.ki1tos.com/entry/2020/05/21/181426)
+  - [ポスドクからポストポスドクへ/円城塔](https://www.jstage.jst.go.jp/article/butsuri/63/7/63_KJ00004980445/_article/-char/ja/)
   - [映画大好きポンポさん/杉谷庄吾【人間プラモ】](https://comic.pixiv.net/works/3728)
   - [映画大好きフランちゃん/杉谷庄吾【人間プラモ】](https://comic.pixiv.net/works/4971)
   - [渡辺明の孤独な闘い](https://anond.hatelabo.jp/20200718001048)
@@ -78,7 +79,7 @@
 
 LaTeXの入門書。LaTeXを始めるには、まずはこれから！
 
-  - [改訂第7版] LaTeX 2ε美文書作成入門/奥村晴彦・黒木裕介 ([日本技術社のページ](http://gihyo.jp/book/2017/978-4-7741-8705-1))
+  - [改訂第9版] LaTeX美文書作成入門/奥村晴彦・黒木裕介 ([技術評論社のページ](https://gihyo.jp/book/2023/978-4-297-13889-9))
 
 
 
@@ -252,6 +253,7 @@ Markdownベース+LaTeX
   - [伝わる文章作成の基本を学ぶための記事・学習コンテンツのまとめ](https://qiita.com/flyaway/items/b6682dbf116454a6814a)
   - [文章を書く心がけ/結城浩](http://www.hyuki.com/writing/writing.html)
   - [文章をわかりやすくする【18個】のルール](https://www.slideshare.net/juntoku_yoshizawa/ss-79083172)
+  - [エリート的な文章の書き方](http://disadvantaged.web.fc2.com/)
   - 播磨尚朝，[J-Physics News Letter 5, 2(2018)](https://www.jphysics.jp/newsletter/2018/03/22/J-Physics_NL_web_v05.pdf)―日本語からはじめる．
   - ロジカル・シンキング―論理的な思考と構成のスキル/照屋華子、岡田恵子
 
@@ -266,6 +268,7 @@ Markdownベース+LaTeX
   - [阪大生のためのアカデミック・ライティング入門 第4版](https://www.celas.osaka-u.ac.jp/education/support/academic-writing/)
   - [大学生のためのアカデミックライティング](http://www.tufs.ac.jp/ts/personal/mkeiko/%E5%A4%A7%E5%AD%A6%E7%94%9F%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%83%83%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0pdf/) (東京外国語大学)
   - [レポートの作成・プレゼンテーションの準備/立教大学大学教育開発・支援センター](https://www.rikkyo.ac.jp/about/activities/fd/cdshe/master.html)
+  - [レポートの書き方資料/中央大学ライティング・ラボ](https://sites.google.com/view/chuo-writinglab/textbook)
   - [Duke Graduate School Scientific Writing Resource](https://sites.duke.edu/scientificwriting/)
 
 
@@ -320,14 +323,16 @@ Markdownベース+LaTeX
   - [科学英語を考える/トム・ガリー(東京大学理学系研究科)](https://www.s.u-tokyo.ac.jp/ja/story/newsletter/english/)
 
 実際に(数学の)論文を英語で書くときには、
-  - 数学のための英語案内/野水克己 (絶版)
+  - 数学のための英語案内/野水克己(サイエンス社,1993)
 
 が素晴らしく参考になる。次もかなり参考になる。
-  - 理科系のための英文作法/杉原厚吉
+  - 理科系のための英文作法/杉原厚吉(中公新書,1994)
   - [A Primer of Mathematical Writing 2nd edn/Steven G. Krantz](https://arxiv.org/abs/1612.04888)
-    - 初版邦訳：数学者の書きもの心得―英語表現から出版まで/後藤ミドリ訳(1999)
+    - 初版邦訳：数学者の書きもの心得―英語表現から出版まで/後藤ミドリ訳(丸善,1999)
   - Writing Mathematical Papers in English/Jerzy Trzeciak
-  - 数学のための英語教本/服部久美子
+  - 数学のための英語教本/服部久美子(共立出版,2020)
+  - 日本語からはじめる科学・技術英文の書き方/石黒鎮雄(丸善,1994)
+    - [ラ・トッカータ 日本語からはじめる科学・技術英文の書き方/伏屋雄紀](https://www.jstage.jst.go.jp/article/butsuri/75/8/75_515/_article/-char/ja/)
   - [正しい英語で論文を書くために/木田雅成](https://www.rs.tus.ac.jp/kida/english.html)
   - [数学論文の書き方(英語編)/小林昭七(1987)](https://www.jstage.jst.go.jp/article/sugaku1947/39/4/39_4_348/_article/-char/ja/)
   - [数学の常識・非常識—由緒正しいTEX入力法/小田忠雄(1999)](http://www.math.titech.ac.jp/~taguchi/nihongo/gakusei/typesetting.html)の三章
@@ -458,15 +463,18 @@ More to be added...
     Murfetのノート群。
   - [TeXromancers](https://aareyanmanzoor.github.io/Texromancers.html)<br>
     古い本をTeXに打ち直してる集団。公開されてる本：
-      - J. F. Adams. Stable Homotopy and Generalised Homology.
-      - Noel J. Hicks. Notes on Differential Geometry.
-      - Hideyuki Matsumura. Commutative Algebra second edition.
-      - J. W. Milnor and J. D. Stasheff. Characteristic Classes.
+      - J. F. Adams. "Stable Homotopy and Generalised Homology".
+      - Noel J. Hicks. "Notes on Differential Geometry".
+      - Hideyuki Matsumura. "Commutative Algebra second edition".
+      - J. W. Milnor and J. D. Stasheff. "Characteristic Classes".
+      - Lagarias and Odlyzko. "Effective Versions of The Chabetarev Density Theorem".
+      - Quillen. "Homotopical Algebra".
   - [『増訂解析概論』(高木貞治 著)の現代仮名遣い版](https://linesegment.web.fc2.com/books/mathematics/zouteikaisekigairon/index.html)<br>
     解析概論の現代仮名遣い版。
   - [小島順「線型代数」(1976)](http://math.oshirase.com/%e7%b7%9a%e5%9e%8b%e4%bb%a3%e6%95%b0/)
   - [満ちてくる海 (The Rising Sea) 日本語訳](http://searial.web.fc2.com/sea/index.html)<br>
     Vakilの代数幾何学の本の日本語化。
+  - [ハーディ『ある数学者の弁明』私家版翻訳/松本佳彦](https://ymatz.net/hardy/)
   - [The Mathematics Genealogy Project](https://www.genealogy.math.ndsu.nodak.edu/)<br>
     数学者の系譜を記録する計画。
   - [MathSciNet](https://mathscinet.ams.org/mathscinet)<br>
@@ -481,10 +489,15 @@ More to be added...
     - [Math Advent Calendar 2020](https://adventar.org/calendars/5029)
     - [Math Advent Calendar 2021](https://adventar.org/calendars/6146)
     - [Math Advent Calendar 2022](https://adventar.org/calendars/7662)
+    - [Math Advent Calendar 2023](https://adventar.org/calendars/8530)
     - [Category Theory Advent Calendar 2017](https://adventar.org/calendars/2393)
     - [Category Theory Advent Calendar 2018](https://adventar.org/calendars/3168)
     - [圏論 Advent Calender 2022](https://adventar.org/calendars/7888)
+    - [圏論 Advent Calender 2023](https://adventar.org/calendars/8591)
     - [Mathematical Logic Advent Calendar 2022](https://adventar.org/calendars/7465)
+    - [Mathematical Logic Advent Calendar 2023](https://adventar.org/calendars/8737)
+  - リンク集へのリンク
+    - [リンク（学生向け）/星明考](http://mathweb.sc.niigata-u.ac.jp/~hoshi/links-j.html)
 
 <a id="phys_links"></a>
 
@@ -515,6 +528,8 @@ More to be added...
  - [毎日算数](https://daily-math-practice.com/)
 
  - [群論概念の知的必要性を生じさせる指導デザイン](https://www.edu.sugiyama-u.ac.jp/math/file-kaken/hamanaka3.pdf) (pdf)
+
+ - [アホでも数学者になれる方法─アホぢからはこわい](https://web.archive.org/web/20150806230423/http://homepage3.nifty.com/kyousei/note10.html)
 
  - [Exercism: Code practice and mentorship for everyone](https://exercism.io/) 
 

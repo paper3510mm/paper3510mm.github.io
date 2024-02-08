@@ -40,6 +40,7 @@ biblatex自体は、BibTeXと違ってただのLaTeX用のパッケージなの�
 - [Biblatexで日本語文献処理（努力編）- ファイルケース](http://shogo1979.blog46.fc2.com/blog-entry-1093.html)
 - [biblatex のオプションの解説](https://qiita.com/shiro_takeda/items/fac1351495f32c224a28)
 - [biblatex の標準スタイルの解説](https://qiita.com/shiro_takeda/items/81f2c50c28eccbec08be)
+- [BibLaTeX - Tasuku Soma](https://tasusu.github.io/biblatex.html)
 - [(u)pBibTeX から biblatex に移行できるか (備忘録) (未完成)](https://ill-identified.hatenablog.com/entry/2020/09/20/231335)
 - [BibLaTeX で参考文献の表示をカスタマイズする](https://orumin.blogspot.com/2017/09/biblatex.html)
 - [BibLaTeXで日本語文献と英語文献の混在を扱う](https://qiita.com/sbtseiji/items/8ea24a39cd7810740e24?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)
@@ -202,6 +203,7 @@ BibLaTeX を用いれば、BibTeX ではできなかった実に多種多様な�
   sorting=nyt,%参考文献でのソートをname,year,title の順で行う
   sortcites=false,%\cite{}の中に書いた順番通りの出力する(falseなら並び替えない)
   date=year,%dateの表示はyearのみにする
+  urldate=iso,%urldateの表示はyyyy-mm-ddにする
   maxnames=8,%著者がmaxnamesを超えるときminnamesの数まで省略する
   minnames=3,
   maxbibnames=99,%参考文献では99人まで著者を載せる
