@@ -38,8 +38,6 @@
   </ul>
 </li>
 
-
-
 </ul>
 
 以降、いろいろ計画中...
@@ -53,7 +51,14 @@
 
 <ol reversed>
 
+<li><p><strong><a href="/pdf/equipment.pdf">Proarrow equipmentのノート</a></strong></p>
+  
+  <p>Proarrow equipment（副射装備）は形式圏論を展開するための枠組みの一つです。ここで形式圏論とは、通常の圏論を形式化・統合化することを目指す2-圏論の一分野です。2-圏に対してその上のproarrow equipmentの構造が与えられると、随伴・同値に加えて（余）極限、Cauchy完備性、各点Kan拡張などといった通常の圏論における様々な概念やそれらの相互作用を抽象的に議論できるようになります。本ノートでは、Woodにより導入されたproarrow equipmentの理論を解説します。</p>
 
+  <ul>
+    <li>2024/11/30: v1公開 (21 pages)</li>
+  </ul>
+</li>
 
 <li><p><strong><a href="/pdf/additive_sheaf.pdf">加法的層の圏と射影スキーム</a></strong></p>
 
