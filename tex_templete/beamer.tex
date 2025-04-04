@@ -1,0 +1,224 @@
+% beamer.tex (templete)
+% コンパイルはplatexでいい
+
+\documentclass[dvipdfmx,11pt]{beamer}
+% option: handout % 完成版のスライドを表示する
+% option: notheorems % theorem環境として theorem, proof, corollary, definition, definitions, fact, example, and examples があらかじめ定義されている。これを無効化する
+
+
+%%%% 基本パッケージ %%%%%
+%\usepackage{hyperref} %beamerが自動で読み込んでる
+\usepackage{graphicx}% 各種画像の張り込み
+\usepackage{comment}
+
+%% hyperref
+\usepackage{xcolor}
+\definecolor{brickred}{rgb}{0.8,0.25,0.33} % dvipsnamesオプションを付けても使える
+\definecolor{yelloworange}{RGB}{255,148,0} % #FF9400
+\hypersetup{
+	bookmarksnumbered=true, %しおりに見出し番号を付ける
+	colorlinks=true, %ハイパーリンクに色を付ける
+	citecolor=blue,
+	linkcolor= , % textcolor
+	urlcolor=yelloworange, % or orange
+}
+
+
+%%%% 和文用 %%%%%
+\usepackage{bxdpx-beamer}
+\usepackage{pxjahyper}%pdfのしおり文字化け対策。hyperrefの後ろにいれる
+\usepackage{minijs}%和文用
+\renewcommand{\kanjifamilydefault}{\gtdefault}%日本語フォントをゴシックにする
+
+
+%%%% スライドの見た目 %%%%%
+\usetheme[progressbar=frametitle]{metropolis} %デザインの選択(省略可) % or Singapore
+\metroset{block=fill} % 環境の背景をうめる
+\usecolortheme{rose}
+\usefonttheme{professionalfonts} %フォントテーマの選択(省略可) %数式の文字を通常の LaTeX と同じにする
+%\useinnertheme{circles} %フレーム内のテーマの選択(省略可) % circlesはitemizeやenumerateのitemを丸で囲む
+%\useoutertheme{infolines} %フレーム外側のテーマの選択(省略可) % infolinesは上下にスライドの情報をのせる
+\setbeamertemplate{navigation symbols}{}%ナビゲーションバー非表示
+\setbeamertemplate{footline}[frame number]%フレーム番号をつける
+\setbeamerfont{footline}{size=\normalsize,series=\bfseries}
+\setbeamercolor{footline}{fg=black,bg=black}
+
+%% 大雑把には、fg=で文字の色を、bg=でブロック背景を設定
+%タイトル色
+\setbeamercolor{title}{fg=structure, bg=}
+%フレームタイトル色
+\setbeamercolor{frametitle}{fg=structure, bg=}
+%Theorem環境の色
+\definecolor{beamerblue}{HTML}{3333B2} %={rgb}{0.2,0.2,0.7}, {RGB}{51,51,178}
+\colorlet{blue7}{blue!7!white}
+\setbeamercolor{block title}{fg=white!10!beamerblue, bg=blue7!80!fg}
+
+
+%%% 消えている文字をうっすらと表示する
+%\setbeamercovered{transparent}
+%%%%
+
+
+%%%%% フォント基本設定 %%%%%
+\usepackage[T1]{fontenc}%8bit フォント
+\usepackage{textcomp}%欧文フォントの追加
+\usepackage[utf8]{inputenc}%文字コードをUTF-8
+\usepackage{otf}%otfパッケージ
+%\usepackage{lxfonts}%数式・英文ローマン体を Lxfont にする
+\renewcommand{\familydefault}{\sfdefault}
+\usefonttheme[onlymath]{serif}
+%%%%%%%%%%
+
+%%%% 数式 %%%%%
+\usepackage{tikz} %ドライブにdvipdfmxを入れるのを忘れないように
+\usetikzlibrary{cd} %tikzcdの使用
+\usetikzlibrary{arrows.meta} 
+\usepackage{tikz-cd}
+\usepackage{bm}%数式太字
+\usepackage{mathrsfs}
+\DeclareMathAlphabet{\euscr}{U}{eus}{m}{n} %Euler scriptの使用
+%%%%%%%%%
+
+%%%% 定義環境 %%%%%
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}%amsthmをamsmathの後ろに置かないと\qedhereの挙動がおかしくなる
+\usepackage{mathtools} %\coloneqq、\vcentcolon の使用
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}
+\newtheorem{dfn}[thm]{Definition}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{exa}[thm]{Example}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{conjecture}[thm]{Conjecture}
+\renewcommand{\proofname}{Proof}
+%%%%%%%%%
+
+
+%%%%% enumerateに関する変更%%%%%
+\setbeamertemplate{enumerate item}{(\arabic{enumi})}
+\setbeamertemplate{enumerate subitem}{(\alph{enumii})}
+
+%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%% 演算子の定義 %%%%%%%%%%%%%%%%%%%
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+%% 強調 
+\newcommand{\emphasize}[1]{\textit{\textbf{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\LaTeX Beamer}%[略タイトル]{タイトル}
+\author{Author (from University)}%[略名前]{名前}
+\date[2023/1/1]{Seminar \\ 2023/1/1}
+%\institute[大阪大学]{大阪大学}
+%% [..]に省略名が書ける
+
+
+\begin{document}
+
+%% 表紙
+\begin{frame}[plain]\frametitle{}
+\titlepage
+\end{frame}
+
+
+%% 目次
+\begin{frame}\frametitle{Contents}
+\tableofcontents
+\end{frame}
+
+
+%% Section: Introduction
+\section{Introduction}
+
+
+\begin{frame}
+\frametitle{Various category theories}
+
+
+Some kinds of categories:
+	\begin{itemize}
+		\item abelian categories,
+		\item topoi,
+		\item triangulated categories,
+		\item model categories.
+	\end{itemize}
+	Other notions of categories:
+	\begin{itemize}
+		\item enriched categories,
+		\item infinity categories (quasi-categories).
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\begin{definition}
+		A dg category $\mathcal{A}$ is a $\mathsf{Ch}$-enriched category.
+	\end{definition}
+	
+	\begin{example}
+		The following categories are Grothendieck categories:
+		\begin{enumerate}
+			\item The category $\mathsf{Ab}$ of abelian groups,
+			\item The category $\mathsf{Mod}(R)$ of right modules over a ring $R$,
+			\item The category $\mathsf{Qcoh}(X)$ of quasi-coherent sheaves on a scheme $X$,
+			\item The category $\mathsf{Ch}=\mathsf{ChAb}$ of cochain complexes of abelian groups.
+		\end{enumerate}
+	\end{example}
+	
+\end{frame}
+
+\begin{frame}
+
+\begin{theorem}[Tabuada]
+		The category $\mathsf{dgCat}$ of (small) dg categories admits a model category structure whose weak equivalences are quasi-equivalences.
+	\end{theorem}
+
+\begin{alertblock}{Remark}
+They are used in many field of mathematics including algebraic geometry and representation theory.
+
+\end{alertblock}
+\end{frame}
+
+
+%% Section: Epilogue
+\section{Epilogue}
+
+\begin{frame}
+	\frametitle{References}
+	
+	%\footnotesize
+	\small
+	\begin{enumerate}[{[1]}]
+		\item Goncalo Tabuada. Une structure de catégorie de modèles de Quillen sur la catégorie des dg-catégories. C.\ R.\ Math.\ Acad.\ Sci.\ Paris 340 (2005), No.\ 1, p.\ 15-19.
+		
+		\item Bertrand To\"en. The homotopy theory of dg-categories and derived Morita theory. Invent.\ Math.\ 167 (2007), No.\ 3, p.\ 615-667.
+		
+	\end{enumerate}
+	
+\end{frame}
+
+
+
+\end{document}
